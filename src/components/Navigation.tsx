@@ -48,24 +48,29 @@ const Navigation = () => {
         {
           title: 'About',
           items: [
-            { label: 'About Us', href: 'about' },
-            { label: 'Careers', href: 'careers' },
-            { label: 'Testimonials', href: 'testimonials' },
+            { label: 'About Us', href: '/company/about' },
+            { label: 'Leadership', href: '/company/leadership-team' },
+            { label: 'Our Values', href: '/company/core-values' },
+            { label: 'Careers', href: '/company/careers' },
+            { label: 'Testimonials', href: '/company/client-testimonials' },
           ],
         },
         {
           title: 'Resources',
           items: [
-            { label: 'Engagement Models', href: 'resources/engagement' },
-            { label: 'Confidentiality', href: 'resources/confidentiality' },
-            { label: 'FAQs', href: 'resources/faqs' },
+            { label: 'Engagement Models', href: '/resources/engagement-models' },
+            { label: 'Confidentiality & Compliance', href: '/resources/confidentiality-compliance' },
+            { label: 'Case Studies', href: '/resources/case-studies' },
+            { label: 'FAQs', href: '/resources/faqs' },
           ],
         },
         {
           title: 'Connect',
           items: [
-            { label: 'Contact Us', href: 'contact' },
-            { label: 'Blogs', href: 'blogs' },
+            { label: 'Contact Us', href: '/contact' },
+            { label: 'Blog', href: '/blog' },
+            { label: 'Partners', href: '/company/strategic-partners' },
+            { label: 'Press & Media', href: '/company/press-media-center' },
           ],
         },
       ],
@@ -77,20 +82,20 @@ const Navigation = () => {
           title: 'Generative AI',
           items: [
             { label: 'Generative AI Overview', href: '/services/generative-ai/overview' },
-            { label: 'AI Strategy Consulting', href: '/services/generative-ai/ai-strategy' },
-            { label: 'AI Development', href: '/services/generative-ai/ai-development' },
-            { label: 'AI Integration', href: '/services/generative-ai/ai-integration' },
-            { label: 'AI Training and Support', href: '/services/generative-ai/ai-training' },
-            { label: 'AI Engagement', href: '/services/generative-ai/ai-engagement' },
+            { label: 'AI Strategy Consulting', href: '/services/generative-ai/ai-strategy-consulting' },
+            { label: 'AI Development', href: '/services/generative-ai/ai-development-services' },
+            { label: 'AI Integration', href: '/services/generative-ai/ai-integration-solutions' },
+            { label: 'AI Training and Support', href: '/services/generative-ai/ai-training-support' },
+            { label: 'AI Engagement', href: '/services/generative-ai/ai-business-engagement' },
           ],
         },
         {
           title: 'Cloud Services',
           items: [
-            { label: 'Cloud Services Overview', href: '/services/cloud-services/overview' },
-            { label: 'AWS', href: '/services/cloud-services/aws' },
-            { label: 'Microsoft Azure', href: '/services/cloud-services/azure' },
-            { label: 'Google Cloud Platform (GCP)', href: '/services/cloud-services/gcp' },
+            { label: 'Cloud Services Overview', href: '/services/cloud/aws-solutions' },
+            { label: 'AWS', href: '/services/cloud/aws-solutions' },
+            { label: 'Microsoft Azure', href: '/services/cloud/azure-services' },
+            { label: 'Google Cloud Platform (GCP)', href: '/services/cloud/gcp-services' },
           ],
         },
         {
@@ -150,43 +155,6 @@ const Navigation = () => {
       ],
     },
     {
-      label: 'Hire Us',
-      categories: [
-        {
-          title: 'Frontend',
-          items: [
-            { label: 'React Developers', href: '/hire/frontend/reactjs' },
-            { label: 'Vue.js Developers', href: '/hire/frontend/vuejs' },
-            { label: 'Angular Developers', href: '/hire/frontend/angular' },
-          ],
-        },
-        {
-          title: 'Backend',
-          items: [
-            { label: 'Node.js Developers', href: '/hire/backend/nodejs' },
-            { label: 'Python Developers', href: '/hire/backend/python' },
-            { label: 'PHP Developers', href: '/hire/backend/php' },
-          ],
-        },
-        {
-          title: 'Mobile',
-          items: [
-            { label: 'iOS Developers', href: '/hire/mobile/ios' },
-            { label: 'Android Developers', href: '/hire/mobile/android' },
-            { label: 'React Native Developers', href: '/hire/mobile/react-native' },
-          ],
-        },
-        {
-          title: 'Specialized',
-          items: [
-            { label: 'eCommerce Developers', href: '/hire/specialized/ecommerce-developer' },
-            { label: 'CMS Developers', href: '/hire/specialized/cms-developers' },
-            { label: 'DevOps Engineers', href: '/hire/specialized/devops-engineers' },
-          ],
-        },
-      ],
-    },
-    {
       label: 'Industries',
       categories: [
         {
@@ -194,7 +162,7 @@ const Navigation = () => {
           items: [
             { label: 'Ecommerce', href: '/industry/retail-commerce/ecommerce', icon: <ShoppingBag className="w-4 h-4" /> },
             { label: 'Fashion', href: '/industry/retail-commerce/fashion', icon: <Sparkles className="w-4 h-4" /> },
-            { label: 'Food', href: '/industry/retail-commerce/food', icon: <UtensilsCrossed className="w-4 h-4" /> },
+            { label: 'Food & Beverage', href: '/industry/retail-commerce/food-beverage', icon: <UtensilsCrossed className="w-4 h-4" /> },
             { label: 'Kitchenware', href: '/industry/retail-commerce/kitchenware', icon: <CookingPot className="w-4 h-4" /> },
           ],
         },
@@ -203,7 +171,7 @@ const Navigation = () => {
           items: [
             { label: 'Healthcare', href: '/industry/healthcare-education/healthcare', icon: <Heart className="w-4 h-4" /> },
             { label: 'Education', href: '/industry/healthcare-education/education', icon: <GraduationCap className="w-4 h-4" /> },
-            { label: 'Pet', href: '/industry/healthcare-education/pet', icon: <PawPrint className="w-4 h-4" /> },
+            { label: 'Pet Care', href: '/industry/healthcare-education/pet-care', icon: <PawPrint className="w-4 h-4" /> },
           ],
         },
         {
@@ -211,23 +179,60 @@ const Navigation = () => {
           items: [
             { label: 'Finance', href: '/industry/finance-security/finance', icon: <DollarSign className="w-4 h-4" /> },
             { label: 'Insurance', href: '/industry/finance-security/insurance', icon: <Shield className="w-4 h-4" /> },
-            { label: 'Security', href: '/industry/finance-security/security', icon: <Shield className="w-4 h-4" /> },
+            { label: 'Cybersecurity', href: '/industry/finance-security/cybersecurity', icon: <Shield className="w-4 h-4" /> },
           ],
         },
         {
           title: 'Infrastructure',
           items: [
-            { label: 'Real Estate', href: '/industry/infrastructure/realestate', icon: <Building2 className="w-4 h-4" /> },
+            { label: 'Real Estate', href: '/industry/infrastructure/real-estate', icon: <Building2 className="w-4 h-4" /> },
             { label: 'Logistics', href: '/industry/infrastructure/logistics', icon: <Truck className="w-4 h-4" /> },
-            { label: 'Travel', href: '/industry/infrastructure/travel', icon: <Plane className="w-4 h-4" /> },
+            { label: 'Travel & Hospitality', href: '/industry/infrastructure/travel-hospitality', icon: <Plane className="w-4 h-4" /> },
             { label: 'Agritech', href: '/industry/infrastructure/agritech', icon: <Sprout className="w-4 h-4" /> },
           ],
         },
         {
           title: 'Media & Entertainment',
           items: [
-            { label: 'Media', href: '/industry/media-entertainment/media', icon: <Film className="w-4 h-4" /> },
-            { label: 'Sports', href: '/industry/media-entertainment/sports', icon: <Trophy className="w-4 h-4" /> },
+            { label: 'Media & Broadcasting', href: '/industry/media-entertainment/media-broadcasting', icon: <Film className="w-4 h-4" /> },
+            { label: 'Sports & Events', href: '/industry/media-entertainment/sports-events', icon: <Trophy className="w-4 h-4" /> },
+          ],
+        },
+      ],
+    },
+    {
+      label: 'Hire Us',
+      categories: [
+        {
+          title: 'Frontend',
+          items: [
+            { label: 'React Developers', href: '/hire/frontend/react-developers' },
+            { label: 'Vue.js Developers', href: '/hire/frontend/vuejs-developers' },
+            { label: 'Angular Developers', href: '/hire/frontend/angular-developers' },
+          ],
+        },
+        {
+          title: 'Backend',
+          items: [
+            { label: 'Node.js Developers', href: '/hire/backend/nodejs-developers' },
+            { label: 'Python Developers', href: '/hire/backend/python-developers' },
+            { label: 'PHP Developers', href: '/hire/backend/php-developers' },
+          ],
+        },
+        {
+          title: 'Mobile',
+          items: [
+            { label: 'iOS Developers', href: '/hire/mobile/ios-developers' },
+            { label: 'Android Developers', href: '/hire/mobile/android-developers' },
+            { label: 'React Native Developers', href: '/hire/mobile/react-native-developers' },
+          ],
+        },
+        {
+          title: 'Specialized',
+          items: [
+            { label: 'Ecommerce Developers', href: '/hire/specialized/ecommerce-developers' },
+            { label: 'CMS Developers', href: '/hire/specialized/cms-developers' },
+            { label: 'DevOps Engineers', href: '/hire/specialized/devops-engineers' },
           ],
         },
       ],
@@ -238,22 +243,22 @@ const Navigation = () => {
         {
           title: 'Category Demo1',
           items: [
-            { label: 'Demo A', href: '#demo-a' },
-            { label: 'Demo B', href: '#demo-b' },
-            { label: 'Demo C', href: '#demo-c' },
+            { label: 'Demo A', href: '/product/demo1/demo-a' },
+            { label: 'Demo B', href: '/product/demo1/demo-b' },
+            { label: 'Demo C', href: '/product/demo1/demo-c' },
           ],
         },
         {
           title: 'Category Demo2',
           items: [
-            { label: 'Demo D', href: '#demo-d' },
-            { label: 'Demo E', href: '#demo-e' },
+            { label: 'Demo D', href: '/product/demo2/demo-d' },
+            { label: 'Demo E', href: '/product/demo2/demo-e' },
           ],
         },
       ],
     },
-    { label: 'Free Tools', href: '/free-tools' },
-    { label: 'Pricing', href: '/pricing-tools' },
+    { label: 'Training', href: '/training-programs' },
+    { label: 'Pricing', href: '/pricing' },
   ];
 
   const handleDropdownToggle = (label: string) => {
@@ -270,9 +275,8 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-white'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex items-center justify-between h-20">
@@ -305,15 +309,14 @@ const Navigation = () => {
                         />
                         <div className="absolute left-1/2 transform -translate-x-1/2 mt-0 bg-white shadow-2xl rounded-lg overflow-hidden animate-dropdown border border-gray-100 z-50 max-h-[calc(100vh-6rem)] overflow-y-auto">
 
-                          <div className={`p-6 grid gap-8 ${
-                            item.categories.length <= 2 ? 'grid-cols-2 min-w-[400px]' :
+                          <div className={`p-6 grid gap-8 ${item.categories.length <= 2 ? 'grid-cols-2 min-w-[400px]' :
                             item.categories.length === 3 ? 'grid-cols-3 min-w-[600px]' :
-                            item.categories.length === 4 ? 'grid-cols-4 min-w-[800px]' :
-                            item.categories.length === 5 ? 'grid-cols-5 min-w-[900px]' :
-                            item.categories.length === 6 ? 'grid-cols-3 min-w-[700px]' :
-                            item.categories.length === 7 ? 'grid-cols-4 min-w-[900px]' :
-                            'grid-cols-4 min-w-[1000px]'
-                          }`}>
+                              item.categories.length === 4 ? 'grid-cols-4 min-w-[800px]' :
+                                item.categories.length === 5 ? 'grid-cols-5 min-w-[900px]' :
+                                  item.categories.length === 6 ? 'grid-cols-3 min-w-[700px]' :
+                                    item.categories.length === 7 ? 'grid-cols-4 min-w-[900px]' :
+                                      'grid-cols-4 min-w-[1000px]'
+                            }`}>
                             {item.categories.map((category) => (
                               <div key={category.title} className="space-y-3">
                                 <h3 className="text-xs font-bold text-gray-900 uppercase tracking-wider border-b border-gray-200 pb-2">
@@ -357,10 +360,10 @@ const Navigation = () => {
 
           <div className="hidden lg:block">
             <a
-              href="#quote"
+              href="/request-quote"
               className="inline-block px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition-all duration-300 transform hover:scale-105"
             >
-              Get a Quote
+              Request a Quote
             </a>
           </div>
 
@@ -376,16 +379,14 @@ const Navigation = () => {
       </div>
 
       <div
-        className={`lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 ${
-          isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-        }`}
+        className={`lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
         onClick={() => setIsMobileMenuOpen(false)}
       />
 
       <div
-        className={`lg:hidden fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`lg:hidden fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
           <h2 className="text-xl font-bold text-black">Menu</h2>
@@ -408,15 +409,13 @@ const Navigation = () => {
                   >
                     <span className="font-medium">{item.label}</span>
                     <ChevronDown
-                      className={`w-4 h-4 transition-transform duration-300 ${
-                        openDropdown === item.label ? 'rotate-180' : ''
-                      }`}
+                      className={`w-4 h-4 transition-transform duration-300 ${openDropdown === item.label ? 'rotate-180' : ''
+                        }`}
                     />
                   </button>
                   <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      openDropdown === item.label ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
-                    }`}
+                    className={`overflow-hidden transition-all duration-300 ${openDropdown === item.label ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
+                      }`}
                   >
                     <div className="ml-4 mt-2 space-y-4 animate-slideDown">
                       {item.categories.map((category) => (

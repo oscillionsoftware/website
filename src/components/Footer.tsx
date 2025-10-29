@@ -23,51 +23,57 @@ interface FooterSection {
 
 const footerData: FooterSection[] = [
   {
-    key: 'contact',
-    title: 'CONTACT',
-    links: [
-      { label: 'Email', href: 'mailto:info@oscillion.com' },
-      { label: 'Contact', href: '#contact' },
-      { label: 'Map', href: 'https://www.google.com/maps' },
-    ],
-  },
-  {
-    key: 'information',
-    title: 'INFORMATION',
-    links: [
-      { label: 'Faq', href: '#faq' },
-      { label: 'Support', href: '#shipping' },
-      { label: 'Security & Compliance', href: '#refund' },
-      { label: 'Terms of Service', href: '#terms' },
-      { label: 'Privacy Policy', href: '#privacy' },
-    ],
-  },
-  {
-    key: 'about',
-    title: 'ABOUT US',
-    links: [
-      { label: 'About Us', href: '#about' },
-      { label: 'Services', href: '#about' },
-      { label: 'Careers', href: '#collection' },
-      { label: 'Associate With Us', href: '#services' },
-      { label: 'Customer Access', href: '#services' },
-    ],
-  },
-  {
-    key: 'community',
-    title: 'COMMUNITY',
-    links: [
-      { label: 'Instagram', href: '#instagram', icon: Instagram },
-      { label: 'LinkedIn', href: '#linkedin', icon: Linkedin },
-      { label: 'Facebook', href: '#facebook', icon: Facebook },
-      { label: 'WhatsApp', href: 'https://wa.me/91XXXXXXXXXX', icon: MessageCircle },
-    ],
-  },
-  {
-    key: 'signin',
-    title: 'SIGN IN',
-    links: [],
-  },
+  key: 'contact',
+  title: 'Contact',
+  links: [
+    { label: 'Email Us', href: 'mailto:info@oscillion.com' },
+    { label: 'Contact Form', href: '/contact' },
+    { label: 'Office Locations', href: '/company/locations' },
+    { label: 'Request a Quote', href: '/request-quote' },
+  ],
+},
+{
+  key: 'information',
+  title: 'Information',
+  links: [
+    { label: 'FAQs', href: '/resources/faqs' },
+    { label: 'Privacy Policy', href: '/legal/privacy-policy' },
+    { label: 'Terms of Use', href: '/legal/terms-of-use' },
+    { label: 'Cookie Policy', href: '/legal/cookie-policy' },
+  ],
+},
+{
+  key: 'about',
+  title: 'Company',
+  links: [
+    { label: 'About Us', href: '/company/about' },
+    { label: 'Careers', href: '/company/careers' },
+    { label: 'Partner With Us', href: '/company/strategic-partners' },
+    { label: 'Free Tools', href: '/resources/free-development-tools' },
+  ],
+},
+{
+  key: 'community',
+  title: 'Community',
+  links: [
+    { label: 'Instagram', href: 'https://www.instagram.com/oscillion', icon: Instagram },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/company/oscillion', icon: Linkedin },
+    { label: 'Facebook', href: 'https://www.facebook.com/oscillion', icon: Facebook },
+    { label: 'WhatsApp', href: 'https://wa.me/919999999999', icon: MessageCircle },
+  ],
+},
+{
+  key: 'account',
+  title: 'My Account',
+  links: [
+    { label: 'Client Login', href: '/login' },
+    { label: 'Partner Portal', href: '/partner-login' },
+    { label: 'Request Access', href: '/request-access' },
+    { label: 'Support Center', href: '/support' },
+  ],
+},
+
+
 ];
 
 const Footer: FC = () => {
