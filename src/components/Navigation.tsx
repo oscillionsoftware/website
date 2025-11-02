@@ -237,26 +237,26 @@ const Navigation = () => {
         },
       ],
     },
-    {
-      label: 'Products',
-      categories: [
-        {
-          title: 'Category Demo1',
-          items: [
-            { label: 'Demo A', href: '/product/demo1/demo-a' },
-            { label: 'Demo B', href: '/product/demo1/demo-b' },
-            { label: 'Demo C', href: '/product/demo1/demo-c' },
-          ],
-        },
-        {
-          title: 'Category Demo2',
-          items: [
-            { label: 'Demo D', href: '/product/demo2/demo-d' },
-            { label: 'Demo E', href: '/product/demo2/demo-e' },
-          ],
-        },
-      ],
-    },
+    // {
+    //   label: 'Products',
+    //   categories: [
+    //     {
+    //       title: 'Category Demo1',
+    //       items: [
+    //         { label: 'Demo A', href: '/product/demo1/demo-a' },
+    //         { label: 'Demo B', href: '/product/demo1/demo-b' },
+    //         { label: 'Demo C', href: '/product/demo1/demo-c' },
+    //       ],
+    //     },
+    //     {
+    //       title: 'Category Demo2',
+    //       items: [
+    //         { label: 'Demo D', href: '/product/demo2/demo-d' },
+    //         { label: 'Demo E', href: '/product/demo2/demo-e' },
+    //       ],
+    //     },
+    //   ],
+    // },
     { label: 'Training', href: '/training-programs' },
     { label: 'Pricing', href: '/pricing' },
   ];
