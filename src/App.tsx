@@ -13,6 +13,7 @@ import CareerPage from './pages/Careers';
 import TestimonialPage from './pages/Testimonials';
 import FaqPage from './pages/Faq';
 import BlogPage from './pages/Blogs';
+import BlogDetailPage from './pages/BlogDetailPage';
 import ContactPage from './pages/Contact';
 import FreeToolPage from './pages/FreeToolPage';
 import PricingPage from './pages/PricingPage';
@@ -93,6 +94,7 @@ function App() {
 
           {/* === BLOG === */}
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogDetailPage />} />
 
           {/* === FALLBACK === */}
           <Route path="*" element={<NotFoundPage />} />
