@@ -1,226 +1,313 @@
-import { useState, useEffect } from 'react';
-
-interface FaqItem {
-  question: string;
-  answer: JSX.Element;
-}
-
-interface FaqCategory {
-  id: string;
-  category: string;
-  items: FaqItem[];
-}
+import { useState } from 'react';
+import { ChevronDown, Search, HelpCircle, MessageCircle, Mail, Phone, Users, Shield, Code, Cloud } from 'lucide-react';
 
 const FaqPage = () => {
-  const [activeSection, setActiveSection] = useState<string | null>(null);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
-  // Scroll to section and close sidebar on mobile
-  const handleNavClick = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsSidebarOpen(false); // Close sidebar on mobile after click
+  const stats = [
+    { icon: HelpCircle, value: '100+', label: 'Questions Answered', color: 'from-black to-gray-700' },
+    { icon: Users, value: '1,400+', label: 'Satisfied Clients', color: 'from-gray-800 to-black' },
+    { icon: MessageCircle, value: '24/7', label: 'Support Available', color: 'from-black to-gray-600' },
+    { icon: Phone, value: '<2hrs', label: 'Response Time', color: 'from-gray-700 to-black' },
+  ];
+
+  const categories = [
+    { id: 'all', name: 'All Questions', icon: HelpCircle },
+    { id: 'general', name: 'General', icon: MessageCircle },
+    { id: 'services', name: 'Services', icon: Code },
+    { id: 'pricing', name: 'Pricing & Billing', icon: Shield },
+    { id: 'technical', name: 'Technical', icon: Cloud },
+    { id: 'support', name: 'Support', icon: Users },
+  ];
+
+  const faqs = [
+    {
+      category: 'general',
+      question: 'What services does Oscillion provide?',
+      answer: 'Oscillion offers a comprehensive range of IT services including web development, mobile app development, cloud services, AI & machine learning solutions, cybersecurity, digital marketing, UI/UX design, and enterprise software development. We work with businesses of all sizes across various industries to deliver cutting-edge technology solutions.'
+    },
+    {
+      category: 'general',
+      question: 'How long has Oscillion been in business?',
+      answer: 'Oscillion Software Services LLP has been providing professional IT services for over 15 years. We have successfully delivered 4,200+ projects for 1,400+ clients across 30+ countries, building a strong reputation for excellence and innovation in the technology industry.'
+    },
+    {
+      category: 'general',
+      question: 'What industries do you serve?',
+      answer: 'We serve a diverse range of industries including e-commerce, healthcare, education, finance, real estate, logistics, fashion, travel, insurance, agritech, media, sports, food & beverage, and more. Our team has deep expertise in understanding industry-specific challenges and delivering tailored solutions.'
+    },
+    {
+      category: 'services',
+      question: 'Do you offer custom software development?',
+      answer: 'Yes, custom software development is one of our core services. We work closely with clients to understand their unique business requirements and develop tailored solutions from scratch. Our team uses modern technologies and agile methodologies to build scalable, secure, and efficient software.'
+    },
+    {
+      category: 'services',
+      question: 'Can you help with existing project maintenance?',
+      answer: 'Absolutely! We offer comprehensive maintenance and support services for existing applications. This includes bug fixes, performance optimization, security updates, feature enhancements, and technical support. We can take over projects built by other teams or continue supporting applications we developed.'
+    },
+    {
+      category: 'services',
+      question: 'Do you provide cloud migration services?',
+      answer: 'Yes, we specialize in cloud migration services for AWS, Microsoft Azure, and Google Cloud Platform. Our team assesses your current infrastructure, plans the migration strategy, executes the migration with minimal downtime, and provides ongoing cloud management and optimization services.'
+    },
+    {
+      category: 'services',
+      question: 'What is your mobile app development process?',
+      answer: 'Our mobile app development process includes: 1) Requirements gathering and analysis, 2) UI/UX design and prototyping, 3) Development using native or cross-platform technologies, 4) Quality assurance and testing, 5) App store submission and deployment, 6) Post-launch support and maintenance. We typically deliver MVPs in 8-12 weeks.'
+    },
+    {
+      category: 'pricing',
+      question: 'How do you charge for projects?',
+      answer: 'We offer flexible pricing models based on project requirements: Fixed Price (for well-defined projects), Time & Material (for evolving requirements), Dedicated Team (for long-term engagements), and Monthly Retainer (for ongoing support). We provide detailed quotes after understanding your specific needs.'
+    },
+    {
+      category: 'pricing',
+      question: 'Do you offer payment plans?',
+      answer: 'Yes, we offer flexible payment terms based on project size and duration. For larger projects, we typically structure payments in milestones (e.g., 30% upfront, 40% mid-project, 30% on completion). For dedicated teams and retainers, we offer monthly or quarterly billing cycles.'
+    },
+    {
+      category: 'pricing',
+      question: 'What is included in your pricing?',
+      answer: 'Our pricing includes project planning, design, development, testing, deployment, and initial support. Additional services like hosting, third-party licenses, premium APIs, and extended support can be added based on your needs. We provide transparent quotes with no hidden fees.'
+    },
+    {
+      category: 'pricing',
+      question: 'Do you provide free consultations?',
+      answer: 'Yes, we offer free initial consultations to understand your requirements and provide preliminary recommendations. This typically includes a 30-60 minute discussion where we assess your needs, suggest solutions, and provide an estimated timeline and budget.'
+    },
+    {
+      category: 'technical',
+      question: 'What technologies do you work with?',
+      answer: 'We work with a wide range of modern technologies including React, Angular, Vue.js, Node.js, Python, PHP, Java, .NET, React Native, Flutter, iOS, Android, AWS, Azure, GCP, MongoDB, PostgreSQL, MySQL, Docker, Kubernetes, and more. We stay updated with the latest industry trends and technologies.'
+    },
+    {
+      category: 'technical',
+      question: 'How do you ensure code quality?',
+      answer: 'We maintain high code quality through: peer code reviews, automated testing (unit, integration, and end-to-end), continuous integration/continuous deployment (CI/CD), adherence to coding standards and best practices, security scanning, and performance testing. All code is thoroughly reviewed before deployment.'
+    },
+    {
+      category: 'technical',
+      question: 'Do you provide technical documentation?',
+      answer: 'Yes, we provide comprehensive technical documentation including system architecture diagrams, API documentation, database schemas, deployment guides, user manuals, and code comments. Documentation is continuously updated throughout the project and handed over at completion.'
+    },
+    {
+      category: 'technical',
+      question: 'How do you handle security?',
+      answer: 'Security is integrated throughout our development process. We follow industry best practices including secure coding standards (OWASP), data encryption, secure authentication and authorization, regular security audits, penetration testing, and compliance with standards like GDPR, HIPAA, and ISO 27001 where applicable.'
+    },
+    {
+      category: 'support',
+      question: 'What kind of support do you offer after project completion?',
+      answer: 'We offer various post-launch support options including bug fixes, performance monitoring, security updates, feature enhancements, technical support, and maintenance. Support packages range from basic (business hours email support) to premium (24/7 phone and email support with guaranteed response times).'
+    },
+    {
+      category: 'support',
+      question: 'What are your support hours?',
+      answer: 'Our standard support hours are Monday to Friday, 9 AM to 6 PM in your timezone. For clients with premium support packages, we offer 24/7 support with dedicated escalation channels. Emergency support is available for critical production issues.'
+    },
+    {
+      category: 'support',
+      question: 'How quickly do you respond to support requests?',
+      answer: 'Response times depend on your support package: Standard support (within 24 hours), Priority support (within 4 hours), Premium support (within 1 hour). Critical production issues receive immediate attention regardless of the package, with typical response times under 2 hours.'
+    },
+    {
+      category: 'general',
+      question: 'Where are you located?',
+      answer: 'Oscillion has offices in multiple locations worldwide including New York (USA), London (UK), Singapore, and Dubai (UAE). We work with clients globally and have team members across different time zones to provide seamless service and support.'
+    },
+    {
+      category: 'general',
+      question: 'How do I get started with a project?',
+      answer: 'Getting started is easy: 1) Contact us through our website, email, or phone, 2) Schedule a free consultation to discuss your requirements, 3) Receive a detailed proposal with timeline and pricing, 4) Sign the agreement and begin the project. We typically kick off projects within 1-2 weeks of agreement signing.'
+    },
+    {
+      category: 'services',
+      question: 'Do you sign NDAs?',
+      answer: 'Yes, we understand the importance of confidentiality and are happy to sign Non-Disclosure Agreements (NDAs) before discussing your project details. We can work with your standard NDA or provide our template. Protecting client information is a top priority for us.'
     }
-  };
+  ];
 
-  // Track active section based on scroll position
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = faqData.map((category) => category.id);
-      const scrollPosition = window.scrollY + 100; // Offset for header
+  const filteredFaqs = faqs.filter(faq => {
+    const matchesCategory = selectedCategory === 'all' || faq.category === selectedCategory;
+    const matchesSearch = searchQuery === '' ||
+      faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      faq.answer.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
 
-      for (const id of sections) {
-        const section = document.getElementById(id);
-        if (section) {
-          const offsetTop = section.offsetTop;
-          const offsetBottom = offsetTop + section.offsetHeight;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-            setActiveSection(id);
-            break;
-          }
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const faqData: FaqCategory[] = [
-    { id: 'about-oscillion-software', category: 'About Oscillion Software', items: [
-      { question: 'How long have you been in business?', answer: <p>We have been providing IT consulting and software development services for 36 years, since 1989. In that time, we’ve completed over 4,200 projects and served more than 1,400 clients, from startups to Fortune 500 companies.</p> },
-      { question: 'Where are you located? Do you offer on-site services?', answer: <p>We are headquartered in McKinney, TX, with another office in Atlanta, GA. We have branches in Fujairah (UAE), Riyadh (KSA), Mexico City (Mexico), Riga (Latvia), Vilnius (Lithuania), Warsaw (Poland), and Vantaa (Finland). We ensure compliance with standards like HIPAA, GDPR, and SAMA and offer on-site visits.</p> },
-      { question: 'How big is your team?', answer: <p>Oscillion Software is a team of 750+ professionals, including IT consultants, project managers, and more, with over 50% being senior-level experts.</p> },
-      { question: 'What types of customers do you serve?', answer: <p>We serve mid-sized and large enterprises, product companies, MSPs, and startups.</p> },
-      { question: 'What industries do you specialize in?', answer: <p>We have experience in over 30 industries, focusing on sector-specific risks and best practices.</p> },
-      { question: 'Can you provide examples of projects you’ve completed in my domain?', answer: <p>Explore our <a href="#" className="text-blue-600 hover:underline">case studies page</a> and contact us for references.</p> },
-      { question: 'What sets your services apart from competitors?', answer: <p>We practice real project management and uphold a proprietary Code of Conduct for ethics and reliability.</p> },
-      { question: 'What technologies do you work with?', answer: <p>Our team is proficient in Python, Java, C#, .NET, PHP, Golang, JavaScript, React Native, Swift, Objective-C, Kotlin, Azure, AWS, GCP, Kafka, Spark, Hadoop, Docker, Kubernetes, and advanced techs like blockchain, AR/VR, AI/ML, and IoT. Visit our <a href="#" className="text-blue-600 hover:underline">Technologies page</a> for a complete list.</p> },
-      { question: 'Do you have partnerships with other technology vendors?', answer: <p>We have long-term partnerships with Microsoft, AWS, Oracle, Adobe, and ServiceNow. Visit our <a href="#" className="text-blue-600 hover:underline">Partners page</a> for more details.</p> },
-      { question: 'Do you have client testimonials?', answer: <p>Over 150 satisfied clients have provided feedback. We can connect you with references in your industry or region. Explore detailed reviews on <a href="#" className="text-blue-600 hover:underline">Clutch</a>.</p> },
-      { question: 'How do you stay informed about emerging technologies and industry best practices?', answer: <p>We engage in continuous learning, attend leading tech conferences, monitor industry publications, and invest in role-specific trainings and certifications.</p> },
-      { question: 'Do your IT professionals hold role-specific certifications?', answer: <ul className="list-disc pl-5"><li>Project managers: PMP, PSM, PSPO, ICP-APM, SAFe PO/PM.</li><li>Business analysts: PMI-PBA, CBAP, IREB-CPRE.</li><li>Solution architects: TOGAF, AWS Solutions Architect, Microsoft Azure Solutions Architect, BTA Blockchain Solution Architect.</li><li>Software engineers: Microsoft Azure Developer Associate, AWS Certified Developer.</li><li>Security specialists: CISSP, CISM, CEH, ITIL.</li><li>QA engineers: ISTQB, CAT, CSQA.</li></ul> },
-    ]},
-    { id: 'pricing', category: 'Pricing', items: [
-      { question: 'What is your pricing model?', answer: <p>We offer time and materials (T&M), T&M with a cap, fixed price, monthly subscription fee, or per-ticket fee. Learn more on our <a href="#" className="text-blue-600 hover:underline">Pricing Models page</a>.</p> },
-      { question: 'How much will a specific service cost?', answer: <p>For a free ballpark estimate, visit our <a href="#" className="text-blue-600 hover:underline">Pricing page</a> with cost calculators. For a tailored quote, contact us via email, phone, live chat, or the quick request form.</p> },
-      { question: 'I have a specific project in mind. How can I get a project estimate? Can you provide a detailed breakdown of the project cost?', answer: <p>Contact us for a rough estimate within 1–3 business days. For a precise quote with a detailed cost breakdown, we’ll need 1–2 weeks for discussions. If you have a project specification or RFP, this can be expedited.</p> },
-      { question: 'What is your minimal project size?', answer: <ul className="list-disc pl-5"><li>Software engineering: $50,000 (custom software), $20,000 (low-code solutions).</li><li>Data analytics: $10,000 (consulting), $20,000 (solution implementation).</li><li>Help desk and managed IT services: $3,000/month.</li><li>SharePoint implementation and consulting: $15,000.</li><li>We’re open to smaller-scale trial projects.</li></ul> },
-      { question: 'How do you manage the budget and prevent cost overruns? Are there any hidden costs?', answer: <p>We use realistic cost estimation, structured change management, and budget monitoring to prevent overruns. There are no hidden costs—everything is outlined upfront. Explore our <a href="#" className="text-blue-600 hover:underline">budget management practices</a>.</p> },
-      { question: 'Do you offer project estimates for free?', answer: <p>Yes, we offer free project estimates as part of our commitment to transparency and client satisfaction.</p> },
-    ]},
-    { id: 'discussing-a-potential-project', category: 'Discussing a Potential Project', items: [
-      { question: 'I have a project in mind. Who should I contact to discuss it?', answer: <ul className="list-disc pl-5"><li>Live chat: 30-second response time.</li><li>Email: <a href="mailto:contact@oscillionsoftware.com" className="text-blue-600 hover:underline">contact@oscillionsoftware.com</a> (1–2 hours to 1 business day response).</li><li>Phone: +1 214 306 68 37 or +1 972 454 47 30 (24/5).</li><li>Learn more: <a href="#" className="text-blue-600 hover:underline">How to start</a>.</li></ul> },
-      { question: 'How can I book a meeting with a specialist?', answer: <p>Use live chat, email us at <a href="mailto:contact@oscillionsoftware.com" className="text-blue-600 hover:underline">contact@oscillionsoftware.com</a>, or call +1 214 306 68 37 or +1 972 454 47 30. Share a brief project description for a tailored discussion.</p> },
-      { question: 'How do you sign NDAs? Can you use my preferred NDA template?', answer: <p>NDAs can be signed in person or remotely via scan or electronic signature. We can use our template or yours if it aligns with our policies.</p> },
-      { question: 'How do you estimate timelines for new projects?', answer: <p>We define the project scope, break it into tasks, identify dependencies, and estimate effort. Small projects take days to 1–2 weeks, medium projects 2–4 weeks, and large projects 1–2 months for planning.</p> },
-      { question: 'How do you estimate costs for new projects?', answer: <p>We analyze requirements, break the scope into measurable units, and estimate time and resources using tailored techniques and historical data. Learn more about our <a href="#" className="text-blue-600 hover:underline">cost estimation practices</a>.</p> },
-      { question: 'Can you help with the feasibility study?', answer: <p>Yes, we conduct thorough feasibility studies analyzing technological, economic, and operational aspects. Request a <a href="#" className="text-blue-600 hover:underline">feasibility study</a>.</p> },
-    ]},
-    { id: 'starting-a-project', category: 'Starting a Project', items: [
-      { question: 'Can you join our project at any stage?', answer: <p>Yes, we can join at any stage—design, development, or post-launch support—aligning quickly with your goals and workflows.</p> },
-      { question: 'How will you integrate into our IT infrastructure?', answer: <p>We deploy services in your environment, grant guest access via secure methods (VPN, RBAC, SSO), synchronize ticketing systems, and integrate with your development pipelines using tools like Jenkins or Azure DevOps.</p> },
-      { question: 'How does the project onboarding usually look like?', answer: <p>We understand your requirements, create a project plan, assign a project manager, integrate with your tools, and establish transparent communication. Learn more about our <a href="#" className="text-blue-600 hover:underline">onboarding process</a>.</p> },
-      { question: 'Can you take over the project from a different IT vendor?', answer: <p>Yes, we conduct a comprehensive audit, perform knowledge transfer, and use a phased approach for a smooth handover. Learn more about our <a href="#" className="text-blue-600 hover:underline">vendor transition approach</a>.</p> },
-      { question: 'Who will be the point of contact for my project?', answer: <p>For full outsourcing: a dedicated project manager and account manager. For dedicated teams: a project coordinator and technical lead. For team augmentation: an account manager handles administrative tasks.</p> },
-    ]},
-    { id: 'development-process-and-practices', category: 'Development Process and Practices', items: [
-      { question: 'Do you sign an SLA?', answer: <p>Yes, our SLAs define service scope, timelines, metrics, change handling, issue resolution, and penalties for non-compliance.</p> },
-      { question: 'How do you handle software licensing?', answer: <p>We assist with procurement, negotiate vendor terms, ensure license alignment, and provide detailed licensing reports.</p> },
-      { question: 'How do you approach managing each project from start to finish?', answer: <p>We align with your goals, use Agile or traditional methods, and assign a dedicated project manager.</p> },
-      { question: 'Do you offer a trial period for your services?', answer: <p>We approach trial periods case-by-case and are open to pilot projects or limited engagements tailored to your needs.</p> },
-      { question: 'How do you handle communication and collaboration across different time zones?', answer: <p>We use synchronous and asynchronous tools, ensure a 2–6 hour work hour overlap, and align help desk services with your business hours.</p> },
-      { question: 'What project reporting tools do you use?', answer: <p>We use Jira, Trello, Asana, Basecamp, and Azure DevOps. Learn more about our <a href="#" className="text-blue-600 hover:underline">reporting approach</a>.</p> },
-      { question: 'Can you accommodate changes in project scope, and how does it impact the timeline and budget?', answer: <p>We manage scope changes through a dedicated process, analyzing impacts and obtaining customer approval. Learn more about <a href="#" className="text-blue-600 hover:underline">change management</a>.</p> },
-      { question: 'What is your contingency plan for unexpected challenges or delays?', answer: <p>We use proactive risk identification, time and budget reserves, flexible methodologies, and transparent communication. Learn more about our <a href="#" className="text-blue-600 hover:underline">contingency planning</a>.</p> },
-      { question: 'Which parts of the development process do you automate, from coding to deployment?', answer: <p>We automate code integration, testing, environment provisioning, deployment, and monitoring, achieving smooth releases and low failure rates.</p> },
-      { question: 'How do you ensure the software is scalable and able to handle future growth?', answer: <p>We design scalable architectures, use autoscaling, conduct performance tests, and apply FinOps for cost optimization.</p> },
-    ]},
-    { id: 'service-quality', category: 'Service Quality', items: [
-      { question: 'How do you ensure service quality?', answer: <p>We use a quality management system with KPIs and controls throughout the SDLC.</p> },
-      { question: 'What is your uptime guarantee?', answer: <p>For cloud-hosted services, we align with providers’ SLAs (99.9%–99.99%). For dedicated hardware, uptime is outlined in a tailored SLA based on your infrastructure.</p> },
-      { question: 'Are you ISO-certified?', answer: <p>Yes, we hold ISO 9001 (quality), ISO 27001 (security), and ISO 13485 (medical devices) certifications.</p> },
-    ]},
-    { id: 'testing-and-qa', category: 'Testing and QA', items: [
-      { question: 'What is your testing process before launching the app?', answer: <p>We conduct UAT, functional, performance, and security testing with a test summary report.</p> },
-      { question: 'How do you handle bug fixes and updates after the app is launched?', answer: <p>We provide a one-month post-launch warranty period, fixing critical or major issues at no additional cost.</p> },
-    ]},
-    { id: 'post-launch-support', category: 'Post-launch Support', items: [
-      { question: 'Do you offer 24/7 support?', answer: <p>Yes, we provide 24/7 L1, L2, and L3 support.</p> },
-      { question: 'Do you provide documentation for the implemented systems and solutions?', answer: <p>We provide comprehensive documentation and integrate knowledge sharing to ensure easy maintenance and evolution.</p> },
-      { question: 'Do you provide ongoing support and maintenance after software delivery/modernization?', answer: <p>We offer 1–3 months of initial support, followed by optional continuous maintenance and L1–L3 support services.</p> },
-      { question: 'Are there ongoing costs for maintenance and support after deployment?', answer: <p>A one-month warranty period is included at no cost. Ongoing maintenance costs range from $5,000 to $50,000+/month based on software type and requirements.</p> },
-      { question: 'What does the knowledge transfer to our team look like? Do you provide training?', answer: <p>We provide structured documentation, hands-on training, Q&A sessions, and a feedback loop to ensure effective knowledge transfer.</p> },
-    ]},
-    { id: 'security-and-compliance', category: 'Security and Compliance', items: [
-      { question: 'How do you guarantee the security of our data and assets?', answer: <p>With ISO 27001 certification, we use NDAs, isolated environments, and role-based access.</p> },
-      { question: 'What happens if there’s a breach or a security incident?', answer: <p>Our 24/7 security operations center detects anomalies, isolates systems, notifies stakeholders, investigates, and implements fixes, followed by a post-incident review.</p> },
-      { question: 'What steps do you take to ensure disaster recovery preparedness?', answer: <p>We develop tailored disaster recovery strategies with RTO/RPO objectives, conduct regular drills, and maintain detailed logs for audits.</p> },
-      { question: 'How do you ensure compliance with data protection standards and regulations?', answer: <p>We embed compliance (HIPAA, PCI DSS, GDPR, etc.) into development, conduct privacy impact assessments, and maintain audit trails.</p> },
-      { question: 'How do you handle our intellectual property? Who owns the code?', answer: <p>We sign NDAs and MSAs ensuring you retain legal ownership of all intellectual property, including code.</p> },
-    ]},
+  const contactOptions = [
+    {
+      icon: Phone,
+      title: 'Call Us',
+      description: '+1 (212) 555-0123',
+      action: 'tel:+12125550123'
+    },
+    {
+      icon: Mail,
+      title: 'Email Us',
+      description: 'support@oscillion.com',
+      action: 'mailto:support@oscillion.com'
+    },
+    {
+      icon: MessageCircle,
+      title: 'Live Chat',
+      description: 'Chat with our team',
+      action: '#chat'
+    }
   ];
 
   return (
-    <div className="pt-20 min-h-screen bg-gray-50">
-      {/* Header Section */}
-      <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold mb-4">Frequently Asked Questions</h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              Find answers to common questions about Oscillion Software or{' '}
-              <a href="mailto:contact@oscillionsoftware.com" className="text-blue-400 hover:underline">
-                contact us
-              </a>{' '}
-              for assistance.
+    <div className="pt-20 bg-white">
+      <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl -top-48 -left-48 animate-float"></div>
+          <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl -bottom-48 -right-48 animate-float-delayed"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center animate-fadeInUp">
+            <h1 className="text-5xl sm:text-6xl font-bold mb-6">Frequently Asked Questions</h1>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+              Find answers to common questions about our services, pricing, and support.
+              Can't find what you're looking for? Contact us directly.
             </p>
+
+            <div className="max-w-2xl mx-auto">
+              <div className="relative">
+                <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-400" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search for answers..."
+                  className="w-full pl-14 pr-4 py-4 rounded-xl text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-30"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Main Content with Sidebar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col lg:flex-row gap-8">
-        {/* Sidebar */}
-        <div className="lg:w-64 w-full lg:sticky lg:top-24">
-          <button
-            className="lg:hidden w-full bg-blue-600 text-white px-4 py-2 rounded mb-4"
-            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-          >
-            {isSidebarOpen ? 'Close Menu' : 'Open Menu'}
-          </button>
-          <nav
-            className={`${
-              isSidebarOpen ? 'block' : 'hidden'
-            } lg:block p-4 lg:p-0`}
-          >
-            <h3 className="text-lg font-semibold text-gray-700 mb-4">Popular Questions</h3>
-            <ul className="space-y-2">
-              {faqData.map((category, index) => (
-                <li key={index}>
-                  <button
-                    onClick={() => handleNavClick(category.id)}
-                    className={`w-full text-left px-3 py-2 rounded ${
-                      activeSection === category.id
-                        ? 'bg-blue-100 text-blue-800'
-                        : 'text-gray-600 hover:bg-gray-100'
-                    }`}
-                  >
-                    {category.category}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-
-        {/* FAQ Content */}
-        <div className="flex-1">
-          {faqData.map((category, categoryIndex) => (
-            <section id={category.id} key={categoryIndex} className="mb-12 scroll-mt-20">
-              <h2 className="text-3xl font-semibold text-gray-800 mb-6">{category.category}</h2>
-              <div className="space-y-4">
-                {category.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="border rounded-lg bg-white shadow-sm">
-                    <button
-                      className="w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        const accordion = document.getElementById(`accordion-${categoryIndex}-${itemIndex}`);
-                        const isOpen = accordion?.classList.contains('hidden');
-                        accordion?.classList.toggle('hidden', !isOpen);
-                      }}
-                    >
-                      <span className="text-lg font-medium text-gray-900">{item.question}</span>
-                      <span className="text-gray-600">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </span>
-                    </button>
-                    <div id={`accordion-${categoryIndex}-${itemIndex}`} className="hidden px-6 py-4 text-gray-600">
-                      {item.answer}
-                    </div>
-                  </div>
-                ))}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-xl p-6 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className={`w-12 h-12 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center mb-4`}>
+                <stat.icon className="w-6 h-6 text-white" />
               </div>
-            </section>
+              <div className="text-3xl font-bold text-black mb-1">{stat.value}</div>
+              <div className="text-sm text-gray-600">{stat.label}</div>
+            </div>
           ))}
         </div>
       </div>
 
-      {/* Contact Section */}
-      <div className="py-16 bg-white text-center">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4">Have a Question or Need Assistance?</h2>
-          <p className="text-gray-600 text-lg mb-6">Our team is ready to help with your IT initiative.</p>
-          <a
-            href="mailto:contact@oscillionsoftware.com"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
-          >
-            Contact Us
-          </a>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {categories.map((category) => (
+            <button
+              key={category.id}
+              onClick={() => setSelectedCategory(category.id)}
+              className={`flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                selectedCategory === category.id
+                  ? 'bg-black text-white shadow-lg'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+            >
+              <category.icon className="w-5 h-5 mr-2" />
+              {category.name}
+            </button>
+          ))}
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+          {filteredFaqs.length > 0 ? (
+            <div className="space-y-4 mb-20">
+              {filteredFaqs.map((faq, index) => (
+                <div
+                  key={index}
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 animate-fadeInUp"
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
+                  <button
+                    onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
+                    className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  >
+                    <span className="text-lg font-semibold text-black pr-8">{faq.question}</span>
+                    <ChevronDown
+                      className={`w-6 h-6 text-black flex-shrink-0 transition-transform ${
+                        openFaqIndex === index ? 'transform rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+                  {openFaqIndex === index && (
+                    <div className="px-8 pb-6 animate-fadeIn">
+                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <HelpCircle className="w-16 h-16 text-gray-300 mx-auto mb-4" />
+              <p className="text-xl text-gray-600">No questions found matching your search.</p>
+              <p className="text-gray-500 mt-2">Try different keywords or browse by category.</p>
+            </div>
+          )}
+        </div>
+
+        <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-12">
+          <h2 className="text-4xl font-bold text-black text-center mb-8">Still Need Help?</h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Our support team is here to assist you. Choose your preferred method of contact and we'll get back to you promptly.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {contactOptions.map((option, index) => (
+              <a
+                key={index}
+                href={option.action}
+                className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center"
+              >
+                <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <option.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-black mb-2">{option.title}</h3>
+                <p className="text-gray-600">{option.description}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-black text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Have more questions or ready to discuss your project? Our team is here to help.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/contact"
+              className="inline-block px-8 py-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+            >
+              Contact Us
+            </a>
+            <a
+              href="/request-quote"
+              className="inline-block px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105"
+            >
+              Request a Quote
+            </a>
+          </div>
         </div>
       </div>
     </div>

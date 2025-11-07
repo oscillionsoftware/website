@@ -1,486 +1,336 @@
-// components/PricingCalculator.jsx
-import { useState, useMemo } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-
-/**
- Pricing assumptions used (per user's "use your price"):
- Generative AI: 4000
- Cloud Services: 3000
- Web Development: 2500
- App Development: 6000
- CMS & Ecommerce: 2000
- Digital Marketing: 500
- Designing: 300
- Hire Developers: 20 (hourly)
-*/
-
-const BASE_PRICES = {
-  "Generative AI": 4000,
-  "Cloud Services": 3000,
-  "Web Development": 2500,
-  "App Development": 6000,
-  "CMS & Ecommerce": 2000,
-  "Digital Marketing": 500,
-  "Designing": 300,
-  "Hire Developers": 20 // hourly base
-};
-
-const SERVICE_OPTIONS = [
-  "Generative AI",
-  "Cloud Services",
-  "Web Development",
-  "App Development",
-  "CMS & Ecommerce",
-  "Digital Marketing",
-  "Designing",
-  "Hire Developers",
-];
-
-const cardVariants = {
-  enter: { x: 50, opacity: 0 },
-  center: { x: 0, opacity: 1 },
-  exit: { x: -50, opacity: 0 },
-};
-
-const ProgressBar = ({ step, max }) => {
-  const pct = Math.round((step / (max - 1)) * 100);
-  return (
-    <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
-      <div
-        className="h-2 bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400"
-        style={{ width: `${pct}%`, transition: "width 400ms ease" }}
-      />
-    </div>
-  );
-};
+import { useState } from 'react';
+import { Check, X, Zap, TrendingUp, Crown, Rocket, Shield, Users, Clock, Award } from 'lucide-react';
 
 const PricingPage = () => {
-  const steps = [
-    "Service",
-    "Details",
-    "Complexity",
-    "Contact",
-    "Estimate"
+  const [billingCycle, setBillingCycle] = useState<'monthly' | 'annual'>('monthly');
+
+  const stats = [
+    { icon: Users, value: '1,400+', label: 'Active Clients', color: 'from-black to-gray-700' },
+    { icon: Rocket, value: '4,200+', label: 'Projects Delivered', color: 'from-gray-800 to-black' },
+    { icon: Award, value: '99%', label: 'Client Satisfaction', color: 'from-black to-gray-600' },
+    { icon: TrendingUp, value: '24/7', label: 'Support Available', color: 'from-gray-700 to-black' },
   ];
-  const [step, setStep] = useState(0);
 
-  // Form state
-  const [service, setService] = useState("Web Development");
-  const [webPages, setWebPages] = useState(5);
-  const [integrations, setIntegrations] = useState(1);
-  const [platforms, setPlatforms] = useState({ web: true, ios: false, android: false });
-  const [features, setFeatures] = useState({
-    auth: true,
-    payments: false,
-    adminPanel: false,
-    api: false,
-  });
-  const [complexity, setComplexity] = useState("Standard"); // Basic / Standard / Advanced
-  const [timelineRush, setTimelineRush] = useState(false);
-  const [companyName, setCompanyName] = useState("");
-  const [email, setEmail] = useState("");
-  const [devHours, setDevHours] = useState(80); // for Hire Developers
-
-  // Helpers
-  const isHireDev = service === "Hire Developers";
-
-  const priceEstimate = useMemo(() => {
-    // returns { basic, standard, premium } objects with min and max
-    const base = BASE_PRICES[service] || 2000;
-
-    // base modifications
-    let subtotal = 0;
-    if (isHireDev) {
-      // hourly * hours range
-      const hourly = base;
-      const basic = hourly * Math.round(devHours * 0.6);
-      const standard = hourly * Math.round(devHours);
-      const premium = hourly * Math.round(devHours * 1.5);
-      return {
-        basic: { min: Math.round(basic * 0.9), max: Math.round(basic * 1.1) },
-        standard: { min: Math.round(standard * 0.9), max: Math.round(standard * 1.15) },
-        premium: { min: Math.round(premium * 0.95), max: Math.round(premium * 1.2) },
-      };
+  const plans = [
+    {
+      name: 'Starter',
+      icon: Zap,
+      description: 'Perfect for startups and small projects',
+      monthlyPrice: 999,
+      annualPrice: 9990,
+      features: [
+        { name: 'Up to 3 team members', included: true },
+        { name: '5 projects per month', included: true },
+        { name: 'Basic support (email)', included: true },
+        { name: '50 GB storage', included: true },
+        { name: 'Basic analytics', included: true },
+        { name: 'Mobile app access', included: true },
+        { name: 'Priority support', included: false },
+        { name: 'Advanced security', included: false },
+        { name: 'Custom integrations', included: false },
+        { name: 'Dedicated account manager', included: false },
+      ],
+      popular: false,
+      cta: 'Get Started'
+    },
+    {
+      name: 'Professional',
+      icon: TrendingUp,
+      description: 'Ideal for growing businesses',
+      monthlyPrice: 2499,
+      annualPrice: 24990,
+      features: [
+        { name: 'Up to 10 team members', included: true },
+        { name: '20 projects per month', included: true },
+        { name: 'Priority support (24/7)', included: true },
+        { name: '200 GB storage', included: true },
+        { name: 'Advanced analytics', included: true },
+        { name: 'Mobile app access', included: true },
+        { name: 'Priority support', included: true },
+        { name: 'Advanced security', included: true },
+        { name: 'Custom integrations', included: true },
+        { name: 'Dedicated account manager', included: false },
+      ],
+      popular: true,
+      cta: 'Start Free Trial'
+    },
+    {
+      name: 'Enterprise',
+      icon: Crown,
+      description: 'For large organizations with complex needs',
+      monthlyPrice: null,
+      annualPrice: null,
+      features: [
+        { name: 'Unlimited team members', included: true },
+        { name: 'Unlimited projects', included: true },
+        { name: 'Premium support (24/7)', included: true },
+        { name: 'Unlimited storage', included: true },
+        { name: 'Custom analytics dashboard', included: true },
+        { name: 'Mobile app access', included: true },
+        { name: 'Priority support', included: true },
+        { name: 'Advanced security', included: true },
+        { name: 'Custom integrations', included: true },
+        { name: 'Dedicated account manager', included: true },
+      ],
+      popular: false,
+      cta: 'Contact Sales'
     }
+  ];
 
-    // Non-hire-dev services:
-    subtotal += base;
-
-    // pages for web / cms
-    if (service === "Web Development" || service === "CMS & Ecommerce") {
-      subtotal += Math.max(0, webPages - 1) * 150; // extra pages cost
+  const addons = [
+    {
+      name: 'Additional Team Member',
+      price: '$99/month',
+      description: 'Add more users to your plan'
+    },
+    {
+      name: 'Extra Storage (100 GB)',
+      price: '$49/month',
+      description: 'Increase your storage capacity'
+    },
+    {
+      name: 'Premium Support',
+      price: '$299/month',
+      description: '24/7 priority phone and email support'
+    },
+    {
+      name: 'Custom Integrations',
+      price: '$499/month',
+      description: 'Connect with your favorite tools'
     }
+  ];
 
-    // Integrations
-    subtotal += integrations * 400;
-
-    // Platforms multiplier (app has platform additions)
-    if (service === "App Development") {
-      const selectedPlatforms = ["ios", "android"].filter(k => platforms[k]).length;
-      // base assumes one platform; add 40% of base for each additional platform
-      if (selectedPlatforms > 1) {
-        subtotal += base * 0.4 * (selectedPlatforms - 1);
-      }
+  const faqs = [
+    {
+      question: 'Can I switch plans anytime?',
+      answer: 'Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.'
+    },
+    {
+      question: 'What payment methods do you accept?',
+      answer: 'We accept all major credit cards, PayPal, and bank transfers for annual plans. Cryptocurrency payments are available for Enterprise customers.'
+    },
+    {
+      question: 'Is there a free trial available?',
+      answer: 'Yes, we offer a 14-day free trial for the Professional plan. No credit card required to start.'
+    },
+    {
+      question: 'What happens if I exceed my plan limits?',
+      answer: 'We will notify you when you approach your limits. You can upgrade your plan or purchase add-ons to continue without interruption.'
+    },
+    {
+      question: 'Do you offer refunds?',
+      answer: 'Yes, we offer a 30-day money-back guarantee. If you are not satisfied, contact us for a full refund.'
+    },
+    {
+      question: 'Can I get a custom plan?',
+      answer: 'Absolutely! Contact our sales team to discuss your specific requirements and get a custom quote.'
     }
+  ];
 
-    // Feature toggles
-    if (features.auth) subtotal += 600;
-    if (features.payments) subtotal += 900;
-    if (features.adminPanel) subtotal += 1200;
-    if (features.api) subtotal += 800;
-
-    // Complexity multiplier
-    const complexityMultiplier = complexity === "Basic" ? 0.9 : complexity === "Advanced" ? 1.5 : 1.0;
-    subtotal *= complexityMultiplier;
-
-    // Timeline rush
-    if (timelineRush) subtotal *= 1.25;
-
-    // Now produce tiers around subtotal
-    // Basic: 0.85 - 1.05, Standard: 0.95 - 1.25, Premium: 1.2 - 1.6
-    const basicMin = Math.round(subtotal * 0.85);
-    const basicMax = Math.round(subtotal * 1.05);
-    const stdMin = Math.round(subtotal * 0.95);
-    const stdMax = Math.round(subtotal * 1.25);
-    const premMin = Math.round(subtotal * 1.2);
-    const premMax = Math.round(subtotal * 1.6);
-
-    return {
-      basic: { min: basicMin, max: basicMax },
-      standard: { min: stdMin, max: stdMax },
-      premium: { min: premMin, max: premMax },
-    };
-  }, [
-    service,
-    webPages,
-    integrations,
-    platforms,
-    features,
-    complexity,
-    timelineRush,
-    devHours,
-    isHireDev,
-  ]);
-
-  const showNext = () => {
-    if (step === 3) {
-      // require email at step 3 (contact)
-      if (!email || !/\S+@\S+\.\S+/.test(email)) {
-        alert("Please enter a valid email to continue.");
-        return;
-      }
-    }
-    setStep((s) => Math.min(s + 1, steps.length - 1));
-  };
-  const showPrev = () => setStep((s) => Math.max(s - 1, 0));
-
-  const toggleFeature = (k) => setFeatures(f => ({ ...f, [k]: !f[k] }));
-  const togglePlatform = (k) => setPlatforms(p => ({ ...p, [k]: !p[k] }));
-
-  const sendQuote = () => {
-    // stub: hook this to your backend/email service
-    const payload = {
-      companyName,
-      email,
-      service,
-      details: {
-        webPages,
-        integrations,
-        platforms,
-        features,
-        complexity,
-        timelineRush,
-        devHours,
-      },
-      estimate: priceEstimate
-    };
-    console.log("Send quote payload:", payload);
-    alert("Quote request sent! (console has payload). Wire sendQuote() to your backend.");
-  };
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   return (
-    <div className="pt-20">
-      {/* Header / Hero - same theme as user */}
-      <div className={`relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-20`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">📐 Instant Project Estimator</h1>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Answer a few quick questions, enter your email, and get a reliable price range — built with the same theme.
+    <div className="pt-20 bg-white">
+      <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl -top-48 -left-48 animate-float"></div>
+          <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl -bottom-48 -right-48 animate-float-delayed"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center animate-fadeInUp">
+            <h1 className="text-5xl sm:text-6xl font-bold mb-6">Simple, Transparent Pricing</h1>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Choose the perfect plan for your business. All plans include core features with no hidden fees.
+              Scale as you grow with flexible pricing options.
             </p>
-            <div className="mt-8 max-w-xl mx-auto">
-              <ProgressBar step={step} max={steps.length} />
-            </div>
           </div>
         </div>
       </div>
 
-      {/* Card */}
-      <div className="py-12 bg-white">
-        <div className="max-w-3xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-white to-gray-50 border border-gray-200 rounded-2xl shadow-xl p-8">
-            <div className="mb-6 text-center">
-              <h2 className="text-2xl font-semibold text-gray-800">{steps[step]}</h2>
-              <p className="text-sm text-gray-500 mt-1">Step {step + 1} of {steps.length}</p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-xl p-6 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className={`w-12 h-12 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center mb-4`}>
+                <stat.icon className="w-6 h-6 text-white" />
+              </div>
+              <div className="text-3xl font-bold text-black mb-1">{stat.value}</div>
+              <div className="text-sm text-gray-600">{stat.label}</div>
             </div>
+          ))}
+        </div>
+      </div>
 
-            <div className="min-h-[260px]">
-              <AnimatePresence exitBeforeEnter>
-                {step === 0 && (
-                  <motion.div
-                    key="step-service"
-                    variants={cardVariants}
-                    initial="enter"
-                    animate="center"
-                    exit="exit"
-                    transition={{ duration: 0.35 }}
-                    className=""
-                  >
-                    <p className="text-sm text-gray-600 mb-4">Choose a service category</p>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                      {SERVICE_OPTIONS.map((s) => (
-                        <button
-                          key={s}
-                          onClick={() => { setService(s); setStep(1); }}
-                          className={`text-left p-3 rounded-xl border ${
-                            service === s ? "border-transparent shadow-lg" : "border-gray-200"
-                          } hover:scale-[1.02] transition transform bg-gradient-to-b ${service === s ? "from-indigo-600 to-pink-600 text-white" : "from-white to-gray-50 text-gray-800"}`}
-                        >
-                          <div className="font-semibold">{s}</div>
-                          <div className="text-xs mt-1 text-gray-500">
-                            {s === "Hire Developers" ? `${BASE_PRICES[s]}/hr` : `Starting from $${BASE_PRICES[s]}`}
-                          </div>
-                        </button>
-                      ))}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="flex justify-center mb-12">
+          <div className="inline-flex bg-gray-100 rounded-xl p-1">
+            <button
+              onClick={() => setBillingCycle('monthly')}
+              className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                billingCycle === 'monthly'
+                  ? 'bg-black text-white shadow-lg'
+                  : 'text-gray-600 hover:text-black'
+              }`}
+            >
+              Monthly
+            </button>
+            <button
+              onClick={() => setBillingCycle('annual')}
+              className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                billingCycle === 'annual'
+                  ? 'bg-black text-white shadow-lg'
+                  : 'text-gray-600 hover:text-black'
+              }`}
+            >
+              Annual
+              <span className="ml-2 text-xs bg-green-500 text-white px-2 py-1 rounded-full">Save 17%</span>
+            </button>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
+          {plans.map((plan, index) => (
+            <div
+              key={index}
+              className={`relative bg-white rounded-2xl shadow-xl p-8 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp ${
+                plan.popular ? 'ring-4 ring-black' : 'border border-gray-200'
+              }`}
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              {plan.popular && (
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-black text-white px-6 py-2 rounded-full text-sm font-semibold">
+                    Most Popular
+                  </span>
+                </div>
+              )}
+
+              <div className="mb-6">
+                <div className="w-14 h-14 bg-black rounded-xl flex items-center justify-center mb-4">
+                  <plan.icon className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-black mb-2">{plan.name}</h3>
+                <p className="text-gray-600">{plan.description}</p>
+              </div>
+
+              <div className="mb-6">
+                {plan.monthlyPrice ? (
+                  <>
+                    <div className="flex items-baseline">
+                      <span className="text-5xl font-bold text-black">
+                        ${billingCycle === 'monthly' ? plan.monthlyPrice : Math.floor(plan.annualPrice / 12)}
+                      </span>
+                      <span className="text-gray-600 ml-2">/month</span>
                     </div>
-                  </motion.div>
-                )}
-
-                {step === 1 && (
-                  <motion.div
-                    key="step-details"
-                    variants={cardVariants}
-                    initial="enter"
-                    animate="center"
-                    exit="exit"
-                    transition={{ duration: 0.35 }}
-                    className=""
-                  >
-                    <p className="text-sm text-gray-600 mb-4">Tell us about the project</p>
-
-                    {/* Dynamic fields */}
-                    {isHireDev ? (
-                      <div className="space-y-4">
-                        <label className="text-sm text-gray-700">Estimated developer hours</label>
-                        <input
-                          type="range"
-                          min={10}
-                          max={800}
-                          value={devHours}
-                          onChange={(e) => setDevHours(Number(e.target.value))}
-                          className="w-full"
-                        />
-                        <div className="flex justify-between text-xs text-gray-500">
-                          <span>10h</span>
-                          <span>{devHours}h</span>
-                          <span>800h</span>
-                        </div>
-                      </div>
-                    ) : (
-                      <div className="space-y-4">
-                        {(service === "Web Development" || service === "CMS & Ecommerce") && (
-                          <>
-                            <label className="text-sm text-gray-700">Number of pages</label>
-                            <input
-                              type="number"
-                              min={1}
-                              value={webPages}
-                              onChange={(e) => setWebPages(Number(e.target.value))}
-                              className="w-28 px-3 py-2 border rounded-md"
-                            />
-                          </>
-                        )}
-
-                        {service === "App Development" && (
-                          <>
-                            <label className="text-sm text-gray-700">Platforms</label>
-                            <div className="flex gap-2">
-                              <button onClick={() => togglePlatform("ios")} className={`px-3 py-2 rounded-md ${platforms.ios ? "bg-indigo-600 text-white" : "bg-gray-100"}`}>iOS</button>
-                              <button onClick={() => togglePlatform("android")} className={`px-3 py-2 rounded-md ${platforms.android ? "bg-indigo-600 text-white" : "bg-gray-100"}`}>Android</button>
-                              <button onClick={() => togglePlatform("web")} className={`px-3 py-2 rounded-md ${platforms.web ? "bg-indigo-600 text-white" : "bg-gray-100"}`}>Web</button>
-                            </div>
-                          </>
-                        )}
-
-                        <label className="text-sm text-gray-700">Integrations (APIs, 3rd party)</label>
-                        <input
-                          type="range"
-                          min={0}
-                          max={10}
-                          value={integrations}
-                          onChange={(e) => setIntegrations(Number(e.target.value))}
-                          className="w-full"
-                        />
-                        <div className="flex justify-between text-xs text-gray-500">
-                          <span>0</span>
-                          <span>{integrations}</span>
-                          <span>10</span>
-                        </div>
-
-                        <label className="text-sm text-gray-700">Features</label>
-                        <div className="grid grid-cols-2 gap-2">
-                          <button onClick={() => toggleFeature("auth")} className={`p-2 rounded-md ${features.auth ? "bg-indigo-600 text-white" : "bg-gray-100"}`}>Authentication</button>
-                          <button onClick={() => toggleFeature("payments")} className={`p-2 rounded-md ${features.payments ? "bg-indigo-600 text-white" : "bg-gray-100"}`}>Payments</button>
-                          <button onClick={() => toggleFeature("adminPanel")} className={`p-2 rounded-md ${features.adminPanel ? "bg-indigo-600 text-white" : "bg-gray-100"}`}>Admin Panel</button>
-                          <button onClick={() => toggleFeature("api")} className={`p-2 rounded-md ${features.api ? "bg-indigo-600 text-white" : "bg-gray-100"}`}>Custom API</button>
-                        </div>
+                    {billingCycle === 'annual' && (
+                      <div className="text-sm text-gray-500 mt-1">
+                        Billed annually at ${plan.annualPrice}
                       </div>
                     )}
-                  </motion.div>
-                )}
-
-                {step === 2 && (
-                  <motion.div
-                    key="step-complexity"
-                    variants={cardVariants}
-                    initial="enter"
-                    animate="center"
-                    exit="exit"
-                    transition={{ duration: 0.35 }}
-                  >
-                    <p className="text-sm text-gray-600 mb-4">Project complexity & timeline</p>
-                    <div className="flex gap-2 mb-4">
-                      {["Basic", "Standard", "Advanced"].map((c) => (
-                        <button
-                          key={c}
-                          onClick={() => setComplexity(c)}
-                          className={`px-4 py-2 rounded-md ${complexity === c ? "bg-gradient-to-r from-indigo-600 to-pink-500 text-white" : "bg-gray-100"}`}
-                        >
-                          {c}
-                        </button>
-                      ))}
-                    </div>
-
-                    <div className="flex items-center gap-3">
-                      <input id="rush" type="checkbox" checked={timelineRush} onChange={() => setTimelineRush(v => !v)} className="h-4 w-4" />
-                      <label htmlFor="rush" className="text-sm text-gray-700">Rush delivery (adds ~25%)</label>
-                    </div>
-
-                    <p className="mt-4 text-xs text-gray-500">Choosing complexity and rush helps us give a realistic range.</p>
-                  </motion.div>
-                )}
-
-                {step === 3 && (
-                  <motion.div
-                    key="step-contact"
-                    variants={cardVariants}
-                    initial="enter"
-                    animate="center"
-                    exit="exit"
-                    transition={{ duration: 0.35 }}
-                  >
-                    <p className="text-sm text-gray-600 mb-4">Contact details</p>
-                    <div className="space-y-3">
-                      <input
-                        value={companyName}
-                        onChange={(e) => setCompanyName(e.target.value)}
-                        placeholder="Company (optional)"
-                        className="w-full px-3 py-2 border rounded-md"
-                      />
-                      <input
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder="Email (required)"
-                        className="w-full px-3 py-2 border rounded-md"
-                      />
-                      <p className="text-xs text-gray-500">We require email to send a detailed PDF quote (we won't spam).</p>
-                    </div>
-                  </motion.div>
-                )}
-
-                {step === 4 && (
-                  <motion.div
-                    key="step-estimate"
-                    variants={cardVariants}
-                    initial="enter"
-                    animate="center"
-                    exit="exit"
-                    transition={{ duration: 0.35 }}
-                    className=""
-                  >
-                    <p className="text-sm text-gray-600 mb-4">Estimated price range</p>
-
-                    <div className="grid grid-cols-1 gap-4">
-                      {/* Basic */}
-                      <div className="p-4 rounded-xl border bg-white">
-                        <div className="flex justify-between items-center">
-                          <div>
-                            <div className="text-sm text-gray-500">Basic</div>
-                            <div className="text-xl font-semibold text-gray-800">${priceEstimate.basic.min.toLocaleString()} — ${priceEstimate.basic.max.toLocaleString()}</div>
-                          </div>
-                          <div className="text-xs text-gray-400">Good for MVP / small scope</div>
-                        </div>
-                      </div>
-
-                      {/* Standard */}
-                      <div className="p-4 rounded-xl border bg-white">
-                        <div className="flex justify-between items-center">
-                          <div>
-                            <div className="text-sm text-gray-500">Standard</div>
-                            <div className="text-xl font-semibold text-gray-800">${priceEstimate.standard.min.toLocaleString()} — ${priceEstimate.standard.max.toLocaleString()}</div>
-                          </div>
-                          <div className="text-xs text-gray-400">Well-rounded product</div>
-                        </div>
-                      </div>
-
-                      {/* Premium */}
-                      <div className="p-4 rounded-xl border bg-white">
-                        <div className="flex justify-between items-center">
-                          <div>
-                            <div className="text-sm text-gray-500">Premium</div>
-                            <div className="text-xl font-semibold text-gray-800">${priceEstimate.premium.min.toLocaleString()} — ${priceEstimate.premium.max.toLocaleString()}</div>
-                          </div>
-                          <div className="text-xs text-gray-400">Enterprise-grade, long-term</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="mt-6 flex gap-3">
-                      <button onClick={sendQuote} className="px-5 py-3 rounded-md bg-gradient-to-r from-indigo-600 to-pink-500 text-white shadow">
-                        Send detailed quote
-                      </button>
-                      <button onClick={() => alert("Download PDF stub — implement server-side generation")} className="px-4 py-3 rounded-md border">Download PDF</button>
-                    </div>
-
-                    <p className="mt-4 text-xs text-gray-500">Estimates are indicative. We'll provide a final proposal after discussion.</p>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-
-            {/* Navigation */}
-            <div className="mt-6 flex justify-between items-center">
-              <div>
-                {step > 0 && (
-                  <button onClick={showPrev} className="px-4 py-2 rounded-md border mr-2">Back</button>
-                )}
-              </div>
-
-              <div className="flex items-center gap-3">
-                {step < steps.length - 1 ? (
-                  <button onClick={showNext} className="px-5 py-3 rounded-md bg-gradient-to-r from-indigo-600 to-pink-500 text-white shadow">
-                    {step === 0 ? "Start" : "Next"}
-                  </button>
+                  </>
                 ) : (
-                  <button onClick={() => { setStep(0); }} className="px-4 py-2 rounded-md border">Start over</button>
+                  <div className="text-3xl font-bold text-black">Custom Pricing</div>
                 )}
               </div>
-            </div>
 
-            {/* Small footer */}
-            <div className="mt-4 text-xs text-gray-400">
-              <strong>Note:</strong> This calculator gives a quick range. For an accurate quote we’ll need a short discovery call.
+              <a
+                href="/contact"
+                className={`block w-full text-center px-6 py-4 rounded-lg font-semibold transition-all duration-300 mb-6 ${
+                  plan.popular
+                    ? 'bg-black text-white hover:bg-gray-800'
+                    : 'bg-gray-100 text-black hover:bg-gray-200'
+                }`}
+              >
+                {plan.cta}
+              </a>
+
+              <div className="space-y-3">
+                {plan.features.map((feature, idx) => (
+                  <div key={idx} className="flex items-start">
+                    {feature.included ? (
+                      <Check className="w-5 h-5 text-black flex-shrink-0 mr-3 mt-0.5" />
+                    ) : (
+                      <X className="w-5 h-5 text-gray-300 flex-shrink-0 mr-3 mt-0.5" />
+                    )}
+                    <span className={feature.included ? 'text-gray-700' : 'text-gray-400'}>
+                      {feature.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
+          ))}
+        </div>
+
+        <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-12 mb-20">
+          <h2 className="text-4xl font-bold text-black text-center mb-8">Available Add-ons</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {addons.map((addon, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <Shield className="w-10 h-10 text-black mb-4" />
+                <h3 className="text-lg font-bold text-black mb-2">{addon.name}</h3>
+                <div className="text-2xl font-bold text-black mb-2">{addon.price}</div>
+                <p className="text-sm text-gray-600">{addon.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-4xl font-bold text-black text-center mb-12">Frequently Asked Questions</h2>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+              >
+                <button
+                  onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
+                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                >
+                  <span className="text-lg font-semibold text-black pr-8">{faq.question}</span>
+                  <Clock className={`w-6 h-6 text-black flex-shrink-0 transition-transform ${
+                    openFaqIndex === index ? 'transform rotate-180' : ''
+                  }`} />
+                </button>
+                {openFaqIndex === index && (
+                  <div className="px-8 pb-6">
+                    <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-black text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold mb-6">Still Have Questions?</h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Our team is here to help you find the perfect plan for your needs.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/contact"
+              className="inline-block px-8 py-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+            >
+              Contact Sales
+            </a>
+            <a
+              href="/request-quote"
+              className="inline-block px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105"
+            >
+              Request Custom Quote
+            </a>
           </div>
         </div>
       </div>
