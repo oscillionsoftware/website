@@ -137,3 +137,17 @@
     animation-delay: 800ms;
   }
 }
+
+  .logo-mobile {
+    width: 300px;
+    height: auto;
+    margin-left: -50px;
+  }
+@media (max-width: 640px) {
+  .logo-mobile {
+    width: 250px;
+    height: auto;
+    margin-left: -40px;
+  }
+}
+

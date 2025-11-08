@@ -282,11 +282,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img
-                src="/Oscillion Software-02.png"
-                alt="Oscillion Software"
-                className="h-12 w-auto"
-              />
+             <img
+  src="/Oscillion Software-02.png"
+  alt="Oscillion Software"
+  className="h-12 w-auto logo-mobile"
+/>
             </Link>
           </div>
 
