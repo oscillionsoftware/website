@@ -63,36 +63,36 @@ const AboutPage = () => {
 
   return (
     <div className="pt-20 bg-white">
-      <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-24 overflow-hidden">
+      <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-16 sm:py-24 md:py-32 lg:py-40 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl -top-48 -left-48 animate-float"></div>
-          <div className="absolute w-96 h-96 bg-white rounded-full blur-3xl -bottom-48 -right-48 animate-float-delayed"></div>
+          <div className="absolute w-64 h-64 sm:w-96 sm:h-96 bg-white rounded-full blur-3xl -top-32 sm:-top-48 -left-32 sm:-left-48 animate-float"></div>
+          <div className="absolute w-64 h-64 sm:w-96 sm:h-96 bg-white rounded-full blur-3xl -bottom-32 sm:-bottom-48 -right-32 sm:-right-48 animate-float-delayed"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fadeInUp">
-            <h1 className="text-5xl sm:text-6xl font-bold mb-6">About Oscillion</h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="page-title mb-4 sm:mb-6">About Oscillion</h1>
+            <p className="page-subtitle max-w-3xl mx-auto leading-relaxed px-4">
               A global leader in software development and IT consulting, empowering businesses
-              with innovative technology solutions since 2010.
+              with innovative technology solutions since 2025.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 sm:-mt-16 relative z-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mb-12 sm:mb-16 lg:mb-20">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-xl p-6 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp"
+              className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-4 sm:p-6 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className={`w-12 h-12 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center mb-4`}>
-                <stat.icon className="w-6 h-6 text-white" />
+              <div className={`w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${stat.color} rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4`}>
+                <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <div className="text-3xl font-bold text-black mb-1">{stat.value}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
+              <div className="text-2xl sm:text-3xl font-bold text-black mb-1">{stat.value}</div>
+              <div className="text-xs sm:text-sm text-gray-600">{stat.label}</div>
             </div>
           ))}
         </div>
