@@ -122,29 +122,41 @@ const Chatbot = () => {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-black text-white shadow-lg 
-        hover:bg-gray-800 transition-all duration-300 flex items-center justify-center transform hover:scale-110"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-black text-white shadow-2xl
+        hover:bg-gray-800 transition-all duration-300 flex items-center justify-center transform hover:scale-110
+        animate-bounce"
+        style={{ animationDuration: '3s' }}
+        aria-label="Open chat"
       >
-        {isOpen ? <X className="w-6 h-6" /> : <MessageCircle className="w-6 h-6" />}
+        {isOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />}
       </button>
 
       {/* Chat Window */}
       <div
-        className={`fixed bottom-24 right-6 z-50 bg-white rounded-lg shadow-2xl border border-gray-200 
+        className={`fixed bottom-20 right-4 sm:bottom-24 sm:right-6 z-50 bg-white rounded-2xl shadow-2xl border border-gray-200
         transform transition-all duration-300
-        w-96 max-w-[90vw]
+        w-[calc(100vw-2rem)] sm:w-96 max-w-md
         ${isOpen ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-4 scale-95 pointer-events-none'}`}
       >
         {/* Header */}
-        <div className="bg-black text-white p-4 rounded-t-lg">
-          <h3 className="text-lg font-semibold">Chat with us</h3>
-          <p className="text-sm text-gray-300">We typically reply in a few minutes</p>
+        <div className="bg-black text-white p-3 sm:p-4 rounded-t-2xl flex items-center justify-between">
+          <div>
+            <h3 className="text-base sm:text-lg font-semibold">Chat with Oscillion</h3>
+            <p className="text-xs sm:text-sm text-gray-300">We're here to help!</p>
+          </div>
+          <button
+            onClick={() => setIsOpen(false)}
+            className="sm:hidden text-white hover:text-gray-300 transition-colors"
+            aria-label="Close chat"
+          >
+            <X className="w-5 h-5" />
+          </button>
         </div>
 
         {/* Messages */}
         <div
           ref={messagesContainerRef}
-          className="h-96 max-h-[70vh] overflow-y-auto p-4 space-y-4 bg-gray-50"
+          className="h-64 sm:h-96 max-h-[50vh] sm:max-h-[70vh] overflow-y-auto p-3 sm:p-4 space-y-3 sm:space-y-4 bg-gray-50"
         >
           {messages.map((message) => (
             <div key={message.id} className={`flex ${message.isUser ? 'justify-end' : 'justify-start'}`}>
@@ -168,7 +180,7 @@ const Chatbot = () => {
         </div>
 
         {/* Input */}
-        <div className="p-4 border-t border-gray-200 bg-white rounded-b-lg">
+        <div className="p-3 sm:p-4 border-t border-gray-200 bg-white rounded-b-2xl">
           <div className="flex space-x-2">
             <input
               type="text"
@@ -184,14 +196,15 @@ const Chatbot = () => {
                   ? 'Enter your mobile...'
                   : 'Type your message...'
               }
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg 
+              className="flex-1 px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-lg
               focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
             />
             <button
               onClick={handleSendMessage}
-              className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors duration-300 flex items-center justify-center"
+              className="px-3 sm:px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors duration-300 flex items-center justify-center flex-shrink-0"
+              aria-label="Send message"
             >
-              <Send className="w-5 h-5" />
+              <Send className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
         </div>

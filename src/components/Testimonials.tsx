@@ -1,54 +1,23 @@
 import { useState, useEffect } from 'react';
-import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Quote, ChevronLeft, ChevronRight, MapPin } from 'lucide-react';
+import testimonialsData from '../data/testimonials.json';
 
 interface Testimonial {
+  id: number;
   name: string;
   role: string;
   company: string;
+  location: string;
   content: string;
   rating: number;
+  industry: string;
+  projectType: string;
 }
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const testimonials: Testimonial[] = [
-    {
-      name: 'Sarah Johnson',
-      role: 'CEO',
-      company: 'TechVision Inc',
-      content: 'Oscillion transformed our digital presence with their innovative solutions. Their team\'s expertise in web development and AI integration exceeded our expectations. Highly recommended!',
-      rating: 5,
-    },
-    {
-      name: 'Michael Chen',
-      role: 'CTO',
-      company: 'Global Logistics Solutions',
-      content: 'Working with Oscillion was a game-changer for our business. They delivered a robust cloud infrastructure that scaled perfectly with our growth. Exceptional service and support!',
-      rating: 5,
-    },
-    {
-      name: 'Emily Rodriguez',
-      role: 'Founder',
-      company: 'StyleHub Fashion',
-      content: 'The eCommerce platform Oscillion built for us increased our sales by 150%. Their attention to detail and understanding of our industry made all the difference.',
-      rating: 5,
-    },
-    {
-      name: 'David Thompson',
-      role: 'Director of IT',
-      company: 'HealthCare Plus',
-      content: 'Security was our top priority, and Oscillion delivered beyond expectations. Their cybersecurity solutions give us peace of mind knowing our patient data is protected.',
-      rating: 5,
-    },
-    {
-      name: 'Lisa Wang',
-      role: 'VP of Marketing',
-      company: 'EduTech Academy',
-      content: 'The mobile app Oscillion developed has revolutionized how our students learn. Intuitive design, seamless functionality, and outstanding performance across all devices.',
-      rating: 5,
-    },
-  ];
+  const testimonials: Testimonial[] = testimonialsData.testimonials;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -107,17 +76,29 @@ const Testimonials = () => {
                 "{currentTestimonial.content}"
               </p>
 
-              <div className="flex items-center">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-black rounded-full flex items-center justify-center text-white text-lg sm:text-xl font-bold mr-3 sm:mr-4">
-                  {currentTestimonial.name.split(' ').map(n => n[0]).join('')}
+              <div>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-black rounded-full flex items-center justify-center text-white text-lg sm:text-xl font-bold mr-3 sm:mr-4 flex-shrink-0">
+                    {currentTestimonial.name.split(' ').map(n => n[0]).join('')}
+                  </div>
+                  <div>
+                    <div className="font-semibold text-black text-base sm:text-lg">
+                      {currentTestimonial.name}
+                    </div>
+                    <div className="text-sm sm:text-base text-gray-600">
+                      {currentTestimonial.role}, {currentTestimonial.company}
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <div className="font-semibold text-black text-base sm:text-lg">
-                    {currentTestimonial.name}
+                <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm text-gray-500">
+                  <div className="flex items-center">
+                    <MapPin className="w-4 h-4 mr-1" />
+                    {currentTestimonial.location}
                   </div>
-                  <div className="text-sm sm:text-base text-gray-600">
-                    {currentTestimonial.role}, {currentTestimonial.company}
-                  </div>
+                  <span className="text-gray-300">|</span>
+                  <div>{currentTestimonial.industry}</div>
+                  <span className="text-gray-300">|</span>
+                  <div>{currentTestimonial.projectType}</div>
                 </div>
               </div>
             </div>

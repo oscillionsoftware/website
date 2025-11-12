@@ -26,8 +26,8 @@ const footerData: FooterSection[] = [
   key: 'contact',
   title: 'Contact',
   links: [
-    { label: 'Email Us', href: 'mailto:info@oscillion.com' },
-    { label: 'Contact Form', href: '/contact' },
+    { label: 'oscillionsoftware@gmail.com', href: 'mailto:oscillionsoftware@gmail.com' },
+    { label: '+91 91191 61210', href: 'tel:+919119161210' },
     { label: 'Office Locations', href: '/company/locations' },
     { label: 'Request a Quote', href: '/request-quote' },
   ],
@@ -59,7 +59,7 @@ const footerData: FooterSection[] = [
     { label: 'Instagram', href: 'https://www.instagram.com/oscillion', icon: Instagram },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/company/oscillion', icon: Linkedin },
     { label: 'Facebook', href: 'https://www.facebook.com/oscillion', icon: Facebook },
-    { label: 'WhatsApp', href: 'https://wa.me/919999999999', icon: MessageCircle },
+    { label: 'WhatsApp', href: 'https://wa.me/919119161210', icon: MessageCircle },
   ],
 },
 {

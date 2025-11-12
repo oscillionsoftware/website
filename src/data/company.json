@@ -1,76 +1,100 @@
 {
   "name": "Oscillion Software Services LLP",
-  "founded": 2024,
+  "founded": 2025,
   "tagline": "Building Premium Software Solutions",
-  "description": "Oscillion is a premium software development company specializing in cutting-edge technology solutions for businesses across India and internationally. We deliver world-class web applications, mobile solutions, AI implementations, and cloud services.",
-  "mission": "To empower businesses with innovative technology solutions that drive digital transformation and sustainable growth.",
-  "vision": "To be the most trusted technology partner for businesses worldwide, recognized for excellence and innovation.",
+  "description": "Oscillion is a premium software development company specializing in cutting-edge technology solutions for businesses across India and internationally. We deliver world-class web applications, mobile solutions, AI implementations, and cloud services with a strong presence in Rajasthan.",
+  "mission": "To empower businesses with innovative technology solutions that drive digital transformation and sustainable growth across India and beyond.",
+  "vision": "To be the most trusted technology partner for businesses worldwide, recognized for excellence, innovation, and delivering exceptional value.",
   "values": [
     {
       "title": "Excellence",
-      "description": "We strive for excellence in every project, delivering premium quality software solutions."
+      "description": "We strive for excellence in every project, delivering premium quality software solutions that exceed expectations."
     },
     {
       "title": "Innovation",
-      "description": "We embrace cutting-edge technologies and innovative approaches to solve complex problems."
+      "description": "We embrace cutting-edge technologies and innovative approaches to solve complex business challenges."
     },
     {
       "title": "Integrity",
-      "description": "We maintain the highest standards of integrity in all our business relationships."
+      "description": "We maintain the highest standards of integrity, transparency, and ethical practices in all our relationships."
     },
     {
       "title": "Client Success",
-      "description": "Our success is measured by the success of our clients."
+      "description": "Your success is our success. We measure our achievements by the results we deliver for our clients."
     }
   ],
   "stats": {
     "yearsExperience": 1,
-    "projectsCompleted": 50,
-    "clientSatisfaction": 98,
-    "teamSize": 25,
-    "countriesServed": 5
+    "projectsCompleted": 150,
+    "clientSatisfaction": 99,
+    "teamSize": 50,
+    "countriesServed": 12
   },
   "services": {
     "primary": [
       "Custom Software Development",
       "Mobile App Development",
       "Web Application Development",
-      "AI & ML Solutions",
-      "Cloud Services"
+      "Generative AI & ML Solutions",
+      "Cloud Infrastructure Services"
     ],
     "secondary": [
       "UI/UX Design",
       "Digital Marketing",
-      "DevOps Services",
-      "Quality Assurance",
-      "Technical Consulting"
+      "DevOps & CI/CD",
+      "Quality Assurance & Testing",
+      "Technical Consulting & Strategy"
     ]
   },
   "markets": {
     "indian": {
-      "description": "Serving businesses across major Indian cities including Mumbai, Delhi, Bangalore, Hyderabad, and Pune.",
-      "focus": "Startups, SMEs, and Enterprises"
+      "description": "Serving businesses across major Indian cities including Jaipur, Delhi, Mumbai, Bangalore, Hyderabad, Pune, and Ahmedabad with a strong focus on Rajasthan.",
+      "focus": "Startups, SMEs, and Enterprises in retail, healthcare, education, finance, and technology sectors"
     },
     "international": {
-      "description": "Delivering premium software solutions to clients in USA, UK, UAE, Singapore, and Australia.",
-      "focus": "Technology Companies, E-commerce, Healthcare, Finance"
+      "description": "Delivering premium software solutions to clients in USA, UK, UAE, Singapore, Australia, Canada, Germany, and other countries.",
+      "focus": "Technology Companies, E-commerce Platforms, Healthcare Systems, Financial Services, and SaaS Businesses"
     }
   },
   "pricing": {
-    "model": "Flexible pricing based on project scope and requirements",
+    "model": "Flexible and transparent pricing based on project scope and requirements",
     "currency": "INR (Indian Rupees)",
-    "description": "Our pricing is competitive and tailored to the Indian market while maintaining international quality standards.",
+    "description": "Our pricing is competitive and tailored to the Indian market while maintaining international quality standards. We offer cost-effective solutions without compromising on quality.",
     "options": [
       "Fixed Price Projects",
       "Time & Material",
-      "Dedicated Team",
-      "Retainer Model"
+      "Dedicated Team Model",
+      "Retainer Model",
+      "Hourly Consulting"
     ]
   },
+  "locations": [
+    {
+      "name": "Oscillion Software Solution",
+      "city": "Jaipur",
+      "address": "Vaishali Nagar, Jaipur, Rajasthan 302021, India",
+      "type": "Head Office",
+      "phone": "+91 91191 61210",
+      "whatsapp": "+91 91191 61210",
+      "email": "oscillionsoftware@gmail.com",
+      "hours": "Mon-Sat: 9:00 AM - 8:00 PM IST"
+    },
+    {
+      "name": "Oscillion Software Services",
+      "city": "Sikar",
+      "address": "Chandpol Gate, Sikar, Rajasthan 332001, India",
+      "type": "Branch Office",
+      "phone": "+91 91191 61210",
+      "whatsapp": "+91 91191 61210",
+      "email": "oscillionsoftware@gmail.com",
+      "hours": "Mon-Sat: 9:00 AM - 8:00 PM IST"
+    }
+  ],
   "contact": {
-    "email": "info@oscillion.com",
-    "phone": "+91 999 999 9999",
-    "address": "Mumbai, Maharashtra, India",
-    "hours": "Mon-Sat: 9:00 AM - 7:00 PM IST"
+    "email": "oscillionsoftware@gmail.com",
+    "phone": "+91 91191 61210",
+    "whatsapp": "+91 91191 61210",
+    "address": "Vaishali Nagar, Jaipur, Rajasthan, India",
+    "hours": "Mon-Sat: 9:00 AM - 8:00 PM IST"
   }
 }

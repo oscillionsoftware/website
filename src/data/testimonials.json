@@ -1,0 +1,114 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Rajesh Kumar",
+      "role": "Founder & CEO",
+      "company": "TechVision India Pvt. Ltd.",
+      "location": "Mumbai, Maharashtra",
+      "content": "Oscillion transformed our entire digital infrastructure. Their team's expertise in web development and AI integration exceeded our expectations. The project was delivered on time and within budget. Highly recommended for any business looking to scale digitally!",
+      "rating": 5,
+      "industry": "Technology",
+      "projectType": "Enterprise Web Application"
+    },
+    {
+      "id": 2,
+      "name": "Priya Sharma",
+      "role": "Director of Operations",
+      "company": "StyleHub Fashion Retail",
+      "location": "Delhi NCR",
+      "content": "The eCommerce platform Oscillion built for us increased our online sales by 180% within the first 6 months. Their attention to detail and understanding of the Indian retail market made all the difference. Exceptional service and ongoing support!",
+      "rating": 5,
+      "industry": "E-commerce",
+      "projectType": "E-commerce Platform"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Amit Patel",
+      "role": "Medical Director",
+      "company": "HealthCare Plus Hospitals",
+      "location": "Ahmedabad, Gujarat",
+      "content": "Security and compliance were our top priorities for patient data management. Oscillion delivered a robust hospital management system that not only meets all regulatory requirements but also improved our operational efficiency by 60%. Outstanding work!",
+      "rating": 5,
+      "industry": "Healthcare",
+      "projectType": "Hospital Management System"
+    },
+    {
+      "id": 4,
+      "name": "Vikram Singh",
+      "role": "Co-Founder",
+      "company": "EduTech Academy",
+      "location": "Bangalore, Karnataka",
+      "content": "The mobile app Oscillion developed has revolutionized how our students learn. The intuitive design, seamless functionality, and excellent performance across all devices has led to a 95% student satisfaction rate. They truly understand the education sector!",
+      "rating": 5,
+      "industry": "Education",
+      "projectType": "Mobile Learning App"
+    },
+    {
+      "id": 5,
+      "name": "Meera Reddy",
+      "role": "CTO",
+      "company": "FinServe Solutions",
+      "location": "Hyderabad, Telangana",
+      "content": "Working with Oscillion for our fintech platform was a game-changer. Their expertise in cloud infrastructure and security protocols gave us the foundation we needed to scale nationally. The team is professional, responsive, and delivers quality work consistently.",
+      "rating": 5,
+      "industry": "Finance",
+      "projectType": "Fintech Platform"
+    },
+    {
+      "id": 6,
+      "name": "Arjun Malhotra",
+      "role": "Managing Director",
+      "company": "Real Estate Pro",
+      "location": "Pune, Maharashtra",
+      "content": "Oscillion developed a comprehensive property management system that streamlined our operations across 5 cities. The system handles everything from client management to documentation seamlessly. Their post-launch support has been exceptional!",
+      "rating": 5,
+      "industry": "Real Estate",
+      "projectType": "Property Management System"
+    },
+    {
+      "id": 7,
+      "name": "Sarah Johnson",
+      "role": "VP of Technology",
+      "company": "Global Logistics Inc.",
+      "location": "Singapore",
+      "content": "As an international client, I was impressed by Oscillion's professionalism and technical expertise. They delivered a complex logistics tracking system that operates flawlessly across multiple countries. The time zone difference was never an issue!",
+      "rating": 5,
+      "industry": "Logistics",
+      "projectType": "Logistics Tracking System"
+    },
+    {
+      "id": 8,
+      "name": "Ananya Joshi",
+      "role": "Founder",
+      "company": "Foodie Hub",
+      "location": "Jaipur, Rajasthan",
+      "content": "Being a local Jaipur startup, working with Oscillion was perfect for us. They understood our vision and delivered a food delivery app that competes with the big players. Their ongoing support and feature updates have been invaluable. Proud to support local talent!",
+      "rating": 5,
+      "industry": "Food & Beverage",
+      "projectType": "Food Delivery App"
+    },
+    {
+      "id": 9,
+      "name": "Mohammed Ali",
+      "role": "CEO",
+      "company": "AgriTech Solutions",
+      "location": "Nagpur, Maharashtra",
+      "content": "Oscillion developed an innovative AgriTech platform that connects farmers directly with buyers. Their understanding of the agricultural sector and technical execution was outstanding. This platform is making a real difference in farmers' lives!",
+      "rating": 5,
+      "industry": "Agriculture",
+      "projectType": "AgriTech Platform"
+    },
+    {
+      "id": 10,
+      "name": "David Thompson",
+      "role": "Director of IT",
+      "company": "MediCare International",
+      "location": "Dubai, UAE",
+      "content": "Oscillion's team delivered a world-class telemedicine platform for our Middle East operations. The quality of work matches any international standards. Their competitive pricing combined with exceptional quality makes them our go-to technology partner!",
+      "rating": 5,
+      "industry": "Healthcare",
+      "projectType": "Telemedicine Platform"
+    }
+  ]
+}

@@ -33,36 +33,22 @@ const ContactPage = () => {
 
   const offices = [
     {
-      city: 'New York',
-      country: 'USA',
-      address: '350 Fifth Avenue, New York, NY 10118',
-      phone: '+1 (212) 555-0123',
-      email: 'newyork@oscillion.com',
-      hours: 'Mon-Fri: 9:00 AM - 6:00 PM EST'
+      city: 'Jaipur',
+      country: 'India',
+      type: 'Head Office',
+      address: 'Vaishali Nagar, Jaipur, Rajasthan 302021',
+      phone: '+91 91191 61210',
+      email: 'oscillionsoftware@gmail.com',
+      hours: 'Mon-Sat: 9:00 AM - 8:00 PM IST'
     },
     {
-      city: 'London',
-      country: 'UK',
-      address: '1 Canada Square, Canary Wharf, London E14 5AB',
-      phone: '+44 20 7946 0958',
-      email: 'london@oscillion.com',
-      hours: 'Mon-Fri: 9:00 AM - 6:00 PM GMT'
-    },
-    {
-      city: 'Singapore',
-      country: 'Singapore',
-      address: '1 Raffles Place, Singapore 048616',
-      phone: '+65 6789 0123',
-      email: 'singapore@oscillion.com',
-      hours: 'Mon-Fri: 9:00 AM - 6:00 PM SGT'
-    },
-    {
-      city: 'Dubai',
-      country: 'UAE',
-      address: 'Dubai Internet City, Dubai, UAE',
-      phone: '+971 4 123 4567',
-      email: 'dubai@oscillion.com',
-      hours: 'Sun-Thu: 9:00 AM - 6:00 PM GST'
+      city: 'Sikar',
+      country: 'India',
+      type: 'Branch Office',
+      address: 'Chandpol Gate, Sikar, Rajasthan 332001',
+      phone: '+91 91191 61210',
+      email: 'oscillionsoftware@gmail.com',
+      hours: 'Mon-Sat: 9:00 AM - 8:00 PM IST'
     }
   ];
 
@@ -230,40 +216,40 @@ const ContactPage = () => {
 
               <div className="space-y-4">
                 <a
-                  href="mailto:contact@oscillion.com"
+                  href="mailto:oscillionsoftware@gmail.com"
                   className="flex items-start p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <Mail className="w-6 h-6 text-black mt-1 mr-4 flex-shrink-0" />
                   <div>
                     <div className="font-semibold text-black mb-1">Email Us</div>
-                    <div className="text-gray-600">contact@oscillion.com</div>
+                    <div className="text-gray-600">oscillionsoftware@gmail.com</div>
                     <div className="text-sm text-gray-500 mt-1">We typically respond within 24 hours</div>
                   </div>
                 </a>
 
                 <a
-                  href="tel:+12125550123"
+                  href="tel:+919119161210"
                   className="flex items-start p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <Phone className="w-6 h-6 text-black mt-1 mr-4 flex-shrink-0" />
                   <div>
                     <div className="font-semibold text-black mb-1">Call Us</div>
-                    <div className="text-gray-600">+1 (212) 555-0123</div>
-                    <div className="text-sm text-gray-500 mt-1">Mon-Fri: 9:00 AM - 6:00 PM EST</div>
+                    <div className="text-gray-600">+91 91191 61210</div>
+                    <div className="text-sm text-gray-500 mt-1">Mon-Sat: 9:00 AM - 8:00 PM IST</div>
                   </div>
                 </a>
 
                 <a
-                  href="https://wa.me/12125550123"
+                  href="https://wa.me/919119161210"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1"
+                  className="flex items-start p-4 bg-green-50 rounded-xl hover:bg-green-100 transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  <MessageSquare className="w-6 h-6 text-black mt-1 mr-4 flex-shrink-0" />
+                  <MessageSquare className="w-6 h-6 text-green-600 mt-1 mr-4 flex-shrink-0" />
                   <div>
                     <div className="font-semibold text-black mb-1">WhatsApp</div>
-                    <div className="text-gray-600">Chat with us instantly</div>
-                    <div className="text-sm text-gray-500 mt-1">Available 24/7</div>
+                    <div className="text-gray-600">+91 91191 61210</div>
+                    <div className="text-sm text-gray-500 mt-1">Chat with us instantly</div>
                   </div>
                 </a>
               </div>
@@ -315,9 +301,9 @@ const ContactPage = () => {
 
       <div className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-black text-center mb-12">Our Global Offices</h2>
+          <h2 className="text-4xl font-bold text-black text-center mb-12">Our Offices in Rajasthan</h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
             {offices.map((office, index) => (
               <div
                 key={index}
