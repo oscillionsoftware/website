@@ -1,0 +1,173 @@
+{
+  "currency": "INR",
+  "packages": [
+    {
+      "id": "starter",
+      "name": "Starter Package",
+      "price": "49,999",
+      "duration": "per project",
+      "popular": false,
+      "description": "Perfect for startups and small businesses looking to establish their digital presence",
+      "features": [
+        "Responsive Website Design",
+        "Up to 5 Pages",
+        "Mobile Optimization",
+        "Basic SEO Setup",
+        "Contact Form Integration",
+        "1 Month Free Support",
+        "Social Media Integration",
+        "Google Analytics Setup"
+      ],
+      "bestFor": "Small Businesses, Startups, Portfolio Websites"
+    },
+    {
+      "id": "professional",
+      "name": "Professional Package",
+      "price": "1,49,999",
+      "duration": "per project",
+      "popular": true,
+      "description": "Ideal for growing businesses requiring advanced features and functionality",
+      "features": [
+        "Custom Web Application",
+        "Up to 15 Pages",
+        "Advanced UI/UX Design",
+        "CMS Integration",
+        "Payment Gateway Integration",
+        "Advanced SEO Optimization",
+        "3 Months Free Support",
+        "Email Marketing Setup",
+        "Live Chat Integration",
+        "SSL Certificate & Security"
+      ],
+      "bestFor": "E-commerce, Service Providers, Corporate Websites"
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise Package",
+      "price": "4,99,999",
+      "duration": "per project",
+      "popular": false,
+      "description": "Comprehensive solution for large-scale businesses with complex requirements",
+      "features": [
+        "Custom Enterprise Solution",
+        "Unlimited Pages",
+        "Advanced Architecture Design",
+        "API Development & Integration",
+        "Cloud Infrastructure Setup",
+        "AI/ML Integration",
+        "6 Months Free Support",
+        "Performance Optimization",
+        "Security Audit & Compliance",
+        "Dedicated Project Manager",
+        "Training & Documentation",
+        "24/7 Priority Support"
+      ],
+      "bestFor": "Large Enterprises, SaaS Products, Complex Platforms"
+    }
+  ],
+  "mobileAppPricing": [
+    {
+      "name": "Basic Mobile App",
+      "price": "99,999",
+      "platform": "Single Platform (iOS or Android)",
+      "features": [
+        "Native App Development",
+        "Up to 10 Screens",
+        "Basic UI/UX Design",
+        "Backend Integration",
+        "Push Notifications",
+        "App Store Submission",
+        "2 Months Support"
+      ]
+    },
+    {
+      "name": "Advanced Mobile App",
+      "price": "2,49,999",
+      "platform": "Cross-Platform (iOS & Android)",
+      "features": [
+        "Cross-Platform Development",
+        "Unlimited Screens",
+        "Premium UI/UX Design",
+        "Advanced Backend & APIs",
+        "Real-time Features",
+        "Payment Integration",
+        "Analytics & Tracking",
+        "App Store Optimization",
+        "6 Months Support"
+      ]
+    }
+  ],
+  "hourlyRates": {
+    "webDeveloper": "800 - 1,500",
+    "mobileDeveloper": "1,000 - 2,000",
+    "uiuxDesigner": "700 - 1,200",
+    "aimlEngineer": "1,500 - 3,000",
+    "devopsEngineer": "1,200 - 2,500",
+    "projectManager": "1,000 - 2,000"
+  },
+  "additionalServices": [
+    {
+      "service": "SEO Optimization",
+      "price": "15,000",
+      "duration": "per month"
+    },
+    {
+      "service": "Social Media Marketing",
+      "price": "20,000",
+      "duration": "per month"
+    },
+    {
+      "service": "Content Writing",
+      "price": "500 - 1,500",
+      "duration": "per article"
+    },
+    {
+      "service": "Logo Design",
+      "price": "5,000 - 15,000",
+      "duration": "one-time"
+    },
+    {
+      "service": "Maintenance & Support",
+      "price": "10,000 - 50,000",
+      "duration": "per month"
+    }
+  ],
+  "dedicatedTeam": {
+    "description": "Hire dedicated developers and designers for your project",
+    "models": [
+      {
+        "name": "Junior Developer",
+        "price": "40,000 - 60,000",
+        "duration": "per month"
+      },
+      {
+        "name": "Senior Developer",
+        "price": "80,000 - 1,20,000",
+        "duration": "per month"
+      },
+      {
+        "name": "Team Lead",
+        "price": "1,20,000 - 1,80,000",
+        "duration": "per month"
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Do you offer custom pricing?",
+      "answer": "Yes, we provide custom pricing based on your specific requirements and project scope. Contact us for a detailed quote."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept bank transfers, UPI, credit/debit cards, and online payment gateways. International clients can pay via PayPal or wire transfer."
+    },
+    {
+      "question": "Is there a money-back guarantee?",
+      "answer": "Yes, we offer a satisfaction guarantee. If you're not satisfied with our initial deliverables, we'll work to make it right or provide a refund as per our terms."
+    },
+    {
+      "question": "Do you offer EMI options?",
+      "answer": "Yes, for projects above ¹1,00,000, we offer flexible EMI options and milestone-based payments."
+    }
+  ]
+}
