@@ -746,23 +746,186 @@
   "healthcare-education/healthcare": {
     "slug": "healthcare-education/healthcare",
     "title": "Healthcare Solutions",
+    "name": "Healthcare",
     "description": "Build secure, scalable healthcare platforms for clinics, hospitals, and telemedicine providers.",
     "hero": {
       "heading": "Transform Healthcare with Technology",
-      "description": "From patient apps to EMR systems, our solutions enhance patient care and data security.",
-      "gradient": "from-red-500 to-pink-600"
+      "description": "From patient apps to EMR systems, our solutions enhance patient care, streamline operations, and ensure data security."
     },
-    "features": [
-      { "title": "Patient Portals", "description": "Streamline appointments and medical records.", "icon": "heart" },
-      { "title": "Telemedicine Platforms", "description": "Enable virtual consultations and monitoring.", "icon": "cloud" },
-      { "title": "HIPAA Compliance", "description": "Ensure secure handling of sensitive medical data.", "icon": "shield" }
+    "overview": {
+      "title": "Leading Healthcare Technology Partner",
+      "description": "We specialize in developing HIPAA-compliant healthcare solutions that improve patient outcomes and streamline clinical workflows. Our expertise spans telemedicine, patient portals, EMR systems, and healthcare analytics.",
+      "highlights": [
+        "HIPAA-compliant application development",
+        "Telemedicine and virtual care platforms",
+        "Patient portal and engagement solutions",
+        "Electronic Health Records (EHR/EMR) integration",
+        "Healthcare analytics and reporting",
+        "Medical device integration"
+      ]
+    },
+    "services": [
+      {
+        "title": "Telemedicine Platforms",
+        "description": "Enable virtual consultations with secure video conferencing, appointment scheduling, e-prescriptions, and remote patient monitoring.",
+        "icon": "cloud"
+      },
+      {
+        "title": "Patient Portal Development",
+        "description": "Build patient-centric portals for appointment booking, medical records access, test results, billing, and secure messaging with providers.",
+        "icon": "heart"
+      },
+      {
+        "title": "EHR/EMR Integration",
+        "description": "Seamless integration with existing Electronic Health Record systems including Epic, Cerner, Allscripts, and custom EMR solutions.",
+        "icon": "database"
+      },
+      {
+        "title": "Healthcare Mobile Apps",
+        "description": "Native iOS and Android apps for patients and healthcare providers with offline capabilities and real-time notifications.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Medical Imaging Solutions",
+        "description": "DICOM-compliant medical imaging platforms with secure storage, sharing, and advanced visualization capabilities.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Healthcare Analytics",
+        "description": "Data-driven insights for population health management, clinical decision support, and operational efficiency.",
+        "icon": "lightbulb"
+      }
+    ],
+    "technologies": [
+      "HL7 & FHIR",
+      "DICOM",
+      "Epic Integration",
+      "Cerner",
+      "AWS Healthcare",
+      "Azure Health",
+      "Twilio Video",
+      "WebRTC",
+      "React Native",
+      "Node.js",
+      "Python",
+      "TensorFlow"
     ],
     "benefits": [
-      "Enhance patient engagement",
-      "Ensure data privacy and compliance",
-      "Integrate with EHR systems",
-      "Improve healthcare outcomes"
-    ]
+      "Enhance patient engagement and satisfaction",
+      "Ensure data privacy and HIPAA compliance",
+      "Integrate seamlessly with existing EHR systems",
+      "Improve healthcare outcomes through better care coordination",
+      "Reduce administrative burden on staff",
+      "Enable remote patient monitoring and care",
+      "Improve clinical decision-making with real-time data",
+      "Reduce hospital readmissions",
+      "Streamline billing and claims processing"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Healthcare Assessment",
+        "description": "Understand your clinical workflows, compliance requirements, and integration needs with existing healthcare systems."
+      },
+      {
+        "step": "02",
+        "title": "Compliance Planning",
+        "description": "Design HIPAA-compliant architecture with security controls, audit logging, and data protection measures."
+      },
+      {
+        "step": "03",
+        "title": "Development & Integration",
+        "description": "Build your healthcare solution with EHR integration, HL7/FHIR standards, and rigorous testing."
+      },
+      {
+        "step": "04",
+        "title": "Security Validation",
+        "description": "Comprehensive security testing, penetration testing, and HIPAA compliance verification."
+      },
+      {
+        "step": "05",
+        "title": "Deployment & Training",
+        "description": "Seamless deployment with staff training, documentation, and ongoing support for healthcare providers."
+      }
+    ],
+    "caseStudies": [
+      {
+        "metric": "85%",
+        "title": "Reduced No-Shows",
+        "description": "Automated appointment reminders and easy rescheduling through patient portal"
+      },
+      {
+        "metric": "60%",
+        "title": "Faster Check-In",
+        "description": "Digital intake forms and pre-visit questionnaires streamline patient registration"
+      },
+      {
+        "metric": "40%",
+        "title": "Lower Costs",
+        "description": "Telemedicine platform reduced emergency room visits and improved care access"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Hospital Management System",
+        "description": "Comprehensive platform for managing hospital operations, patient care, and administrative workflows.",
+        "features": [
+          "Patient admission and discharge",
+          "Bed and ward management",
+          "Operating room scheduling",
+          "Pharmacy and lab integration",
+          "Billing and insurance claims"
+        ]
+      },
+      {
+        "title": "Telemedicine Platform",
+        "description": "Complete virtual care solution connecting patients with healthcare providers remotely.",
+        "features": [
+          "HD video consultations",
+          "E-prescriptions and pharmacy integration",
+          "Remote patient monitoring",
+          "Secure chat and file sharing",
+          "Insurance verification and billing"
+        ]
+      }
+    ],
+    "security": {
+      "title": "HIPAA Compliance & Security",
+      "features": [
+        "End-to-end encryption for all patient data",
+        "Role-based access controls (RBAC)",
+        "Complete audit logging and monitoring",
+        "Business Associate Agreements (BAA)",
+        "Regular security audits and penetration testing",
+        "HIPAA compliance documentation",
+        "Disaster recovery and backup systems",
+        "Secure API authentication"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How do you ensure HIPAA compliance?",
+        "answer": "We follow HIPAA security and privacy rules throughout development, including encryption at rest and in transit, access controls, audit logging, and regular security assessments. We provide Business Associate Agreements and maintain comprehensive compliance documentation."
+      },
+      {
+        "question": "Can you integrate with our existing EHR system?",
+        "answer": "Yes! We have extensive experience integrating with major EHR systems like Epic, Cerner, Allscripts, and others using HL7, FHIR, and proprietary APIs. We ensure seamless data flow while maintaining security and compliance."
+      },
+      {
+        "question": "What telemedicine features do you support?",
+        "answer": "Our telemedicine solutions include HD video consultations, screen sharing, e-prescriptions, appointment scheduling, payment processing, insurance verification, medical records access, and integration with diagnostic devices for remote monitoring."
+      },
+      {
+        "question": "How long does healthcare software development take?",
+        "answer": "Timeline varies based on complexity. A basic patient portal takes 3-4 months, while comprehensive telemedicine platforms or hospital management systems typically require 6-12 months including compliance validation and testing."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform Healthcare Delivery?",
+      "description": "Let's build secure, compliant healthcare technology that improves patient outcomes.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "Schedule Consultation"
+    }
   },
   "finance-security/cybersecurity": {
     "slug": "finance-security/cybersecurity",

@@ -170,16 +170,6 @@ const DynamicIndustryPage = () => {
             <p className="text-xl mb-8 text-gray-300 leading-relaxed">
               {industry.hero.description}
             </p>
-            {industry.hero.stats && (
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-                {industry.hero.stats.map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-4xl font-bold mb-2">{stat.value}</div>
-                    <div className="text-sm text-gray-400">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            )}
           </div>
         </div>
       </div>
