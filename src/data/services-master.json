@@ -531,7 +531,17 @@
             "starting": "₹5,00,000",
             "duration": "12-16 weeks"
           }
-        },
+        }
+      ]
+    },
+    {
+      "id": "cms-ecommerce",
+      "name": "CMS & E-Commerce",
+      "slug": "cms-ecommerce",
+      "icon": "globe",
+      "description": "Content Management Systems and E-Commerce platforms for online business success.",
+      "color": "from-gray-700 to-black",
+      "services": [
         {
           "id": "wordpress-development",
           "name": "WordPress Development",
