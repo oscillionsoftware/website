@@ -927,67 +927,774 @@
       "secondaryButton": "Schedule Consultation"
     }
   },
+  "finance-security/finance": {
+    "slug": "finance-security/finance",
+    "title": "Financial Technology Solutions",
+    "name": "Finance",
+    "description": "Build secure, compliant fintech applications for banking, payments, and financial services.",
+    "hero": {
+      "heading": "Innovate Financial Services with Technology",
+      "description": "Create secure, scalable fintech solutions that transform banking, payments, wealth management, and financial operations."
+    },
+    "overview": {
+      "title": "Leading Fintech Development Partner",
+      "description": "We develop secure, compliant financial technology solutions that meet stringent regulatory requirements while delivering exceptional user experiences. Our expertise spans digital banking, payment processing, wealth management, and financial analytics.",
+      "highlights": [
+        "PCI-DSS compliant payment solutions",
+        "Digital banking and mobile banking apps",
+        "Payment gateway and wallet development",
+        "Trading and investment platforms",
+        "Financial analytics and reporting",
+        "Regulatory compliance automation"
+      ]
+    },
+    "services": [
+      {
+        "title": "Digital Banking Platforms",
+        "description": "Build modern banking experiences with account management, transfers, bill payments, and real-time notifications.",
+        "icon": "database"
+      },
+      {
+        "title": "Payment Processing Solutions",
+        "description": "Secure payment gateways with multi-currency support, fraud detection, and PCI-DSS compliance.",
+        "icon": "lock"
+      },
+      {
+        "title": "Trading & Investment Platforms",
+        "description": "Real-time trading platforms with market data, portfolio management, and advanced analytics.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Lending & Credit Management",
+        "description": "Automated loan origination, credit scoring, underwriting, and loan servicing systems.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Wealth Management Apps",
+        "description": "Portfolio tracking, robo-advisory, retirement planning, and financial goal management.",
+        "icon": "monitor"
+      },
+      {
+        "title": "RegTech Solutions",
+        "description": "Compliance automation, KYC/AML verification, transaction monitoring, and regulatory reporting.",
+        "icon": "shield"
+      }
+    ],
+    "technologies": [
+      "Plaid API",
+      "Stripe",
+      "Blockchain",
+      "AWS FinTech",
+      "Azure Finance",
+      "Kafka",
+      "PostgreSQL",
+      "Redis",
+      "React Native",
+      "Node.js",
+      "Python",
+      "Go"
+    ],
+    "benefits": [
+      "Reduce operational costs through automation",
+      "Ensure PCI-DSS and regulatory compliance",
+      "Improve transaction processing speed",
+      "Enhance security and fraud prevention",
+      "Scale seamlessly with growing transaction volumes",
+      "Provide superior customer experiences",
+      "Enable real-time financial insights",
+      "Accelerate time-to-market for new products"
+    ]
+  },
+  "finance-security/insurance": {
+    "slug": "finance-security/insurance",
+    "title": "Insurance Technology Solutions",
+    "name": "Insurance",
+    "description": "Modernize insurance operations with digital platforms for policy management, claims processing, and customer engagement.",
+    "hero": {
+      "heading": "Transform Insurance with Digital Solutions",
+      "description": "Build modern insurance platforms that streamline underwriting, claims, policy management, and customer engagement."
+    },
+    "overview": {
+      "title": "Insurance Technology Expertise",
+      "description": "We develop comprehensive insurance technology solutions that automate processes, improve customer experiences, and drive operational efficiency. From policy management to claims processing, our solutions cover the entire insurance lifecycle.",
+      "highlights": [
+        "Policy administration systems",
+        "Claims management automation",
+        "Insurance mobile applications",
+        "Agent and broker portals",
+        "Underwriting automation",
+        "Customer self-service platforms"
+      ]
+    },
+    "services": [
+      {
+        "title": "Policy Management Systems",
+        "description": "Complete policy lifecycle management from quotes to renewals with automated workflows and document generation.",
+        "icon": "database"
+      },
+      {
+        "title": "Claims Processing Automation",
+        "description": "Streamlined claims filing, adjudication, and settlement with AI-powered fraud detection.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Insurance Mobile Apps",
+        "description": "Mobile-first experiences for policy holders with instant quotes, claims filing, and document uploads.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Agent Portal Development",
+        "description": "Comprehensive portals for agents and brokers with commission tracking, lead management, and reporting.",
+        "icon": "users"
+      },
+      {
+        "title": "Underwriting Automation",
+        "description": "AI-powered risk assessment, automated underwriting rules, and integration with third-party data sources.",
+        "icon": "shield"
+      },
+      {
+        "title": "Customer Portal",
+        "description": "Self-service portals for policy management, premium payments, claims tracking, and document access.",
+        "icon": "monitor"
+      }
+    ],
+    "technologies": [
+      "Guidewire",
+      "Duck Creek",
+      "ISO Standards",
+      "OCR & AI",
+      "AWS Insurance",
+      "Azure",
+      "React",
+      "Node.js",
+      "Python",
+      "TensorFlow"
+    ],
+    "benefits": [
+      "Reduce claims processing time by 60%",
+      "Automate underwriting and policy issuance",
+      "Improve customer satisfaction scores",
+      "Reduce operational costs significantly",
+      "Enable digital-first customer experiences",
+      "Enhance fraud detection capabilities",
+      "Streamline agent and broker operations",
+      "Ensure regulatory compliance"
+    ]
+  },
   "finance-security/cybersecurity": {
     "slug": "finance-security/cybersecurity",
     "title": "Cybersecurity Services",
+    "name": "Cybersecurity",
     "description": "Protect your business with comprehensive cybersecurity and data protection solutions.",
     "hero": {
       "heading": "Secure Your Digital Infrastructure",
-      "description": "We offer enterprise-grade protection from cyber threats, breaches, and data loss.",
-      "gradient": "from-blue-700 to-cyan-600"
+      "description": "Enterprise-grade cybersecurity solutions that protect against threats, breaches, and data loss while ensuring compliance."
     },
-    "features": [
-      { "title": "Threat Detection", "description": "Monitor and identify suspicious activity in real-time.", "icon": "shield" },
-      { "title": "Data Encryption", "description": "Protect sensitive data across all platforms.", "icon": "lock" },
-      { "title": "Incident Response", "description": "Rapid mitigation and recovery from security breaches.", "icon": "server" }
+    "overview": {
+      "title": "Comprehensive Cybersecurity Solutions",
+      "description": "We provide end-to-end cybersecurity services that protect your digital assets, secure your infrastructure, and ensure compliance with industry standards. Our solutions combine advanced technology with expert security practices.",
+      "highlights": [
+        "Security assessment and auditing",
+        "Penetration testing and vulnerability scanning",
+        "Security operations center (SOC) setup",
+        "Incident response and forensics",
+        "Compliance and risk management",
+        "Security awareness training"
+      ]
+    },
+    "services": [
+      {
+        "title": "Threat Detection & Response",
+        "description": "24/7 monitoring with AI-powered threat detection, real-time alerts, and automated incident response.",
+        "icon": "shield"
+      },
+      {
+        "title": "Penetration Testing",
+        "description": "Comprehensive security testing including network, application, cloud, and social engineering assessments.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Security Architecture",
+        "description": "Design and implement secure architecture with zero-trust principles, micro-segmentation, and defense in depth.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Data Encryption & Protection",
+        "description": "End-to-end encryption, data loss prevention (DLP), and secure key management solutions.",
+        "icon": "lock"
+      },
+      {
+        "title": "Compliance Management",
+        "description": "Ensure compliance with ISO 27001, SOC 2, GDPR, HIPAA, and other regulatory frameworks.",
+        "icon": "database"
+      },
+      {
+        "title": "Security Training",
+        "description": "Employee security awareness training, phishing simulations, and security best practices workshops.",
+        "icon": "users"
+      }
+    ],
+    "technologies": [
+      "SIEM Tools",
+      "Splunk",
+      "CrowdStrike",
+      "Palo Alto",
+      "AWS Security",
+      "Azure Security",
+      "Kubernetes Security",
+      "HashiCorp Vault",
+      "OWASP",
+      "Nessus",
+      "Metasploit",
+      "Wireshark"
     ],
     "benefits": [
-      "24/7 monitoring and response",
-      "Compliance with ISO & GDPR standards",
+      "24/7 security monitoring and response",
+      "Compliance with ISO, GDPR, and industry standards",
+      "Reduce security incidents by 80%",
+      "Protect customer trust and brand reputation",
+      "Prevent data breaches and ransomware",
       "Secure cloud infrastructure",
-      "Protect customer trust and reputation"
+      "Meet audit and compliance requirements",
+      "Reduce cyber insurance premiums"
+    ]
+  },
+  "education/education": {
+    "slug": "education/education",
+    "title": "Education Technology Solutions",
+    "name": "Education",
+    "description": "Transform education with innovative learning platforms, student management systems, and digital classrooms.",
+    "hero": {
+      "heading": "Empower Learning with Technology",
+      "description": "Build engaging educational platforms that enhance learning experiences, streamline administration, and connect students with knowledge."
+    },
+    "overview": {
+      "title": "Education Technology Expertise",
+      "description": "We develop comprehensive EdTech solutions that transform traditional education into interactive, accessible, and effective learning experiences. From K-12 to higher education and corporate training, our platforms engage learners and simplify administration.",
+      "highlights": [
+        "Learning Management Systems (LMS)",
+        "Virtual classroom and video conferencing",
+        "Student information systems",
+        "Assessment and examination platforms",
+        "Mobile learning applications",
+        "Parent and teacher portals"
+      ]
+    },
+    "services": [
+      {
+        "title": "Learning Management Systems",
+        "description": "Comprehensive LMS platforms with course management, content delivery, assessments, and progress tracking.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Virtual Classrooms",
+        "description": "Interactive online classrooms with live video, screen sharing, whiteboards, breakout rooms, and recording.",
+        "icon": "cloud"
+      },
+      {
+        "title": "Student Information Systems",
+        "description": "Complete student lifecycle management including enrollment, attendance, grades, and academic records.",
+        "icon": "database"
+      },
+      {
+        "title": "Assessment Platforms",
+        "description": "Online testing and examination systems with auto-grading, proctoring, and detailed analytics.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Mobile Learning Apps",
+        "description": "Native iOS and Android apps for on-the-go learning with offline content and push notifications.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Parent-Teacher Portals",
+        "description": "Communication platforms connecting parents, teachers, and students with messaging and progress updates.",
+        "icon": "users"
+      }
+    ],
+    "technologies": [
+      "Moodle",
+      "Canvas LMS",
+      "Zoom SDK",
+      "WebRTC",
+      "Xapi (Tin Can)",
+      "SCORM",
+      "AWS Educate",
+      "React",
+      "React Native",
+      "Node.js",
+      "Python",
+      "MongoDB"
+    ],
+    "benefits": [
+      "Increase student engagement and outcomes",
+      "Enable remote and hybrid learning",
+      "Automate administrative tasks",
+      "Provide personalized learning paths",
+      "Improve parent-teacher communication",
+      "Track student progress in real-time",
+      "Reduce operational costs",
+      "Scale to support growing enrollment"
+    ]
+  },
+  "lifestyle/pet-care": {
+    "slug": "lifestyle/pet-care",
+    "title": "Pet Care Technology Solutions",
+    "name": "Pet Care",
+    "description": "Build innovative pet care platforms for veterinary services, pet stores, grooming, and pet parent communities.",
+    "hero": {
+      "heading": "Modernize Pet Care with Digital Solutions",
+      "description": "Create comprehensive pet care platforms that connect pet parents with veterinarians, groomers, trainers, and pet services."
+    },
+    "overview": {
+      "title": "Pet Care Technology Partner",
+      "description": "We develop technology solutions for the growing pet care industry, helping veterinary clinics, pet stores, grooming services, and pet care providers deliver exceptional experiences to pet parents while streamlining their operations.",
+      "highlights": [
+        "Veterinary practice management",
+        "Pet health and wellness tracking",
+        "Grooming and boarding booking systems",
+        "Pet adoption platforms",
+        "E-commerce for pet supplies",
+        "Telemedicine for pets"
+      ]
+    },
+    "services": [
+      {
+        "title": "Veterinary Management Software",
+        "description": "Complete practice management with appointments, medical records, prescriptions, billing, and inventory.",
+        "icon": "heart"
+      },
+      {
+        "title": "Pet Health Tracking Apps",
+        "description": "Mobile apps for pet parents to track vaccinations, medications, vet visits, and health metrics.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Booking & Scheduling",
+        "description": "Online booking systems for grooming, boarding, training, and veterinary appointments.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Pet Adoption Platforms",
+        "description": "Connect shelters, rescues, and adopters with searchable databases and application management.",
+        "icon": "users"
+      },
+      {
+        "title": "Pet Supply E-commerce",
+        "description": "Online stores for pet food, toys, and accessories with subscription and delivery options.",
+        "icon": "shoppingcart"
+      },
+      {
+        "title": "Telemedicine for Pets",
+        "description": "Virtual consultations between pet parents and veterinarians with video calls and chat.",
+        "icon": "cloud"
+      }
+    ],
+    "technologies": [
+      "React Native",
+      "Node.js",
+      "MongoDB",
+      "Stripe",
+      "Twilio",
+      "AWS",
+      "Firebase",
+      "WebRTC",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "benefits": [
+      "Improve pet parent engagement",
+      "Streamline veterinary operations",
+      "Enable telemedicine consultations",
+      "Increase booking and appointment rates",
+      "Automate reminders and notifications",
+      "Build loyal customer communities",
+      "Grow revenue through subscriptions",
+      "Provide 24/7 access to pet care resources"
+    ]
+  },
+  "real-estate/real-estate": {
+    "slug": "real-estate/real-estate",
+    "title": "Real Estate Technology Solutions",
+    "name": "Real Estate",
+    "description": "Transform real estate with property management platforms, listing portals, and virtual tour solutions.",
+    "hero": {
+      "heading": "Digitize Real Estate Operations",
+      "description": "Build modern real estate platforms that connect buyers, sellers, agents, and property managers with powerful digital tools."
+    },
+    "overview": {
+      "title": "Real Estate Technology Expertise",
+      "description": "We develop comprehensive real estate technology solutions that streamline property management, enhance listing visibility, facilitate transactions, and improve communication between all stakeholders in the real estate ecosystem.",
+      "highlights": [
+        "Property management platforms",
+        "Real estate listing portals",
+        "Virtual tours and 3D visualization",
+        "Agent and broker CRM systems",
+        "Tenant and lease management",
+        "Real estate investment platforms"
+      ]
+    },
+    "services": [
+      {
+        "title": "Property Management Systems",
+        "description": "Complete property management with tenant screening, lease management, rent collection, and maintenance tracking.",
+        "icon": "database"
+      },
+      {
+        "title": "Real Estate Listing Portals",
+        "description": "Advanced search and filtering, map integration, saved searches, and property alerts for buyers and renters.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Virtual Tours & 3D Visualization",
+        "description": "Immersive 360° virtual tours, 3D floor plans, and augmented reality property viewing.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Agent CRM & Lead Management",
+        "description": "Customer relationship management for real estate agents with lead tracking and automated follow-ups.",
+        "icon": "users"
+      },
+      {
+        "title": "Tenant Portal",
+        "description": "Self-service portals for tenants to pay rent, submit maintenance requests, and access documents.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Investment Analysis Tools",
+        "description": "Real estate investment platforms with property analysis, ROI calculators, and portfolio management.",
+        "icon": "lock"
+      }
+    ],
+    "technologies": [
+      "Mapbox",
+      "Google Maps API",
+      "Matterport",
+      "Zillow API",
+      "MLS Integration",
+      "Stripe",
+      "AWS",
+      "React",
+      "React Native",
+      "Node.js",
+      "PostgreSQL"
+    ],
+    "benefits": [
+      "Increase property visibility and leads",
+      "Streamline tenant management",
+      "Automate rent collection and accounting",
+      "Enable virtual property viewings",
+      "Improve agent productivity",
+      "Reduce vacancy rates",
+      "Enhance property marketing",
+      "Simplify transaction management"
     ]
   },
   "infrastructure/logistics": {
     "slug": "infrastructure/logistics",
     "title": "Logistics & Supply Chain",
+    "name": "Logistics",
     "description": "Digitize logistics and streamline supply chains with data-driven technology.",
     "hero": {
       "heading": "Optimize Logistics Operations",
-      "description": "We build intelligent logistics software that improves delivery efficiency and visibility.",
-      "gradient": "from-orange-500 to-yellow-600"
+      "description": "Build intelligent logistics software that improves delivery efficiency, reduces costs, and provides real-time visibility across your supply chain."
     },
-    "features": [
-      { "title": "Fleet Tracking", "description": "Monitor and manage fleets in real-time.", "icon": "truck" },
-      { "title": "Route Optimization", "description": "Save fuel and time with AI-based routing.", "icon": "lightbulb" },
-      { "title": "Inventory Control", "description": "Track goods across warehouses and locations.", "icon": "database" }
+    "overview": {
+      "title": "Logistics Technology Solutions",
+      "description": "We develop comprehensive logistics and supply chain management solutions that optimize operations, reduce costs, and improve delivery performance. From fleet management to warehouse automation, our solutions cover the entire logistics ecosystem.",
+      "highlights": [
+        "Transportation management systems (TMS)",
+        "Warehouse management systems (WMS)",
+        "Fleet tracking and management",
+        "Route optimization and planning",
+        "Last-mile delivery solutions",
+        "Supply chain visibility platforms"
+      ]
+    },
+    "services": [
+      {
+        "title": "Fleet Management Systems",
+        "description": "Real-time GPS tracking, vehicle diagnostics, driver behavior monitoring, and fuel management.",
+        "icon": "truck"
+      },
+      {
+        "title": "Route Optimization",
+        "description": "AI-powered route planning that reduces fuel costs, delivery times, and carbon emissions.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Warehouse Management",
+        "description": "Inventory control, pick-pack-ship automation, barcode scanning, and warehouse layout optimization.",
+        "icon": "database"
+      },
+      {
+        "title": "Last-Mile Delivery",
+        "description": "Customer-facing delivery tracking, proof of delivery, real-time ETAs, and delivery notifications.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Supply Chain Visibility",
+        "description": "End-to-end tracking of goods across suppliers, warehouses, carriers, and customers.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Freight Management",
+        "description": "Load planning, carrier selection, freight auditing, and freight payment automation.",
+        "icon": "lock"
+      }
+    ],
+    "technologies": [
+      "IoT Sensors",
+      "GPS Tracking",
+      "RFID",
+      "Barcode Systems",
+      "AWS IoT",
+      "Azure IoT",
+      "Kafka",
+      "Redis",
+      "PostgreSQL",
+      "React",
+      "Node.js",
+      "Python"
     ],
     "benefits": [
       "Cut operational costs by 25%",
-      "Improve delivery times",
-      "Real-time analytics dashboard",
-      "Integrated IoT device tracking"
+      "Improve on-time delivery rates",
+      "Reduce fuel consumption and emissions",
+      "Increase warehouse efficiency",
+      "Real-time visibility across operations",
+      "Automate manual processes",
+      "Optimize inventory levels",
+      "Enhance customer satisfaction"
+    ]
+  },
+  "travel-hospitality/travel": {
+    "slug": "travel-hospitality/travel",
+    "title": "Travel & Hospitality Solutions",
+    "name": "Travel & Hospitality",
+    "description": "Transform travel and hospitality with booking platforms, guest management systems, and personalized experiences.",
+    "hero": {
+      "heading": "Elevate Travel & Hospitality Experiences",
+      "description": "Build innovative travel platforms that streamline bookings, enhance guest experiences, and drive operational efficiency."
+    },
+    "overview": {
+      "title": "Travel Technology Expertise",
+      "description": "We develop comprehensive travel and hospitality technology solutions that help hotels, resorts, travel agencies, tour operators, and hospitality businesses deliver exceptional guest experiences while optimizing operations and revenue.",
+      "highlights": [
+        "Hotel booking and reservation systems",
+        "Property management systems (PMS)",
+        "Travel agency and tour operator platforms",
+        "Guest experience and loyalty programs",
+        "Restaurant and catering management",
+        "Revenue management and analytics"
+      ]
+    },
+    "services": [
+      {
+        "title": "Hotel Booking Systems",
+        "description": "Online booking engines with real-time availability, dynamic pricing, and seamless payment integration.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Property Management Systems",
+        "description": "Complete PMS with reservations, front desk operations, housekeeping, and guest services management.",
+        "icon": "database"
+      },
+      {
+        "title": "Travel Planning Platforms",
+        "description": "Trip planning and itinerary management with flight, hotel, and activity bookings in one platform.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Guest Experience Apps",
+        "description": "Mobile apps for contactless check-in, room service, concierge, and personalized recommendations.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Restaurant Management",
+        "description": "Table reservations, menu management, POS integration, and kitchen display systems.",
+        "icon": "users"
+      },
+      {
+        "title": "Loyalty & Rewards Programs",
+        "description": "Customer loyalty programs with points, rewards, tier management, and personalized offers.",
+        "icon": "heart"
+      }
+    ],
+    "technologies": [
+      "Amadeus API",
+      "Sabre GDS",
+      "Booking.com API",
+      "Stripe",
+      "AWS Travel",
+      "React Native",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "Elasticsearch"
+    ],
+    "benefits": [
+      "Increase direct bookings and reduce OTA commissions",
+      "Improve guest satisfaction scores",
+      "Optimize revenue with dynamic pricing",
+      "Streamline hotel operations",
+      "Enable contactless guest experiences",
+      "Build guest loyalty and repeat business",
+      "Provide personalized recommendations",
+      "Reduce no-shows and cancellations"
+    ]
+  },
+  "agriculture/agritech": {
+    "slug": "agriculture/agritech",
+    "title": "Agricultural Technology Solutions",
+    "name": "Agritech",
+    "description": "Modernize agriculture with smart farming platforms, crop management systems, and supply chain solutions.",
+    "hero": {
+      "heading": "Transform Agriculture with Technology",
+      "description": "Build innovative agritech solutions that increase yields, reduce costs, and promote sustainable farming practices."
+    },
+    "overview": {
+      "title": "Agritech Innovation Partner",
+      "description": "We develop technology solutions for modern agriculture, helping farmers, agribusinesses, and agricultural cooperatives leverage IoT, AI, and data analytics to optimize crop production, manage resources efficiently, and improve supply chain operations.",
+      "highlights": [
+        "Precision farming and crop monitoring",
+        "Farm management software",
+        "Agricultural marketplace platforms",
+        "Livestock management systems",
+        "Supply chain and traceability",
+        "Weather and soil analytics"
+      ]
+    },
+    "services": [
+      {
+        "title": "Farm Management Systems",
+        "description": "Complete farm operations management with crop planning, field mapping, inventory, and financial tracking.",
+        "icon": "database"
+      },
+      {
+        "title": "Precision Agriculture",
+        "description": "IoT sensors for soil monitoring, irrigation automation, crop health tracking, and yield prediction.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Agricultural Marketplaces",
+        "description": "B2B and B2C platforms connecting farmers with buyers, suppliers, and distributors.",
+        "icon": "users"
+      },
+      {
+        "title": "Livestock Management",
+        "description": "Track animal health, feeding schedules, breeding records, and veterinary care.",
+        "icon": "heart"
+      },
+      {
+        "title": "Supply Chain Traceability",
+        "description": "Track produce from farm to table with blockchain-based traceability and quality assurance.",
+        "icon": "lock"
+      },
+      {
+        "title": "Weather & Analytics",
+        "description": "Weather forecasting, soil analysis, pest prediction, and AI-powered farming recommendations.",
+        "icon": "cloud"
+      }
+    ],
+    "technologies": [
+      "IoT Sensors",
+      "Blockchain",
+      "Satellite Imagery",
+      "AI & ML",
+      "AWS IoT",
+      "TensorFlow",
+      "React Native",
+      "Node.js",
+      "Python",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "benefits": [
+      "Increase crop yields by 30%",
+      "Reduce water and fertilizer usage",
+      "Lower operational costs",
+      "Enable data-driven farming decisions",
+      "Improve supply chain transparency",
+      "Optimize resource allocation",
+      "Predict and prevent crop diseases",
+      "Connect farmers directly with markets"
     ]
   },
   "media-entertainment/sports-events": {
     "slug": "media-entertainment/sports-events",
     "title": "Sports & Events Solutions",
+    "name": "Sports & Events",
     "description": "Deliver engaging fan experiences and event management tools for the modern era.",
     "hero": {
       "heading": "Empowering Sports and Events Digitally",
-      "description": "From ticketing platforms to fan engagement apps — we bring innovation to sports and entertainment.",
-      "gradient": "from-indigo-600 to-blue-700"
+      "description": "Create innovative platforms for ticketing, fan engagement, event management, and sports analytics."
     },
-    "features": [
-      { "title": "Ticketing Platforms", "description": "Seamless ticket booking and payment systems.", "icon": "trophy" },
-      { "title": "Fan Engagement", "description": "Interactive features to boost audience loyalty.", "icon": "users" },
-      { "title": "Analytics & Insights", "description": "Data-driven decisions for teams and organizers.", "icon": "lightbulb" }
+    "overview": {
+      "title": "Sports & Events Technology",
+      "description": "We develop comprehensive sports and events technology solutions that enhance fan experiences, streamline event operations, and provide data-driven insights for teams, venues, and organizers.",
+      "highlights": [
+        "Ticketing and event management",
+        "Fan engagement and mobile apps",
+        "Sports analytics and performance tracking",
+        "Venue and stadium management",
+        "Live streaming and broadcasting",
+        "Merchandise and concession systems"
+      ]
+    },
+    "services": [
+      {
+        "title": "Ticketing Platforms",
+        "description": "Seamless ticket booking with seat selection, dynamic pricing, season passes, and digital wallet integration.",
+        "icon": "trophy"
+      },
+      {
+        "title": "Fan Engagement Apps",
+        "description": "Mobile apps with live scores, player stats, social features, polls, and exclusive content.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Event Management",
+        "description": "Complete event planning with vendor management, scheduling, staff coordination, and real-time dashboards.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Sports Analytics",
+        "description": "Performance tracking, player statistics, game analysis, and predictive analytics for teams.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Venue Management",
+        "description": "Stadium operations including access control, crowd management, concessions, and parking.",
+        "icon": "database"
+      },
+      {
+        "title": "Live Streaming",
+        "description": "Multi-platform live streaming with real-time stats overlay, multiple camera angles, and replay features.",
+        "icon": "cloud"
+      }
+    ],
+    "technologies": [
+      "Ticketmaster API",
+      "AWS Media",
+      "Wowza Streaming",
+      "React Native",
+      "Node.js",
+      "Redis",
+      "Kafka",
+      "PostgreSQL",
+      "TensorFlow",
+      "Computer Vision"
     ],
     "benefits": [
-      "Boost audience engagement",
-      "Custom branding and monetization options",
-      "Cloud-based scalability",
-      "Enhanced security for transactions"
+      "Boost audience engagement and loyalty",
+      "Increase ticket and merchandise sales",
+      "Streamline event operations",
+      "Provide data-driven insights",
+      "Enable seamless fan experiences",
+      "Monetize digital content",
+      "Reduce operational costs",
+      "Enhance venue safety and security"
     ]
   }
 }
