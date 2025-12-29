@@ -17,6 +17,9 @@ import BlogPage from './pages/Blogs';
 import BlogDetailPage from './pages/BlogDetailPage';
 import ContactPage from './pages/Contact';
 import FreeToolPage from './pages/FreeToolPage';
+import SEOAnalyzerTool from './pages/tools/SEOAnalyzerTool';
+import WebsiteSpeedTestTool from './pages/tools/WebsiteSpeedTestTool';
+import TechStackAdvisorTool from './pages/tools/TechStackAdvisorTool';
 import PricingPage from './pages/PricingPage';
 
 import RequestQuotePage from './pages/RequestQuotePage';
@@ -75,6 +78,11 @@ function App() {
           <Route path="/resources/case-studies" element={<CaseStudiesPage />} />
           <Route path="/resources/faqs" element={<FaqPage />} />
           <Route path="/resources/free-development-tools" element={<FreeToolPage />} />
+
+          {/* === TOOLS === */}
+          <Route path="/tools/seo-analyzer" element={<SEOAnalyzerTool />} />
+          <Route path="/tools/website-speed-test" element={<WebsiteSpeedTestTool />} />
+          <Route path="/tools/tech-stack-advisor" element={<TechStackAdvisorTool />} />
 
           {/* === LEGAL === */}
           <Route path="/legal/privacy-policy" element={<PrivacyPolicyPage />} />
