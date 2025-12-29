@@ -1,5 +1,5 @@
 import { useState, FormEvent } from 'react';
-import { Send, CheckCircle, Clock, Users, Award, TrendingUp, Zap, Shield, Code, Globe } from 'lucide-react';
+import { Send, CheckCircle, Users, Zap, Shield, Code, Globe } from 'lucide-react';
 
 const RequestQuotePage = () => {
   const [formData, setFormData] = useState({
@@ -15,13 +15,6 @@ const RequestQuotePage = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  const stats = [
-    { icon: Users, value: '1,400+', label: 'Satisfied Clients', color: 'from-black to-gray-700' },
-    { icon: Award, value: '4,200+', label: 'Projects Delivered', color: 'from-gray-800 to-black' },
-    { icon: Clock, value: '<48hrs', label: 'Response Time', color: 'from-black to-gray-600' },
-    { icon: TrendingUp, value: '99%', label: 'Success Rate', color: 'from-gray-700 to-black' },
-  ];
 
   const services = [
     'Web Development',
@@ -122,25 +115,6 @@ const RequestQuotePage = () => {
             <p className="text-xl text-gray-200 max-w-2xl mx-auto">
               Get a detailed quote for custom software development, web applications, mobile apps, cloud solutions, AI development, or IT consulting services - Free consultation and transparent pricing for your project
             </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-xl p-6 transform hover:-translate-y-2 transition-all duration-300"
-              >
-                <div className={`w-12 h-12 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center mb-4`}>
-                  <stat.icon className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-3xl font-bold text-black mb-1">{stat.value}</div>
-                <div className="text-sm text-gray-600">{stat.label}</div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
