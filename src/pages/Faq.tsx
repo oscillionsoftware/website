@@ -6,13 +6,6 @@ const FaqPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
-  const stats = [
-    { icon: HelpCircle, value: '100+', label: 'Questions Answered', color: 'from-black to-gray-700' },
-    { icon: Users, value: '1,400+', label: 'Satisfied Clients', color: 'from-gray-800 to-black' },
-    { icon: MessageCircle, value: '24/7', label: 'Support Available', color: 'from-black to-gray-600' },
-    { icon: Phone, value: '<2hrs', label: 'Response Time', color: 'from-gray-700 to-black' },
-  ];
-
   const categories = [
     { id: 'all', name: 'All Questions', icon: HelpCircle },
     { id: 'general', name: 'General', icon: MessageCircle },
@@ -188,24 +181,6 @@ const FaqPage = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl shadow-xl p-6 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className={`w-12 h-12 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center mb-4`}>
-                <stat.icon className="w-6 h-6 text-white" />
-              </div>
-              <div className="text-3xl font-bold text-black mb-1">{stat.value}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
-            </div>
-          ))}
         </div>
       </div>
 
