@@ -531,6 +531,174 @@
             "starting": "₹5,00,000",
             "duration": "12-16 weeks"
           }
+        },
+        {
+          "id": "wordpress-development",
+          "name": "WordPress Development",
+          "slug": "wordpress",
+          "shortDesc": "Custom WordPress websites and plugins for flexible content management.",
+          "longDesc": "Build powerful, flexible websites with WordPress. From custom themes to complex plugins, we create WordPress solutions that are easy to manage and scale with your business needs.",
+          "icon": "globe",
+          "features": [
+            "Custom Theme Development",
+            "Plugin Development",
+            "WooCommerce Integration",
+            "SEO Optimization",
+            "Performance Optimization",
+            "Security Hardening"
+          ],
+          "benefits": [
+            "Easy content management",
+            "Extensive plugin ecosystem",
+            "SEO-friendly",
+            "Cost-effective"
+          ],
+          "technologies": ["WordPress", "PHP", "MySQL", "WooCommerce", "Elementor"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹1,50,000",
+            "duration": "4-8 weeks"
+          }
+        },
+        {
+          "id": "magento-development",
+          "name": "Magento Development",
+          "slug": "magento",
+          "shortDesc": "Enterprise e-commerce solutions with Magento platform.",
+          "longDesc": "Create powerful e-commerce stores with Magento. Our Magento experts build scalable, feature-rich online stores that handle complex product catalogs and high-volume transactions.",
+          "icon": "globe",
+          "features": [
+            "Custom Magento Development",
+            "Multi-Store Setup",
+            "Payment Gateway Integration",
+            "Inventory Management",
+            "Extension Development",
+            "Performance Optimization"
+          ],
+          "benefits": [
+            "Enterprise-grade features",
+            "Highly scalable",
+            "Advanced catalog management",
+            "Multi-currency support"
+          ],
+          "technologies": ["Magento 2", "PHP", "MySQL", "Elasticsearch", "Redis"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹6,00,000",
+            "duration": "12-16 weeks"
+          }
+        },
+        {
+          "id": "joomla-development",
+          "name": "Joomla Development",
+          "slug": "joomla",
+          "shortDesc": "Flexible CMS solutions with Joomla for complex websites.",
+          "longDesc": "Develop feature-rich websites with Joomla CMS. Perfect for complex websites requiring advanced user management, multilingual support, and flexible content organization.",
+          "icon": "globe",
+          "features": [
+            "Custom Template Development",
+            "Extension Development",
+            "Multilingual Sites",
+            "User Management",
+            "SEO Configuration",
+            "Third-party Integration"
+          ],
+          "benefits": [
+            "Flexible architecture",
+            "Strong user management",
+            "Multilingual ready",
+            "Active community"
+          ],
+          "technologies": ["Joomla 4", "PHP", "MySQL", "Bootstrap", "jQuery"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹2,00,000",
+            "duration": "6-10 weeks"
+          }
+        },
+        {
+          "id": "shopify-development",
+          "name": "Shopify Development",
+          "slug": "shopify",
+          "shortDesc": "Fast, secure e-commerce stores with Shopify platform.",
+          "longDesc": "Launch your online store quickly with Shopify. We create custom Shopify themes and apps that help you sell products online with ease and grow your e-commerce business.",
+          "icon": "globe",
+          "features": [
+            "Custom Theme Development",
+            "Shopify App Development",
+            "Payment Integration",
+            "Product Management",
+            "Store Migration",
+            "Marketing Integration"
+          ],
+          "benefits": [
+            "Quick launch",
+            "Secure & reliable",
+            "Easy to manage",
+            "Built-in payments"
+          ],
+          "technologies": ["Shopify", "Liquid", "React", "GraphQL", "Node.js"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹2,50,000",
+            "duration": "4-8 weeks"
+          }
+        },
+        {
+          "id": "opencart-development",
+          "name": "OpenCart Development",
+          "slug": "opencart",
+          "shortDesc": "Open-source e-commerce solutions with OpenCart.",
+          "longDesc": "Build cost-effective online stores with OpenCart. This open-source e-commerce platform offers flexibility and ease of use, perfect for small to medium-sized businesses.",
+          "icon": "globe",
+          "features": [
+            "Custom Theme Design",
+            "Module Development",
+            "Payment Gateway Setup",
+            "Multi-Store Management",
+            "SEO Optimization",
+            "Shipping Integration"
+          ],
+          "benefits": [
+            "Cost-effective",
+            "Easy to use",
+            "Lightweight",
+            "Open source"
+          ],
+          "technologies": ["OpenCart", "PHP", "MySQL", "Bootstrap", "jQuery"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹1,80,000",
+            "duration": "6-8 weeks"
+          }
+        },
+        {
+          "id": "drupal-development",
+          "name": "Drupal Development",
+          "slug": "drupal",
+          "shortDesc": "Enterprise CMS solutions with Drupal for complex requirements.",
+          "longDesc": "Create robust, enterprise-level websites with Drupal. Perfect for complex content structures, high security requirements, and sites that need advanced customization capabilities.",
+          "icon": "globe",
+          "features": [
+            "Custom Module Development",
+            "Theme Development",
+            "Multi-site Setup",
+            "Content Architecture",
+            "API Development",
+            "Security Implementation"
+          ],
+          "benefits": [
+            "Enterprise security",
+            "Highly flexible",
+            "Scalable architecture",
+            "Strong community"
+          ],
+          "technologies": ["Drupal 10", "PHP", "MySQL", "Symfony", "Twig"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,50,000",
+            "duration": "10-14 weeks"
+          }
         }
       ]
     },
@@ -624,6 +792,90 @@
             "model": "Fixed Price",
             "starting": "₹4,50,000",
             "duration": "10-12 weeks"
+          }
+        },
+        {
+          "id": "flutter-development",
+          "name": "Flutter Development",
+          "slug": "flutter",
+          "shortDesc": "Beautiful native apps from a single codebase with Flutter.",
+          "longDesc": "Build stunning, natively compiled applications for mobile, web, and desktop from a single codebase using Flutter. Our Flutter experts create high-performance apps with beautiful, customizable UI.",
+          "icon": "smartphone",
+          "features": [
+            "Cross-Platform Development",
+            "Hot Reload",
+            "Custom Widget Development",
+            "Native Performance",
+            "Material & Cupertino Design",
+            "State Management"
+          ],
+          "benefits": [
+            "Fast development",
+            "Beautiful UI",
+            "Native performance",
+            "Single codebase"
+          ],
+          "technologies": ["Flutter", "Dart", "Firebase", "Provider", "Bloc"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹4,00,000",
+            "duration": "10-12 weeks"
+          }
+        },
+        {
+          "id": "cross-platform",
+          "name": "Cross Platform Development",
+          "slug": "cross-platform",
+          "shortDesc": "Multi-platform mobile solutions with shared codebase.",
+          "longDesc": "Develop applications that run seamlessly across iOS, Android, and other platforms from a single codebase. Save time and resources while reaching wider audiences with cross-platform development.",
+          "icon": "smartphone",
+          "features": [
+            "Multi-Platform Support",
+            "Shared Codebase",
+            "Native API Access",
+            "Platform-Specific Customization",
+            "Cost-Effective Development",
+            "Unified Maintenance"
+          ],
+          "benefits": [
+            "Reduced development cost",
+            "Faster time to market",
+            "Easier maintenance",
+            "Wider reach"
+          ],
+          "technologies": ["React Native", "Flutter", "Xamarin", "Ionic", "Cordova"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,80,000",
+            "duration": "10-12 weeks"
+          }
+        },
+        {
+          "id": "wearable-development",
+          "name": "Wearable App Development",
+          "slug": "wearable",
+          "shortDesc": "Smart applications for wearable devices and IoT.",
+          "longDesc": "Create innovative applications for smartwatches, fitness trackers, and other wearable devices. We build wearable apps that provide seamless experiences on Apple Watch, Wear OS, and other platforms.",
+          "icon": "smartphone",
+          "features": [
+            "Apple Watch Apps",
+            "Wear OS Development",
+            "Fitness Tracker Integration",
+            "Health Monitoring",
+            "Sensor Integration",
+            "Companion App Development"
+          ],
+          "benefits": [
+            "Enhanced user engagement",
+            "Health & fitness tracking",
+            "Real-time notifications",
+            "IoT connectivity"
+          ],
+          "technologies": ["WatchOS", "Wear OS", "Swift", "Kotlin", "HealthKit"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,50,000",
+            "duration": "8-10 weeks"
           }
         }
       ]
