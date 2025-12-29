@@ -72,7 +72,6 @@ const DynamicServicePage = () => {
         badge={serviceCategory.name}
         title={service.name}
         subtitle={service.longDesc}
-        icon={<Icon className="w-10 h-10 sm:w-12 sm:h-12 text-white" />}
       />
 
       {/* Overview Section */}

@@ -9,6 +9,34 @@
       "color": "from-black to-gray-800",
       "services": [
         {
+          "id": "ai-overview",
+          "name": "Generative AI Overview",
+          "slug": "overview",
+          "shortDesc": "Discover the power of generative AI and how it can transform your business operations.",
+          "longDesc": "Explore the world of Generative AI and understand how cutting-edge artificial intelligence can revolutionize your business. From content creation to process automation, generative AI offers unprecedented opportunities for innovation and efficiency.",
+          "icon": "sparkles",
+          "features": [
+            "AI-Powered Content Generation",
+            "Automated Creative Workflows",
+            "Intelligent Data Analysis",
+            "Natural Language Processing",
+            "Computer Vision Applications",
+            "Predictive Modeling"
+          ],
+          "benefits": [
+            "Transform business operations with AI",
+            "Automate repetitive tasks",
+            "Generate insights from data",
+            "Enhance customer experiences"
+          ],
+          "technologies": ["GPT-4", "DALL-E", "Midjourney", "Claude", "Stable Diffusion"],
+          "pricing": {
+            "model": "Consultation",
+            "starting": "Free",
+            "duration": "1-2 hours"
+          }
+        },
+        {
           "id": "ai-strategy",
           "name": "AI Strategy Consulting",
           "slug": "ai-strategy-consulting",
@@ -103,6 +131,34 @@
       "color": "from-gray-800 to-black",
       "services": [
         {
+          "id": "cloud-overview",
+          "name": "Cloud Services Overview",
+          "slug": "overview",
+          "shortDesc": "Comprehensive cloud computing solutions for modern businesses.",
+          "longDesc": "Discover how cloud services can transform your business infrastructure. We provide expertise across all major cloud platforms including AWS, Azure, and Google Cloud Platform to help you build scalable, secure, and cost-effective solutions.",
+          "icon": "cloud",
+          "features": [
+            "Multi-Cloud Strategy",
+            "Cloud Migration Planning",
+            "Infrastructure as Code",
+            "Cost Optimization",
+            "Security & Compliance",
+            "Disaster Recovery"
+          ],
+          "benefits": [
+            "Reduced infrastructure costs",
+            "Improved scalability",
+            "Enhanced security",
+            "Global reach and availability"
+          ],
+          "technologies": ["AWS", "Azure", "GCP", "Docker", "Kubernetes"],
+          "pricing": {
+            "model": "Consultation",
+            "starting": "Free",
+            "duration": "1-2 hours"
+          }
+        },
+        {
           "id": "aws-solutions",
           "name": "AWS Solutions",
           "slug": "aws-solutions",
@@ -196,6 +252,202 @@
       "description": "Custom web applications built with modern frameworks for optimal performance.",
       "color": "from-black to-gray-700",
       "services": [
+        {
+          "id": "php-development",
+          "name": "PHP Development",
+          "slug": "php",
+          "shortDesc": "Robust and scalable web applications built with PHP.",
+          "longDesc": "Build powerful server-side web applications with PHP. Our experienced PHP developers create secure, scalable solutions using modern PHP frameworks and best practices for optimal performance.",
+          "icon": "code",
+          "features": [
+            "Custom PHP Development",
+            "MVC Architecture",
+            "RESTful API Development",
+            "Database Integration",
+            "Security Implementation",
+            "Performance Optimization"
+          ],
+          "benefits": [
+            "Cost-effective development",
+            "Wide hosting support",
+            "Strong community",
+            "Rapid development"
+          ],
+          "technologies": ["PHP 8+", "MySQL", "PostgreSQL", "Composer", "PHPUnit"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹2,00,000",
+            "duration": "6-10 weeks"
+          }
+        },
+        {
+          "id": "mean-stack",
+          "name": "MEAN Stack Development",
+          "slug": "mean-stack",
+          "shortDesc": "Full-stack JavaScript solutions with MongoDB, Express, Angular, and Node.js.",
+          "longDesc": "Leverage the power of the MEAN stack for end-to-end JavaScript development. Build modern, scalable web applications using MongoDB, Express.js, Angular, and Node.js in a unified development environment.",
+          "icon": "layers",
+          "features": [
+            "Full Stack JavaScript",
+            "MongoDB Database Design",
+            "Express.js API Development",
+            "Angular Frontend",
+            "Real-time Applications",
+            "Single Page Applications"
+          ],
+          "benefits": [
+            "Unified language stack",
+            "High performance",
+            "Scalable architecture",
+            "Rich ecosystem"
+          ],
+          "technologies": ["MongoDB", "Express.js", "Angular", "Node.js", "TypeScript"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹4,50,000",
+            "duration": "10-14 weeks"
+          }
+        },
+        {
+          "id": "angularjs-development",
+          "name": "Angular JS Development",
+          "slug": "angularjs",
+          "shortDesc": "Dynamic single-page applications with Angular framework.",
+          "longDesc": "Create powerful, dynamic web applications with Angular. Our Angular experts build enterprise-grade applications with TypeScript, following best practices for maintainable and scalable solutions.",
+          "icon": "code",
+          "features": [
+            "Angular 17+ Development",
+            "Component-Based Architecture",
+            "TypeScript Development",
+            "Reactive Programming with RxJS",
+            "Material Design Integration",
+            "Progressive Web Apps"
+          ],
+          "benefits": [
+            "Enterprise-grade applications",
+            "Strong typing with TypeScript",
+            "Comprehensive framework",
+            "Google-backed support"
+          ],
+          "technologies": ["Angular", "TypeScript", "RxJS", "Angular Material", "NgRx"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,50,000",
+            "duration": "8-12 weeks"
+          }
+        },
+        {
+          "id": "python-web",
+          "name": "Python Web Development",
+          "slug": "python-web",
+          "shortDesc": "Powerful web applications built with Python frameworks.",
+          "longDesc": "Develop robust web applications using Python's powerful frameworks. Whether it's Django, Flask, or FastAPI, we create scalable, secure web solutions tailored to your business needs.",
+          "icon": "code",
+          "features": [
+            "Django & Flask Development",
+            "RESTful API Design",
+            "Database ORM Integration",
+            "Authentication & Authorization",
+            "Admin Panel Development",
+            "Third-party Integrations"
+          ],
+          "benefits": [
+            "Rapid development",
+            "Clean, readable code",
+            "Extensive libraries",
+            "Strong security features"
+          ],
+          "technologies": ["Python", "Django", "Flask", "FastAPI", "PostgreSQL"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,00,000",
+            "duration": "8-12 weeks"
+          }
+        },
+        {
+          "id": "codeigniter-development",
+          "name": "CodeIgniter Development",
+          "slug": "codeigniter",
+          "shortDesc": "Lightweight and powerful PHP framework for rapid development.",
+          "longDesc": "Build fast, lightweight web applications with CodeIgniter. This powerful PHP framework enables rapid development while maintaining flexibility and performance.",
+          "icon": "code",
+          "features": [
+            "MVC Architecture",
+            "Lightweight Framework",
+            "Database Abstraction",
+            "Form Validation",
+            "Security Features",
+            "Session Management"
+          ],
+          "benefits": [
+            "Fast development cycle",
+            "Small footprint",
+            "Easy to learn",
+            "Excellent documentation"
+          ],
+          "technologies": ["CodeIgniter 4", "PHP", "MySQL", "Bootstrap", "jQuery"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹1,80,000",
+            "duration": "6-8 weeks"
+          }
+        },
+        {
+          "id": "laravel-development",
+          "name": "Laravel Development",
+          "slug": "laravel",
+          "shortDesc": "Elegant PHP framework for modern web applications.",
+          "longDesc": "Create beautiful, elegant web applications with Laravel. This modern PHP framework provides expressive syntax and powerful tools for building scalable applications with clean, maintainable code.",
+          "icon": "code",
+          "features": [
+            "Eloquent ORM",
+            "Blade Templating",
+            "RESTful Routing",
+            "Authentication System",
+            "Queue Management",
+            "Task Scheduling"
+          ],
+          "benefits": [
+            "Elegant syntax",
+            "Comprehensive ecosystem",
+            "Built-in security",
+            "Active community"
+          ],
+          "technologies": ["Laravel 10", "PHP", "MySQL", "Redis", "Vue.js"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹2,50,000",
+            "duration": "8-10 weeks"
+          }
+        },
+        {
+          "id": "cakephp-development",
+          "name": "CakePHP Development",
+          "slug": "cakephp",
+          "shortDesc": "Rapid development framework following convention over configuration.",
+          "longDesc": "Build web applications quickly with CakePHP's convention over configuration approach. This mature PHP framework provides powerful scaffolding and built-in features for rapid application development.",
+          "icon": "code",
+          "features": [
+            "Convention Over Configuration",
+            "Built-in ORM",
+            "Scaffolding Tools",
+            "Security Components",
+            "Caching Mechanisms",
+            "Email & Validation"
+          ],
+          "benefits": [
+            "Rapid development",
+            "Less configuration",
+            "Strong security",
+            "Stable and mature"
+          ],
+          "technologies": ["CakePHP 5", "PHP", "MySQL", "Bootstrap", "jQuery"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹2,00,000",
+            "duration": "6-10 weeks"
+          }
+        },
         {
           "id": "react-development",
           "name": "React Development",
