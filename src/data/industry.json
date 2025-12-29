@@ -160,29 +160,6 @@
         "Fraud detection and prevention"
       ]
     },
-    "pricing": {
-      "title": "Flexible Pricing Models",
-      "models": [
-        {
-          "name": "Starter Package",
-          "price": "₹2,50,000",
-          "description": "Perfect for small businesses",
-          "features": ["Up to 500 products", "Payment gateway integration", "Mobile responsive", "Basic SEO"]
-        },
-        {
-          "name": "Growth Package",
-          "price": "₹5,00,000",
-          "description": "For growing businesses",
-          "features": ["Unlimited products", "Advanced analytics", "Marketing automation", "Custom integrations"]
-        },
-        {
-          "name": "Enterprise Package",
-          "price": "Custom",
-          "description": "For large-scale operations",
-          "features": ["Multi-store management", "Dedicated support", "Custom development", "SLA guarantees"]
-        }
-      ]
-    },
     "faqs": [
       {
         "question": "What ecommerce platform is best for my business?",
@@ -367,29 +344,6 @@
         "Secure authentication for VIP accounts",
         "Copyright and brand protection",
         "Counterfeit prevention measures"
-      ]
-    },
-    "pricing": {
-      "title": "Fashion-Focused Packages",
-      "models": [
-        {
-          "name": "Boutique Package",
-          "price": "₹3,00,000",
-          "description": "For independent designers and small brands",
-          "features": ["Up to 200 products", "Lookbook feature", "Basic analytics", "Social integration"]
-        },
-        {
-          "name": "Brand Package",
-          "price": "₹6,00,000",
-          "description": "For established fashion brands",
-          "features": ["Unlimited products", "Size recommendations", "AR try-on", "Advanced marketing"]
-        },
-        {
-          "name": "Fashion House Package",
-          "price": "Custom",
-          "description": "For luxury brands and large retailers",
-          "features": ["Multi-brand support", "VIP experiences", "Custom features", "White-glove service"]
-        }
       ]
     },
     "faqs": [
@@ -578,29 +532,6 @@
         "GDPR compliance for customer data"
       ]
     },
-    "pricing": {
-      "title": "Flexible Pricing for Food Businesses",
-      "models": [
-        {
-          "name": "Single Location",
-          "price": "₹1,50,000",
-          "description": "Perfect for independent restaurants",
-          "features": ["Online ordering", "Basic POS integration", "Customer database", "Email notifications"]
-        },
-        {
-          "name": "Multi-Location",
-          "price": "₹4,00,000",
-          "description": "For restaurant chains",
-          "features": ["Centralized management", "Advanced analytics", "Loyalty program", "Marketing automation"]
-        },
-        {
-          "name": "Enterprise Solution",
-          "price": "Custom",
-          "description": "For large-scale operations",
-          "features": ["Custom development", "API access", "Dedicated support", "White-label options"]
-        }
-      ]
-    },
     "faqs": [
       {
         "question": "Can customers order through their own app?",
@@ -785,29 +716,6 @@
         "B2B pricing confidentiality",
         "Fraud prevention systems",
         "Data backup and recovery"
-      ]
-    },
-    "pricing": {
-      "title": "Tailored Pricing Plans",
-      "models": [
-        {
-          "name": "Starter Store",
-          "price": "₹2,00,000",
-          "description": "For small kitchenware businesses",
-          "features": ["Up to 300 products", "Recipe blog", "Basic analytics", "Email marketing"]
-        },
-        {
-          "name": "Professional Store",
-          "price": "₹4,50,000",
-          "description": "For established brands",
-          "features": ["Unlimited products", "Bundle builder", "Gift registry", "Advanced features"]
-        },
-        {
-          "name": "Enterprise Solution",
-          "price": "Custom",
-          "description": "For large retailers and manufacturers",
-          "features": ["B2B portal", "Custom development", "API integrations", "Dedicated support"]
-        }
       ]
     },
     "faqs": [
