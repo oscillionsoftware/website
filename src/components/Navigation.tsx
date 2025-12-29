@@ -236,7 +236,7 @@ const Navigation = () => {
       ],
     },
     { label: 'Products', href: '/products' },
-    { label: 'Pricing', href: '/pricing' },
+    { label: 'Free Tools', href: '/resources/free-development-tools' },
   ];
 
   const handleDropdownToggle = (label: string) => {
