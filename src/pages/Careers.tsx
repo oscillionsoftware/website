@@ -110,13 +110,6 @@ const CareerPage = () => {
     return deptMatch && locMatch;
   });
 
-  const stats = [
-    { icon: Users, value: '750+', label: 'Team Members' },
-    { icon: Target, value: '30+', label: 'Countries' },
-    { icon: Award, value: '4.8/5', label: 'Employee Rating' },
-    { icon: TrendingUp, value: '95%', label: 'Retention Rate' }
-  ];
-
   return (
     <div className="pt-20 bg-white">
       <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-24 overflow-hidden">
@@ -139,22 +132,6 @@ const CareerPage = () => {
               View Open Positions
             </a>
           </div>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl shadow-xl p-6 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp text-center"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <stat.icon className="w-10 h-10 mx-auto mb-3 text-black" />
-              <div className="text-3xl font-bold text-black mb-1">{stat.value}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
-            </div>
-          ))}
         </div>
       </div>
 

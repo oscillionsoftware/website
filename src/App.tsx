@@ -8,6 +8,7 @@ import DynamicServicePage from './pages/DynamicServicePage';
 import DynamicHirePage from './pages/DynamicHirePage';
 import DynamicIndustryPage from './pages/DynamicIndustryPage';
 import DynamicProductPage from './pages/DynamicProductPage';
+import ProductsPage from './pages/ProductsPage';
 import AboutPage from './pages/About';
 import CareerPage from './pages/Careers';
 import TestimonialPage from './pages/Testimonials';
@@ -16,14 +17,14 @@ import BlogPage from './pages/Blogs';
 import BlogDetailPage from './pages/BlogDetailPage';
 import ContactPage from './pages/Contact';
 import FreeToolPage from './pages/FreeToolPage';
+import SEOAnalyzerTool from './pages/tools/SEOAnalyzerTool';
+import WebsiteSpeedTestTool from './pages/tools/WebsiteSpeedTestTool';
+import TechStackAdvisorTool from './pages/tools/TechStackAdvisorTool';
 import PricingPage from './pages/PricingPage';
 
 import RequestQuotePage from './pages/RequestQuotePage';
-import TrainingPage from './pages/TrainingPage';
-import LeadershipPage from './pages/LeadershipPage';
 import CoreValuesPage from './pages/CoreValuesPage';
 import PartnersPage from './pages/PartnersPage';
-import PressMediaPage from './pages/PressMediaPage';
 import LocationsPage from './pages/LocationsPage';
 import EngagementModelsPage from './pages/EngagementModelsPage';
 import ConfidentialityPage from './pages/ConfidentialityPage';
@@ -49,16 +50,13 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/request-quote" element={<RequestQuotePage />} />
           <Route path="/pricing" element={<PricingPage />} />
-          <Route path="/training-programs" element={<TrainingPage />} />
 
           {/* === COMPANY === */}
           <Route path="/company/about" element={<AboutPage />} />
-          <Route path="/company/leadership-team" element={<LeadershipPage />} />
           <Route path="/company/core-values" element={<CoreValuesPage />} />
           <Route path="/company/careers" element={<CareerPage />} />
           <Route path="/company/client-testimonials" element={<TestimonialPage />} />
           <Route path="/company/strategic-partners" element={<PartnersPage />} />
-          <Route path="/company/press-media-center" element={<PressMediaPage />} />
           <Route path="/company/locations" element={<LocationsPage />} />
 
           {/* === SERVICES === */}
@@ -71,7 +69,8 @@ function App() {
           <Route path="/hire/:teamType/:developerType" element={<DynamicHirePage />} />
 
           {/* === PRODUCTS === */}
-          <Route path="/product/:category/:productType" element={<DynamicProductPage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/products/:category/:productType" element={<DynamicProductPage />} />
 
           {/* === RESOURCES === */}
           <Route path="/resources/engagement-models" element={<EngagementModelsPage />} />
@@ -79,6 +78,11 @@ function App() {
           <Route path="/resources/case-studies" element={<CaseStudiesPage />} />
           <Route path="/resources/faqs" element={<FaqPage />} />
           <Route path="/resources/free-development-tools" element={<FreeToolPage />} />
+
+          {/* === TOOLS === */}
+          <Route path="/tools/seo-analyzer" element={<SEOAnalyzerTool />} />
+          <Route path="/tools/website-speed-test" element={<WebsiteSpeedTestTool />} />
+          <Route path="/tools/tech-stack-advisor" element={<TechStackAdvisorTool />} />
 
           {/* === LEGAL === */}
           <Route path="/legal/privacy-policy" element={<PrivacyPolicyPage />} />

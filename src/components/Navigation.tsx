@@ -49,7 +49,6 @@ const Navigation = () => {
           title: 'About',
           items: [
             { label: 'About Us', href: '/company/about' },
-            { label: 'Leadership', href: '/company/leadership-team' },
             { label: 'Our Values', href: '/company/core-values' },
             { label: 'Careers', href: '/company/careers' },
             { label: 'Testimonials', href: '/company/client-testimonials' },
@@ -70,7 +69,6 @@ const Navigation = () => {
             { label: 'Contact Us', href: '/contact' },
             { label: 'Blog', href: '/blog' },
             { label: 'Partners', href: '/company/strategic-partners' },
-            { label: 'Press & Media', href: '/company/press-media-center' },
           ],
         },
       ],
@@ -92,7 +90,7 @@ const Navigation = () => {
         {
           title: 'Cloud Services',
           items: [
-            { label: 'Cloud Services Overview', href: '/services/cloud/aws-solutions' },
+            { label: 'Cloud Services Overview', href: '/services/cloud/overview' },
             { label: 'AWS', href: '/services/cloud/aws-solutions' },
             { label: 'Microsoft Azure', href: '/services/cloud/azure-services' },
             { label: 'Google Cloud Platform (GCP)', href: '/services/cloud/gcp-services' },
@@ -170,8 +168,8 @@ const Navigation = () => {
           title: 'Healthcare & Education',
           items: [
             { label: 'Healthcare', href: '/industry/healthcare-education/healthcare', icon: <Heart className="w-4 h-4" /> },
-            { label: 'Education', href: '/industry/healthcare-education/education', icon: <GraduationCap className="w-4 h-4" /> },
-            { label: 'Pet Care', href: '/industry/healthcare-education/pet-care', icon: <PawPrint className="w-4 h-4" /> },
+            { label: 'Education', href: '/industry/education/education', icon: <GraduationCap className="w-4 h-4" /> },
+            { label: 'Pet Care', href: '/industry/lifestyle/pet-care', icon: <PawPrint className="w-4 h-4" /> },
           ],
         },
         {
@@ -185,10 +183,10 @@ const Navigation = () => {
         {
           title: 'Infrastructure',
           items: [
-            { label: 'Real Estate', href: '/industry/infrastructure/real-estate', icon: <Building2 className="w-4 h-4" /> },
+            { label: 'Real Estate', href: '/industry/real-estate/real-estate', icon: <Building2 className="w-4 h-4" /> },
             { label: 'Logistics', href: '/industry/infrastructure/logistics', icon: <Truck className="w-4 h-4" /> },
-            { label: 'Travel & Hospitality', href: '/industry/infrastructure/travel-hospitality', icon: <Plane className="w-4 h-4" /> },
-            { label: 'Agritech', href: '/industry/infrastructure/agritech', icon: <Sprout className="w-4 h-4" /> },
+            { label: 'Travel & Hospitality', href: '/industry/travel-hospitality/travel', icon: <Plane className="w-4 h-4" /> },
+            { label: 'Agritech', href: '/industry/agriculture/agritech', icon: <Sprout className="w-4 h-4" /> },
           ],
         },
         {
@@ -237,8 +235,8 @@ const Navigation = () => {
         },
       ],
     },
-    { label: 'Training', href: '/training-programs' },
-    { label: 'Pricing', href: '/pricing' },
+    { label: 'Products', href: '/products' },
+    { label: 'Free Tools', href: '/resources/free-development-tools' },
   ];
 
   const handleDropdownToggle = (label: string) => {
@@ -264,7 +262,7 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
              <img
-  src="./logo.png"
+  src="/logo.png"
   alt="Oscillion Software"
   className="w-auto logo-mobile"
 />
@@ -294,17 +292,17 @@ const Navigation = () => {
                         />
                         <div className="absolute left-1/2 transform -translate-x-1/2 mt-0 bg-white shadow-2xl rounded-xl overflow-hidden animate-dropdown border border-gray-100 z-50 max-h-[calc(100vh-6rem)] overflow-y-auto">
 
-                          <div className={`p-6 grid gap-8 ${item.categories.length <= 2 ? 'grid-cols-2 min-w-[400px]' :
-                            item.categories.length === 3 ? 'grid-cols-3 min-w-[600px]' :
-                              item.categories.length === 4 ? 'grid-cols-4 min-w-[800px]' :
-                                item.categories.length === 5 ? 'grid-cols-5 min-w-[900px]' :
+                          <div className={`p-8 grid gap-8 ${item.categories.length <= 2 ? 'grid-cols-2 min-w-[450px]' :
+                            item.categories.length === 3 ? 'grid-cols-3 min-w-[650px]' :
+                              item.categories.length === 4 ? 'grid-cols-4 min-w-[850px]' :
+                                item.categories.length === 5 ? 'grid-cols-5 min-w-[950px]' :
                                   item.categories.length === 6 ? 'grid-cols-3 min-w-[700px]' :
                                     item.categories.length === 7 ? 'grid-cols-4 min-w-[900px]' :
                                       'grid-cols-4 min-w-[1000px]'
                             }`}>
                             {item.categories.map((category) => (
-                              <div key={category.title} className="space-y-3">
-                                <h3 className="text-xs font-bold text-gray-900 uppercase tracking-wider border-b border-gray-200 pb-2">
+                              <div key={category.title} className="space-y-4">
+                                <h3 className="text-xs font-bold text-black uppercase tracking-wider border-b-2 border-black pb-2">
                                   {category.title}
                                 </h3>
                                 <div className="space-y-2">
@@ -312,7 +310,7 @@ const Navigation = () => {
                                     <a
                                       key={subItem.label}
                                       href={subItem.href}
-                                      className="flex items-center space-x-2 text-sm text-gray-700 hover:text-black hover:translate-x-1 transition-all duration-200 group/item"
+                                      className="flex items-center space-x-2 text-sm text-gray-700 hover:text-black hover:translate-x-1 transition-all duration-200 group/item py-1"
                                       onClick={() => setOpenDropdown(null)}
                                     >
                                       {subItem.icon && (
@@ -320,7 +318,7 @@ const Navigation = () => {
                                           {subItem.icon}
                                         </span>
                                       )}
-                                      <span>{subItem.label}</span>
+                                      <span className="font-medium">{subItem.label}</span>
                                     </a>
                                   ))}
                                 </div>
@@ -407,14 +405,14 @@ const Navigation = () => {
                     <div className="ml-2 mt-2 space-y-4 animate-slideDown">
                       {item.categories.map((category) => (
                         <div key={category.title} className="space-y-2">
-                          <h4 className="text-xs font-bold text-gray-900 uppercase tracking-wider px-4 pt-2">
+                          <h4 className="text-xs font-bold text-black uppercase tracking-wider px-4 pt-2 border-b border-gray-300 pb-2">
                             {category.title}
                           </h4>
                           {category.items.map((subItem) => (
                             <a
                               key={subItem.label}
                               href={subItem.href}
-                              className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-200"
+                              className="flex items-center space-x-2 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-all duration-200 font-medium"
                               onClick={() => setIsMobileMenuOpen(false)}
                             >
                               {subItem.icon && (

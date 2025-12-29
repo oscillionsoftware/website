@@ -9,6 +9,34 @@
       "color": "from-black to-gray-800",
       "services": [
         {
+          "id": "ai-overview",
+          "name": "Generative AI Overview",
+          "slug": "overview",
+          "shortDesc": "Discover the power of generative AI and how it can transform your business operations.",
+          "longDesc": "Explore the world of Generative AI and understand how cutting-edge artificial intelligence can revolutionize your business. From content creation to process automation, generative AI offers unprecedented opportunities for innovation and efficiency.",
+          "icon": "sparkles",
+          "features": [
+            "AI-Powered Content Generation",
+            "Automated Creative Workflows",
+            "Intelligent Data Analysis",
+            "Natural Language Processing",
+            "Computer Vision Applications",
+            "Predictive Modeling"
+          ],
+          "benefits": [
+            "Transform business operations with AI",
+            "Automate repetitive tasks",
+            "Generate insights from data",
+            "Enhance customer experiences"
+          ],
+          "technologies": ["GPT-4", "DALL-E", "Midjourney", "Claude", "Stable Diffusion"],
+          "pricing": {
+            "model": "Consultation",
+            "starting": "Free",
+            "duration": "1-2 hours"
+          }
+        },
+        {
           "id": "ai-strategy",
           "name": "AI Strategy Consulting",
           "slug": "ai-strategy-consulting",
@@ -102,6 +130,34 @@
       "description": "Scalable cloud infrastructure solutions for seamless business operations and growth.",
       "color": "from-gray-800 to-black",
       "services": [
+        {
+          "id": "cloud-overview",
+          "name": "Cloud Services Overview",
+          "slug": "overview",
+          "shortDesc": "Comprehensive cloud computing solutions for modern businesses.",
+          "longDesc": "Discover how cloud services can transform your business infrastructure. We provide expertise across all major cloud platforms including AWS, Azure, and Google Cloud Platform to help you build scalable, secure, and cost-effective solutions.",
+          "icon": "cloud",
+          "features": [
+            "Multi-Cloud Strategy",
+            "Cloud Migration Planning",
+            "Infrastructure as Code",
+            "Cost Optimization",
+            "Security & Compliance",
+            "Disaster Recovery"
+          ],
+          "benefits": [
+            "Reduced infrastructure costs",
+            "Improved scalability",
+            "Enhanced security",
+            "Global reach and availability"
+          ],
+          "technologies": ["AWS", "Azure", "GCP", "Docker", "Kubernetes"],
+          "pricing": {
+            "model": "Consultation",
+            "starting": "Free",
+            "duration": "1-2 hours"
+          }
+        },
         {
           "id": "aws-solutions",
           "name": "AWS Solutions",
@@ -197,6 +253,202 @@
       "color": "from-black to-gray-700",
       "services": [
         {
+          "id": "php-development",
+          "name": "PHP Development",
+          "slug": "php",
+          "shortDesc": "Robust and scalable web applications built with PHP.",
+          "longDesc": "Build powerful server-side web applications with PHP. Our experienced PHP developers create secure, scalable solutions using modern PHP frameworks and best practices for optimal performance.",
+          "icon": "code",
+          "features": [
+            "Custom PHP Development",
+            "MVC Architecture",
+            "RESTful API Development",
+            "Database Integration",
+            "Security Implementation",
+            "Performance Optimization"
+          ],
+          "benefits": [
+            "Cost-effective development",
+            "Wide hosting support",
+            "Strong community",
+            "Rapid development"
+          ],
+          "technologies": ["PHP 8+", "MySQL", "PostgreSQL", "Composer", "PHPUnit"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹2,00,000",
+            "duration": "6-10 weeks"
+          }
+        },
+        {
+          "id": "mean-stack",
+          "name": "MEAN Stack Development",
+          "slug": "mean-stack",
+          "shortDesc": "Full-stack JavaScript solutions with MongoDB, Express, Angular, and Node.js.",
+          "longDesc": "Leverage the power of the MEAN stack for end-to-end JavaScript development. Build modern, scalable web applications using MongoDB, Express.js, Angular, and Node.js in a unified development environment.",
+          "icon": "layers",
+          "features": [
+            "Full Stack JavaScript",
+            "MongoDB Database Design",
+            "Express.js API Development",
+            "Angular Frontend",
+            "Real-time Applications",
+            "Single Page Applications"
+          ],
+          "benefits": [
+            "Unified language stack",
+            "High performance",
+            "Scalable architecture",
+            "Rich ecosystem"
+          ],
+          "technologies": ["MongoDB", "Express.js", "Angular", "Node.js", "TypeScript"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹4,50,000",
+            "duration": "10-14 weeks"
+          }
+        },
+        {
+          "id": "angularjs-development",
+          "name": "Angular JS Development",
+          "slug": "angularjs",
+          "shortDesc": "Dynamic single-page applications with Angular framework.",
+          "longDesc": "Create powerful, dynamic web applications with Angular. Our Angular experts build enterprise-grade applications with TypeScript, following best practices for maintainable and scalable solutions.",
+          "icon": "code",
+          "features": [
+            "Angular 17+ Development",
+            "Component-Based Architecture",
+            "TypeScript Development",
+            "Reactive Programming with RxJS",
+            "Material Design Integration",
+            "Progressive Web Apps"
+          ],
+          "benefits": [
+            "Enterprise-grade applications",
+            "Strong typing with TypeScript",
+            "Comprehensive framework",
+            "Google-backed support"
+          ],
+          "technologies": ["Angular", "TypeScript", "RxJS", "Angular Material", "NgRx"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,50,000",
+            "duration": "8-12 weeks"
+          }
+        },
+        {
+          "id": "python-web",
+          "name": "Python Web Development",
+          "slug": "python-web",
+          "shortDesc": "Powerful web applications built with Python frameworks.",
+          "longDesc": "Develop robust web applications using Python's powerful frameworks. Whether it's Django, Flask, or FastAPI, we create scalable, secure web solutions tailored to your business needs.",
+          "icon": "code",
+          "features": [
+            "Django & Flask Development",
+            "RESTful API Design",
+            "Database ORM Integration",
+            "Authentication & Authorization",
+            "Admin Panel Development",
+            "Third-party Integrations"
+          ],
+          "benefits": [
+            "Rapid development",
+            "Clean, readable code",
+            "Extensive libraries",
+            "Strong security features"
+          ],
+          "technologies": ["Python", "Django", "Flask", "FastAPI", "PostgreSQL"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,00,000",
+            "duration": "8-12 weeks"
+          }
+        },
+        {
+          "id": "codeigniter-development",
+          "name": "CodeIgniter Development",
+          "slug": "codeigniter",
+          "shortDesc": "Lightweight and powerful PHP framework for rapid development.",
+          "longDesc": "Build fast, lightweight web applications with CodeIgniter. This powerful PHP framework enables rapid development while maintaining flexibility and performance.",
+          "icon": "code",
+          "features": [
+            "MVC Architecture",
+            "Lightweight Framework",
+            "Database Abstraction",
+            "Form Validation",
+            "Security Features",
+            "Session Management"
+          ],
+          "benefits": [
+            "Fast development cycle",
+            "Small footprint",
+            "Easy to learn",
+            "Excellent documentation"
+          ],
+          "technologies": ["CodeIgniter 4", "PHP", "MySQL", "Bootstrap", "jQuery"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹1,80,000",
+            "duration": "6-8 weeks"
+          }
+        },
+        {
+          "id": "laravel-development",
+          "name": "Laravel Development",
+          "slug": "laravel",
+          "shortDesc": "Elegant PHP framework for modern web applications.",
+          "longDesc": "Create beautiful, elegant web applications with Laravel. This modern PHP framework provides expressive syntax and powerful tools for building scalable applications with clean, maintainable code.",
+          "icon": "code",
+          "features": [
+            "Eloquent ORM",
+            "Blade Templating",
+            "RESTful Routing",
+            "Authentication System",
+            "Queue Management",
+            "Task Scheduling"
+          ],
+          "benefits": [
+            "Elegant syntax",
+            "Comprehensive ecosystem",
+            "Built-in security",
+            "Active community"
+          ],
+          "technologies": ["Laravel 10", "PHP", "MySQL", "Redis", "Vue.js"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹2,50,000",
+            "duration": "8-10 weeks"
+          }
+        },
+        {
+          "id": "cakephp-development",
+          "name": "CakePHP Development",
+          "slug": "cakephp",
+          "shortDesc": "Rapid development framework following convention over configuration.",
+          "longDesc": "Build web applications quickly with CakePHP's convention over configuration approach. This mature PHP framework provides powerful scaffolding and built-in features for rapid application development.",
+          "icon": "code",
+          "features": [
+            "Convention Over Configuration",
+            "Built-in ORM",
+            "Scaffolding Tools",
+            "Security Components",
+            "Caching Mechanisms",
+            "Email & Validation"
+          ],
+          "benefits": [
+            "Rapid development",
+            "Less configuration",
+            "Strong security",
+            "Stable and mature"
+          ],
+          "technologies": ["CakePHP 5", "PHP", "MySQL", "Bootstrap", "jQuery"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹2,00,000",
+            "duration": "6-10 weeks"
+          }
+        },
+        {
           "id": "react-development",
           "name": "React Development",
           "slug": "react-development",
@@ -278,6 +530,184 @@
             "model": "Fixed Price",
             "starting": "₹5,00,000",
             "duration": "12-16 weeks"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cms-ecommerce",
+      "name": "CMS & E-Commerce",
+      "slug": "cms-ecommerce",
+      "icon": "globe",
+      "description": "Content Management Systems and E-Commerce platforms for online business success.",
+      "color": "from-gray-700 to-black",
+      "services": [
+        {
+          "id": "wordpress-development",
+          "name": "WordPress Development",
+          "slug": "wordpress",
+          "shortDesc": "Custom WordPress websites and plugins for flexible content management.",
+          "longDesc": "Build powerful, flexible websites with WordPress. From custom themes to complex plugins, we create WordPress solutions that are easy to manage and scale with your business needs.",
+          "icon": "globe",
+          "features": [
+            "Custom Theme Development",
+            "Plugin Development",
+            "WooCommerce Integration",
+            "SEO Optimization",
+            "Performance Optimization",
+            "Security Hardening"
+          ],
+          "benefits": [
+            "Easy content management",
+            "Extensive plugin ecosystem",
+            "SEO-friendly",
+            "Cost-effective"
+          ],
+          "technologies": ["WordPress", "PHP", "MySQL", "WooCommerce", "Elementor"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹1,50,000",
+            "duration": "4-8 weeks"
+          }
+        },
+        {
+          "id": "magento-development",
+          "name": "Magento Development",
+          "slug": "magento",
+          "shortDesc": "Enterprise e-commerce solutions with Magento platform.",
+          "longDesc": "Create powerful e-commerce stores with Magento. Our Magento experts build scalable, feature-rich online stores that handle complex product catalogs and high-volume transactions.",
+          "icon": "globe",
+          "features": [
+            "Custom Magento Development",
+            "Multi-Store Setup",
+            "Payment Gateway Integration",
+            "Inventory Management",
+            "Extension Development",
+            "Performance Optimization"
+          ],
+          "benefits": [
+            "Enterprise-grade features",
+            "Highly scalable",
+            "Advanced catalog management",
+            "Multi-currency support"
+          ],
+          "technologies": ["Magento 2", "PHP", "MySQL", "Elasticsearch", "Redis"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹6,00,000",
+            "duration": "12-16 weeks"
+          }
+        },
+        {
+          "id": "joomla-development",
+          "name": "Joomla Development",
+          "slug": "joomla",
+          "shortDesc": "Flexible CMS solutions with Joomla for complex websites.",
+          "longDesc": "Develop feature-rich websites with Joomla CMS. Perfect for complex websites requiring advanced user management, multilingual support, and flexible content organization.",
+          "icon": "globe",
+          "features": [
+            "Custom Template Development",
+            "Extension Development",
+            "Multilingual Sites",
+            "User Management",
+            "SEO Configuration",
+            "Third-party Integration"
+          ],
+          "benefits": [
+            "Flexible architecture",
+            "Strong user management",
+            "Multilingual ready",
+            "Active community"
+          ],
+          "technologies": ["Joomla 4", "PHP", "MySQL", "Bootstrap", "jQuery"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹2,00,000",
+            "duration": "6-10 weeks"
+          }
+        },
+        {
+          "id": "shopify-development",
+          "name": "Shopify Development",
+          "slug": "shopify",
+          "shortDesc": "Fast, secure e-commerce stores with Shopify platform.",
+          "longDesc": "Launch your online store quickly with Shopify. We create custom Shopify themes and apps that help you sell products online with ease and grow your e-commerce business.",
+          "icon": "globe",
+          "features": [
+            "Custom Theme Development",
+            "Shopify App Development",
+            "Payment Integration",
+            "Product Management",
+            "Store Migration",
+            "Marketing Integration"
+          ],
+          "benefits": [
+            "Quick launch",
+            "Secure & reliable",
+            "Easy to manage",
+            "Built-in payments"
+          ],
+          "technologies": ["Shopify", "Liquid", "React", "GraphQL", "Node.js"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹2,50,000",
+            "duration": "4-8 weeks"
+          }
+        },
+        {
+          "id": "opencart-development",
+          "name": "OpenCart Development",
+          "slug": "opencart",
+          "shortDesc": "Open-source e-commerce solutions with OpenCart.",
+          "longDesc": "Build cost-effective online stores with OpenCart. This open-source e-commerce platform offers flexibility and ease of use, perfect for small to medium-sized businesses.",
+          "icon": "globe",
+          "features": [
+            "Custom Theme Design",
+            "Module Development",
+            "Payment Gateway Setup",
+            "Multi-Store Management",
+            "SEO Optimization",
+            "Shipping Integration"
+          ],
+          "benefits": [
+            "Cost-effective",
+            "Easy to use",
+            "Lightweight",
+            "Open source"
+          ],
+          "technologies": ["OpenCart", "PHP", "MySQL", "Bootstrap", "jQuery"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹1,80,000",
+            "duration": "6-8 weeks"
+          }
+        },
+        {
+          "id": "drupal-development",
+          "name": "Drupal Development",
+          "slug": "drupal",
+          "shortDesc": "Enterprise CMS solutions with Drupal for complex requirements.",
+          "longDesc": "Create robust, enterprise-level websites with Drupal. Perfect for complex content structures, high security requirements, and sites that need advanced customization capabilities.",
+          "icon": "globe",
+          "features": [
+            "Custom Module Development",
+            "Theme Development",
+            "Multi-site Setup",
+            "Content Architecture",
+            "API Development",
+            "Security Implementation"
+          ],
+          "benefits": [
+            "Enterprise security",
+            "Highly flexible",
+            "Scalable architecture",
+            "Strong community"
+          ],
+          "technologies": ["Drupal 10", "PHP", "MySQL", "Symfony", "Twig"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,50,000",
+            "duration": "10-14 weeks"
           }
         }
       ]
@@ -373,6 +803,90 @@
             "starting": "₹4,50,000",
             "duration": "10-12 weeks"
           }
+        },
+        {
+          "id": "flutter-development",
+          "name": "Flutter Development",
+          "slug": "flutter",
+          "shortDesc": "Beautiful native apps from a single codebase with Flutter.",
+          "longDesc": "Build stunning, natively compiled applications for mobile, web, and desktop from a single codebase using Flutter. Our Flutter experts create high-performance apps with beautiful, customizable UI.",
+          "icon": "smartphone",
+          "features": [
+            "Cross-Platform Development",
+            "Hot Reload",
+            "Custom Widget Development",
+            "Native Performance",
+            "Material & Cupertino Design",
+            "State Management"
+          ],
+          "benefits": [
+            "Fast development",
+            "Beautiful UI",
+            "Native performance",
+            "Single codebase"
+          ],
+          "technologies": ["Flutter", "Dart", "Firebase", "Provider", "Bloc"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹4,00,000",
+            "duration": "10-12 weeks"
+          }
+        },
+        {
+          "id": "cross-platform",
+          "name": "Cross Platform Development",
+          "slug": "cross-platform",
+          "shortDesc": "Multi-platform mobile solutions with shared codebase.",
+          "longDesc": "Develop applications that run seamlessly across iOS, Android, and other platforms from a single codebase. Save time and resources while reaching wider audiences with cross-platform development.",
+          "icon": "smartphone",
+          "features": [
+            "Multi-Platform Support",
+            "Shared Codebase",
+            "Native API Access",
+            "Platform-Specific Customization",
+            "Cost-Effective Development",
+            "Unified Maintenance"
+          ],
+          "benefits": [
+            "Reduced development cost",
+            "Faster time to market",
+            "Easier maintenance",
+            "Wider reach"
+          ],
+          "technologies": ["React Native", "Flutter", "Xamarin", "Ionic", "Cordova"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,80,000",
+            "duration": "10-12 weeks"
+          }
+        },
+        {
+          "id": "wearable-development",
+          "name": "Wearable App Development",
+          "slug": "wearable",
+          "shortDesc": "Smart applications for wearable devices and IoT.",
+          "longDesc": "Create innovative applications for smartwatches, fitness trackers, and other wearable devices. We build wearable apps that provide seamless experiences on Apple Watch, Wear OS, and other platforms.",
+          "icon": "smartphone",
+          "features": [
+            "Apple Watch Apps",
+            "Wear OS Development",
+            "Fitness Tracker Integration",
+            "Health Monitoring",
+            "Sensor Integration",
+            "Companion App Development"
+          ],
+          "benefits": [
+            "Enhanced user engagement",
+            "Health & fitness tracking",
+            "Real-time notifications",
+            "IoT connectivity"
+          ],
+          "technologies": ["WatchOS", "Wear OS", "Swift", "Kotlin", "HealthKit"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹3,50,000",
+            "duration": "8-10 weeks"
+          }
         }
       ]
     },
@@ -438,6 +952,217 @@
             "model": "Fixed Price",
             "starting": "₹50,000",
             "duration": "2-3 weeks"
+          }
+        },
+        {
+          "id": "graphic-designing",
+          "name": "Graphic Designing",
+          "slug": "graphic-designing",
+          "shortDesc": "Visually stunning designs that communicate your brand story.",
+          "longDesc": "Create impactful visual content with our graphic design services. From marketing materials to social media graphics, we design eye-catching visuals that capture attention and communicate your message effectively.",
+          "icon": "image",
+          "features": [
+            "Marketing Collateral Design",
+            "Social Media Graphics",
+            "Brochures & Flyers",
+            "Poster & Banner Design",
+            "Infographics",
+            "Print & Digital Assets"
+          ],
+          "benefits": [
+            "Professional visual identity",
+            "Consistent brand messaging",
+            "Enhanced marketing materials",
+            "Increased engagement"
+          ],
+          "technologies": ["Adobe Photoshop", "Illustrator", "InDesign", "Canva", "Figma"],
+          "pricing": {
+            "model": "Fixed Price",
+            "starting": "₹40,000",
+            "duration": "2-4 weeks"
+          }
+        },
+        {
+          "id": "custom-designing",
+          "name": "Custom Designing",
+          "slug": "custom-designing",
+          "shortDesc": "Tailored design solutions to match unique business requirements.",
+          "longDesc": "Get personalized design solutions crafted specifically for your brand's unique needs. Our custom design service offers end-to-end creative solutions, from concept to final delivery, ensuring your vision comes to life perfectly.",
+          "icon": "layers",
+          "features": [
+            "Bespoke Design Solutions",
+            "Brand-Specific Creatives",
+            "Custom Illustrations",
+            "Packaging Design",
+            "Print & Digital Design",
+            "Collaborative Design Process"
+          ],
+          "benefits": [
+            "Fully customized outcomes",
+            "Brand-consistent designs",
+            "Unique visual identity",
+            "High creative flexibility"
+          ],
+          "technologies": ["Adobe Creative Suite", "Figma", "Sketch", "CorelDRAW", "Blender"],
+          "pricing": {
+            "model": "Project-based",
+            "starting": "₹60,000",
+            "duration": "3-5 weeks"
+          }
+        }
+      ]
+    },
+    {
+      "id": "digital-marketing",
+      "name": "Digital Marketing",
+      "slug": "digital-marketing",
+      "icon": "trending-up",
+      "description": "Data-driven digital marketing strategies to grow your online presence.",
+      "color": "from-gray-800 to-gray-900",
+      "services": [
+        {
+          "id": "seo",
+          "name": "Search Engine Optimization (SEO)",
+          "slug": "seo",
+          "shortDesc": "Boost your online visibility and rank higher on search engines.",
+          "longDesc": "Improve your website's search engine rankings with our comprehensive SEO services. We use proven strategies including on-page optimization, technical SEO, content optimization, and link building to drive organic traffic and increase your online visibility.",
+          "icon": "search",
+          "features": [
+            "On-Page Optimization",
+            "Technical SEO Audit",
+            "Keyword Research & Strategy",
+            "Content Optimization",
+            "Off-Page SEO & Link Building",
+            "Local SEO",
+            "SEO Analytics & Reporting"
+          ],
+          "benefits": [
+            "Higher search rankings",
+            "Increased organic traffic",
+            "Better ROI",
+            "Enhanced brand visibility"
+          ],
+          "technologies": ["Google Analytics", "SEMrush", "Ahrefs", "Google Search Console", "Screaming Frog"],
+          "pricing": {
+            "model": "Monthly Retainer",
+            "starting": "₹25,000",
+            "duration": "Ongoing"
+          }
+        },
+        {
+          "id": "smo",
+          "name": "Social Media Optimization (SMO)",
+          "slug": "smo",
+          "shortDesc": "Engage audiences and grow your social media presence.",
+          "longDesc": "Build a strong and active social presence across all major platforms. Our SMO services include strategy development, content creation, community management, and performance tracking to maximize engagement and grow your audience.",
+          "icon": "share-2",
+          "features": [
+            "Social Media Strategy",
+            "Content Creation & Curation",
+            "Community Management",
+            "Profile Optimization",
+            "Engagement Analytics",
+            "Cross-Platform Management",
+            "Social Media Advertising"
+          ],
+          "benefits": [
+            "Increased brand awareness",
+            "Audience growth",
+            "Improved engagement",
+            "Better customer relationships"
+          ],
+          "technologies": ["Facebook", "Instagram", "LinkedIn", "Twitter", "Buffer", "Hootsuite"],
+          "pricing": {
+            "model": "Monthly Retainer",
+            "starting": "₹20,000",
+            "duration": "Ongoing"
+          }
+        },
+        {
+          "id": "ppc",
+          "name": "Pay Per Click (PPC)",
+          "slug": "ppc",
+          "shortDesc": "Drive instant traffic and leads through paid advertising.",
+          "longDesc": "Maximize your ROI with targeted PPC campaigns. Our certified experts manage Google Ads, Facebook Ads, and other paid advertising platforms to drive qualified traffic, generate leads, and increase conversions while optimizing your ad spend.",
+          "icon": "zap",
+          "features": [
+            "Campaign Strategy & Setup",
+            "Keyword Research & Bidding",
+            "Ad Copy Creation",
+            "Landing Page Optimization",
+            "A/B Testing",
+            "Conversion Tracking",
+            "Performance Analytics"
+          ],
+          "benefits": [
+            "Instant lead generation",
+            "Precise audience targeting",
+            "Scalable ad spend",
+            "Measurable ROI"
+          ],
+          "technologies": ["Google Ads", "Facebook Ads", "LinkedIn Ads", "Google Tag Manager", "Analytics"],
+          "pricing": {
+            "model": "Monthly Retainer + Ad Spend",
+            "starting": "₹30,000",
+            "duration": "Ongoing"
+          }
+        },
+        {
+          "id": "email-marketing",
+          "name": "Email Marketing",
+          "slug": "email-marketing",
+          "shortDesc": "Personalized email campaigns that convert leads into customers.",
+          "longDesc": "Engage customers through impactful and automated email strategies. Our email marketing services include campaign design, automation setup, list management, and performance optimization to nurture leads and drive conversions.",
+          "icon": "mail",
+          "features": [
+            "Email Campaign Strategy",
+            "Template Design & Development",
+            "Marketing Automation",
+            "List Management & Segmentation",
+            "A/B Testing",
+            "Analytics & Reporting",
+            "Drip Campaigns"
+          ],
+          "benefits": [
+            "Better lead nurturing",
+            "Increased open rates",
+            "Cost-effective marketing",
+            "Higher conversion rates"
+          ],
+          "technologies": ["Mailchimp", "SendGrid", "HubSpot", "ActiveCampaign", "Klaviyo"],
+          "pricing": {
+            "model": "Monthly Retainer",
+            "starting": "₹15,000",
+            "duration": "Ongoing"
+          }
+        },
+        {
+          "id": "whatsapp-marketing",
+          "name": "WhatsApp Marketing",
+          "slug": "whatsapp-marketing",
+          "shortDesc": "Reach customers instantly with personalized WhatsApp campaigns.",
+          "longDesc": "Boost customer engagement using WhatsApp automation and marketing. Our services include bulk messaging, chatbot setup, automated responses, and campaign management to help you reach customers directly on their preferred messaging platform.",
+          "icon": "message-circle",
+          "features": [
+            "WhatsApp Business Setup",
+            "Bulk Messaging",
+            "Chatbot Development",
+            "Automated Responses",
+            "Broadcast Campaigns",
+            "Customer Support Integration",
+            "Analytics & Tracking"
+          ],
+          "benefits": [
+            "Direct customer engagement",
+            "High open rates",
+            "Instant communication",
+            "Better customer service"
+          ],
+          "technologies": ["WhatsApp Business API", "Twilio", "Gupshup", "MessageBird"],
+          "pricing": {
+            "model": "Monthly Retainer",
+            "starting": "₹18,000",
+            "duration": "Ongoing"
           }
         }
       ]

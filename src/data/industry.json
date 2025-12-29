@@ -2,106 +2,3023 @@
   "retail-commerce/ecommerce": {
     "slug": "retail-commerce/ecommerce",
     "title": "Ecommerce Solutions",
+    "name": "Ecommerce",
     "description": "Empower your online business with scalable ecommerce technology and tailored digital strategies.",
     "hero": {
-      "heading": "Revolutionize Your Online Store",
-      "description": "We design and build seamless ecommerce experiences that drive conversions and customer loyalty.",
-      "gradient": "from-pink-600 to-purple-700"
+      "heading": "Transform Your Online Retail Business",
+      "description": "Build powerful, scalable ecommerce platforms that drive sales, enhance customer experience, and grow your digital presence.",
+      "gradient": "from-blue-600 to-cyan-600",
+      "stats": [
+        {
+          "value": "500+",
+          "label": "Ecommerce Projects"
+        },
+        {
+          "value": "98%",
+          "label": "Client Satisfaction"
+        },
+        {
+          "value": "3x",
+          "label": "Average ROI"
+        },
+        {
+          "value": "24/7",
+          "label": "Support Available"
+        }
+      ]
     },
-    "features": [
-      { "title": "Custom Storefronts", "description": "Develop user-friendly and responsive online stores.", "icon": "shoppingbag" },
-      { "title": "Payment Integration", "description": "Secure payment gateways with global currency support.", "icon": "lock" },
-      { "title": "Inventory Automation", "description": "Sync and manage stock levels in real-time.", "icon": "code" }
+    "overview": {
+      "title": "Leading Ecommerce Development Company",
+      "description": "We specialize in creating high-performance ecommerce solutions that transform the way businesses sell online. From custom storefronts to enterprise-level marketplaces, our expertise spans the entire ecommerce ecosystem.",
+      "highlights": [
+        "Custom ecommerce platform development",
+        "Multi-vendor marketplace solutions",
+        "Headless commerce architecture",
+        "Payment gateway integration",
+        "Real-time inventory management",
+        "Advanced analytics and reporting"
+      ]
+    },
+    "services": [
+      {
+        "title": "Custom Storefront Development",
+        "description": "Build unique, branded shopping experiences tailored to your business needs with responsive design and seamless navigation.",
+        "icon": "shoppingbag"
+      },
+      {
+        "title": "Payment Gateway Integration",
+        "description": "Secure, PCI-compliant payment processing with support for multiple currencies, payment methods, and fraud detection.",
+        "icon": "lock"
+      },
+      {
+        "title": "Inventory Management",
+        "description": "Real-time stock tracking, automated reordering, multi-warehouse support, and seamless ERP integration.",
+        "icon": "database"
+      },
+      {
+        "title": "Shopping Cart Optimization",
+        "description": "Reduce cart abandonment with streamlined checkout, guest checkout options, and one-click purchasing.",
+        "icon": "shoppingcart"
+      },
+      {
+        "title": "Product Recommendation Engine",
+        "description": "AI-powered personalization that increases average order value through intelligent product suggestions.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Mobile Commerce Solutions",
+        "description": "Native iOS and Android shopping apps with offline capabilities and push notifications.",
+        "icon": "smartphone"
+      }
+    ],
+    "technologies": [
+      "Shopify Plus",
+      "Magento",
+      "WooCommerce",
+      "BigCommerce",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Stripe",
+      "PayPal",
+      "Elastic Search",
+      "Redis",
+      "AWS"
     ],
     "benefits": [
       "Increase conversion rates by up to 40%",
-      "Reduce cart abandonment",
-      "Integrate with Shopify, WooCommerce, or Magento",
-      "Optimized for all devices"
-    ]
+      "Reduce cart abandonment by 25%",
+      "Improve page load speeds for better SEO",
+      "Scale to handle millions of transactions",
+      "24/7 automated customer support",
+      "Advanced fraud prevention",
+      "Multi-currency and multi-language support",
+      "Seamless third-party integrations"
+    ],
+    "process": [
+      {
+        "step": "1",
+        "title": "Discovery & Planning",
+        "description": "Analyze your business model, target audience, and competitive landscape to create a strategic roadmap."
+      },
+      {
+        "step": "2",
+        "title": "Design & Prototyping",
+        "description": "Create intuitive user interfaces and engaging shopping experiences through wireframes and prototypes."
+      },
+      {
+        "step": "3",
+        "title": "Development & Integration",
+        "description": "Build your platform with clean code, integrate payment systems, and connect essential business tools."
+      },
+      {
+        "step": "4",
+        "title": "Testing & Optimization",
+        "description": "Rigorous quality assurance, performance testing, and conversion rate optimization before launch."
+      },
+      {
+        "step": "5",
+        "title": "Launch & Support",
+        "description": "Smooth deployment with ongoing maintenance, updates, and 24/7 technical support."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Fashion Retailer Success",
+        "metric": "150% increase in online sales",
+        "description": "Helped a leading fashion brand migrate to Shopify Plus with custom features"
+      },
+      {
+        "title": "B2B Marketplace Platform",
+        "metric": "10,000+ daily transactions",
+        "description": "Built a scalable B2B platform handling complex pricing and bulk orders"
+      },
+      {
+        "title": "Global Electronics Store",
+        "metric": "35 countries served",
+        "description": "Deployed multi-currency store with localized experiences"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "B2C Ecommerce",
+        "description": "Direct-to-consumer platforms with personalized shopping experiences",
+        "features": [
+          "Wishlist management",
+          "Customer reviews",
+          "Loyalty programs",
+          "Gift cards"
+        ]
+      },
+      {
+        "title": "B2B Ecommerce",
+        "description": "Enterprise solutions for wholesale and bulk ordering",
+        "features": [
+          "Custom pricing",
+          "Bulk ordering",
+          "Quote management",
+          "Account hierarchies"
+        ]
+      },
+      {
+        "title": "Marketplace Platforms",
+        "description": "Multi-vendor marketplaces with vendor management systems",
+        "features": [
+          "Vendor dashboards",
+          "Commission management",
+          "Dispute resolution",
+          "Rating systems"
+        ]
+      },
+      {
+        "title": "Subscription Commerce",
+        "description": "Recurring billing and subscription management solutions",
+        "features": [
+          "Auto-billing",
+          "Subscription tiers",
+          "Pause/resume options",
+          "Renewal management"
+        ]
+      }
+    ],
+    "security": {
+      "title": "Enterprise-Grade Security",
+      "features": [
+        "PCI DSS compliance for payment processing",
+        "SSL encryption for all transactions",
+        "DDoS protection and firewall",
+        "Regular security audits and updates",
+        "GDPR and privacy compliance",
+        "Fraud detection and prevention"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What ecommerce platform is best for my business?",
+        "answer": "It depends on your business size, budget, and technical requirements. We'll analyze your needs and recommend the best platform whether it's Shopify, Magento, WooCommerce, or a custom solution."
+      },
+      {
+        "question": "How long does it take to build an ecommerce website?",
+        "answer": "Typically 8-16 weeks for a standard store, and 4-6 months for enterprise-level platforms with custom features."
+      },
+      {
+        "question": "Do you provide ongoing maintenance and support?",
+        "answer": "Yes, we offer comprehensive maintenance packages including updates, security patches, feature enhancements, and 24/7 technical support."
+      },
+      {
+        "question": "Can you migrate my existing store to a new platform?",
+        "answer": "Absolutely. We handle complete store migrations including products, customers, orders, and historical data with zero downtime."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Launch Your Ecommerce Success Story?",
+      "description": "Let's build an online store that converts visitors into loyal customers.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "Schedule Consultation"
+    }
+  },
+  "retail-commerce/fashion": {
+    "slug": "retail-commerce/fashion",
+    "title": "Fashion & Apparel Solutions",
+    "name": "Fashion & Apparel",
+    "description": "Transform your fashion business with cutting-edge technology solutions designed for the modern retail landscape.",
+    "hero": {
+      "heading": "Elevate Your Fashion Brand with Digital Excellence",
+      "description": "Custom ecommerce platforms, mobile apps, and digital solutions that bring your fashion vision to life and connect with style-conscious customers.",
+      "gradient": "from-pink-600 to-rose-600",
+      "stats": [
+        {
+          "value": "200+",
+          "label": "Fashion Brands"
+        },
+        {
+          "value": "50M+",
+          "label": "Transactions Processed"
+        },
+        {
+          "value": "45%",
+          "label": "Avg. Conversion Increase"
+        },
+        {
+          "value": "99.9%",
+          "label": "Uptime Guarantee"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Fashion-First Technology Solutions",
+      "description": "We understand the unique challenges of the fashion industry - from seasonal trends to size variations and style preferences. Our technology solutions are built specifically for fashion retailers, brands, and marketplaces.",
+      "highlights": [
+        "Visual-first shopping experiences",
+        "Size recommendation engines",
+        "Virtual try-on technology",
+        "Trend analytics and forecasting",
+        "Influencer and social commerce integration",
+        "Omnichannel retail solutions"
+      ]
+    },
+    "services": [
+      {
+        "title": "Fashion Ecommerce Platforms",
+        "description": "Stunning, conversion-optimized online stores with advanced filtering, visual search, and style recommendations.",
+        "icon": "shoppingbag"
+      },
+      {
+        "title": "Virtual Try-On & AR",
+        "description": "Augmented reality features that let customers visualize products before purchase, reducing returns.",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Size & Fit Recommendations",
+        "description": "AI-powered size recommendations based on body measurements and style preferences to reduce returns.",
+        "icon": "users"
+      },
+      {
+        "title": "Lookbook & Catalog Management",
+        "description": "Dynamic lookbooks, style guides, and seasonal catalogs that inspire and drive sales.",
+        "icon": "film"
+      },
+      {
+        "title": "Influencer Commerce Integration",
+        "description": "Seamless integration with social platforms for influencer collaborations and shoppable posts.",
+        "icon": "heart"
+      },
+      {
+        "title": "Inventory & Trend Analytics",
+        "description": "Real-time insights into trending styles, stock levels, and predictive analytics for better buying decisions.",
+        "icon": "lightbulb"
+      }
+    ],
+    "technologies": [
+      "Shopify Plus",
+      "Magento Commerce",
+      "React Native",
+      "TensorFlow",
+      "AR Kit",
+      "Computer Vision",
+      "Elastic Search",
+      "Stripe",
+      "Instagram API",
+      "Google Analytics",
+      "BigQuery",
+      "AWS"
+    ],
+    "benefits": [
+      "Reduce return rates by up to 30% with size recommendations",
+      "Increase engagement with visual search",
+      "Boost social commerce sales",
+      "Streamline omnichannel operations",
+      "Improve inventory turnover",
+      "Enhance customer loyalty programs",
+      "Enable faster seasonal launches",
+      "Gain insights into trending styles"
+    ],
+    "process": [
+      {
+        "step": "1",
+        "title": "Brand Discovery",
+        "description": "Understand your brand identity, target audience, and unique value proposition in the fashion market."
+      },
+      {
+        "step": "2",
+        "title": "Experience Design",
+        "description": "Create visually stunning designs that reflect your brand aesthetic and provide intuitive shopping flows."
+      },
+      {
+        "step": "3",
+        "title": "Platform Development",
+        "description": "Build high-performance platforms with fashion-specific features like visual search and style recommendations."
+      },
+      {
+        "step": "4",
+        "title": "Integration & Testing",
+        "description": "Connect with your existing systems, social platforms, and ensure flawless performance across devices."
+      },
+      {
+        "step": "5",
+        "title": "Launch & Growth",
+        "description": "Deploy your platform and continuously optimize based on customer behavior and fashion trends."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Premium Luxury Brand",
+        "metric": "200% revenue growth",
+        "description": "Launched exclusive online boutique with VIP membership features"
+      },
+      {
+        "title": "Fast Fashion Retailer",
+        "metric": "5M monthly visitors",
+        "description": "Built scalable platform handling rapid inventory changes"
+      },
+      {
+        "title": "Sustainable Fashion Startup",
+        "metric": "25% return reduction",
+        "description": "Implemented AI-powered size recommendations"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Luxury Fashion Platforms",
+        "description": "High-end ecommerce with exclusive experiences and VIP features",
+        "features": [
+          "Private sales",
+          "Personal styling",
+          "Concierge service",
+          "Limited editions"
+        ]
+      },
+      {
+        "title": "Fast Fashion Solutions",
+        "description": "Rapid product launches with real-time inventory management",
+        "features": [
+          "Quick product uploads",
+          "Flash sales",
+          "Trend tracking",
+          "Social integration"
+        ]
+      },
+      {
+        "title": "Sustainable Fashion Tech",
+        "description": "Transparency tools for eco-conscious consumers",
+        "features": [
+          "Product traceability",
+          "Sustainability scores",
+          "Recycling programs",
+          "Carbon footprint"
+        ]
+      },
+      {
+        "title": "Fashion Marketplace",
+        "description": "Multi-brand platforms connecting designers with shoppers",
+        "features": [
+          "Designer dashboards",
+          "Commission tracking",
+          "Quality control",
+          "Brand pages"
+        ]
+      }
+    ],
+    "security": {
+      "title": "Secure Fashion Commerce",
+      "features": [
+        "PCI-compliant payment processing",
+        "Customer data protection",
+        "Fraud prevention for high-value items",
+        "Secure authentication for VIP accounts",
+        "Copyright and brand protection",
+        "Counterfeit prevention measures"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How can technology reduce return rates in fashion?",
+        "answer": "We implement AI-powered size recommendations, virtual try-on features, detailed product visualization, and accurate size charts to help customers make informed decisions, reducing returns by up to 30%."
+      },
+      {
+        "question": "Can you integrate with Instagram and social media?",
+        "answer": "Yes! We create seamless integrations with Instagram Shopping, Facebook Shops, Pinterest, and other platforms to enable social commerce and influencer collaborations."
+      },
+      {
+        "question": "Do you support seasonal collections and fashion shows?",
+        "answer": "Absolutely. Our platforms are designed for the fashion calendar with features for pre-orders, waitlists, exclusive launches, and digital fashion show experiences."
+      },
+      {
+        "question": "How do you handle fashion photography and product images?",
+        "answer": "We provide guidance on image requirements and can recommend photography services. Our platforms support 360-degree views, zoom features, and video content."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform Your Fashion Brand?",
+      "description": "Let's create a digital experience as stylish as your designs.",
+      "primaryButton": "Get Started",
+      "secondaryButton": "View Portfolio"
+    }
+  },
+  "retail-commerce/food-beverage": {
+    "slug": "retail-commerce/food-beverage",
+    "title": "Food & Beverage Solutions",
+    "name": "Food & Beverage",
+    "description": "Innovative technology solutions for restaurants, food delivery, cloud kitchens, and beverage brands.",
+    "hero": {
+      "heading": "Digital Solutions for Modern Food Businesses",
+      "description": "From online ordering to kitchen management, we build technology that helps food businesses thrive in the digital age.",
+      "gradient": "from-orange-600 to-red-600",
+      "stats": [
+        {
+          "value": "150+",
+          "label": "Food Businesses"
+        },
+        {
+          "value": "2M+",
+          "label": "Orders Delivered"
+        },
+        {
+          "value": "60%",
+          "label": "Order Increase"
+        },
+        {
+          "value": "<3min",
+          "label": "Avg. Order Time"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Complete Food & Beverage Technology Suite",
+      "description": "Whether you're a restaurant, cloud kitchen, food delivery service, or beverage brand, we provide end-to-end technology solutions that streamline operations and enhance customer experience.",
+      "highlights": [
+        "Online ordering and delivery platforms",
+        "Restaurant management systems",
+        "Kitchen display and automation",
+        "Table reservation systems",
+        "Menu management and digital menus",
+        "Loyalty and rewards programs"
+      ]
+    },
+    "services": [
+      {
+        "title": "Online Ordering Platforms",
+        "description": "Custom-branded websites and mobile apps for direct ordering, reducing commission fees from third-party platforms.",
+        "icon": "shoppingbag"
+      },
+      {
+        "title": "Restaurant Management System",
+        "description": "Complete POS integration, inventory tracking, staff management, and real-time reporting for efficient operations.",
+        "icon": "utensils"
+      },
+      {
+        "title": "Kitchen Display Systems",
+        "description": "Digital kitchen management with order routing, preparation timers, and staff coordination.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Table Reservation & QR Menus",
+        "description": "Contactless dining with QR code menus, table booking, and waitlist management.",
+        "icon": "qrcode"
+      },
+      {
+        "title": "Delivery Fleet Management",
+        "description": "Real-time driver tracking, route optimization, and delivery performance analytics.",
+        "icon": "truck"
+      },
+      {
+        "title": "Loyalty & Rewards Programs",
+        "description": "Customer retention programs with points, offers, and personalized promotions.",
+        "icon": "gift"
+      }
+    ],
+    "technologies": [
+      "React Native",
+      "Node.js",
+      "MongoDB",
+      "PostgreSQL",
+      "Redis",
+      "Firebase",
+      "Stripe",
+      "Twilio",
+      "Google Maps API",
+      "Socket.io",
+      "AWS",
+      "Docker"
+    ],
+    "benefits": [
+      "Reduce third-party commission costs by 70%",
+      "Increase direct orders by 60%",
+      "Improve kitchen efficiency by 40%",
+      "Reduce wait times and improve service",
+      "Better inventory management",
+      "Enhanced customer insights",
+      "Automated marketing campaigns",
+      "Seamless omnichannel experience"
+    ],
+    "process": [
+      {
+        "step": "1",
+        "title": "Business Analysis",
+        "description": "Understand your operations, menu, customer base, and business goals."
+      },
+      {
+        "step": "2",
+        "title": "Solution Design",
+        "description": "Design user-friendly interfaces for customers, kitchen staff, and delivery partners."
+      },
+      {
+        "step": "3",
+        "title": "Development & Integration",
+        "description": "Build your platform and integrate with existing POS, payment systems, and delivery services."
+      },
+      {
+        "step": "4",
+        "title": "Staff Training & Testing",
+        "description": "Train your team and conduct thorough testing to ensure smooth operations."
+      },
+      {
+        "step": "5",
+        "title": "Launch & Optimization",
+        "description": "Go live with continuous monitoring and optimization based on performance data."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Multi-Location Restaurant Chain",
+        "metric": "85% order automation",
+        "description": "Deployed unified ordering system across 25 locations"
+      },
+      {
+        "title": "Cloud Kitchen Network",
+        "metric": "300% growth in 12 months",
+        "description": "Built scalable platform for multi-brand virtual kitchens"
+      },
+      {
+        "title": "Premium Dining Restaurant",
+        "metric": "50% table turnover improvement",
+        "description": "Implemented smart reservation and waitlist system"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Quick Service Restaurants",
+        "description": "Fast ordering and pickup solutions for QSR chains",
+        "features": [
+          "Mobile ordering",
+          "Kiosk integration",
+          "Drive-thru systems",
+          "Quick checkout"
+        ]
+      },
+      {
+        "title": "Fine Dining Solutions",
+        "description": "Premium experiences for upscale restaurants",
+        "features": [
+          "Reservation system",
+          "Wine pairing suggestions",
+          "Special occasion features",
+          "Private events"
+        ]
+      },
+      {
+        "title": "Cloud Kitchen Platforms",
+        "description": "Virtual kitchen operations and multi-brand management",
+        "features": [
+          "Multi-brand support",
+          "Kitchen efficiency",
+          "Delivery optimization",
+          "Data analytics"
+        ]
+      },
+      {
+        "title": "Food Delivery Services",
+        "description": "Complete delivery marketplace platforms",
+        "features": [
+          "Restaurant onboarding",
+          "Driver management",
+          "Real-time tracking",
+          "Commission handling"
+        ]
+      }
+    ],
+    "security": {
+      "title": "Food Safety & Data Security",
+      "features": [
+        "Secure payment processing",
+        "Customer data protection",
+        "Food safety compliance tracking",
+        "Health and safety protocols",
+        "Contactless payment options",
+        "GDPR compliance for customer data"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can customers order through their own app?",
+        "answer": "Yes! We build custom-branded mobile apps for iOS and Android, giving you direct access to customers without third-party commissions."
+      },
+      {
+        "question": "How do you integrate with existing POS systems?",
+        "answer": "We have experience integrating with major POS systems like Square, Toast, Clover, and can build custom integrations for proprietary systems."
+      },
+      {
+        "question": "What about delivery logistics?",
+        "answer": "We can build your own delivery management system or integrate with existing providers like DoorDash, Uber Eats, or local delivery services."
+      },
+      {
+        "question": "Can you handle peak hours and high order volumes?",
+        "answer": "Our platforms are built to scale automatically, handling thousands of concurrent orders without performance issues."
+      }
+    ],
+    "cta": {
+      "title": "Hungry for Digital Growth?",
+      "description": "Let's cook up a technology solution that serves your business perfectly.",
+      "primaryButton": "Schedule Demo",
+      "secondaryButton": "See Features"
+    }
+  },
+  "retail-commerce/kitchenware": {
+    "slug": "retail-commerce/kitchenware",
+    "title": "Kitchenware & Home Goods Solutions",
+    "name": "Kitchenware & Home Goods",
+    "description": "Specialized ecommerce solutions for kitchenware, cookware, and home goods retailers.",
+    "hero": {
+      "heading": "Elevate Your Kitchenware Brand Online",
+      "description": "Build engaging online shopping experiences that showcase your products and inspire home chefs with specialized ecommerce solutions.",
+      "gradient": "from-teal-600 to-green-600",
+      "stats": [
+        {
+          "value": "100+",
+          "label": "Home Goods Brands"
+        },
+        {
+          "value": "1M+",
+          "label": "Products Sold"
+        },
+        {
+          "value": "35%",
+          "label": "Conversion Rate Boost"
+        },
+        {
+          "value": "4.8/5",
+          "label": "Customer Rating"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Purpose-Built for Kitchenware Retail",
+      "description": "We understand the unique needs of kitchenware retailers - from detailed product specifications to recipe integration and product care guides. Our solutions help customers find the perfect tools for their culinary adventures.",
+      "highlights": [
+        "Product visualization and 360\u00b0 views",
+        "Recipe integration and content marketing",
+        "Product care and maintenance guides",
+        "Bundle and set recommendations",
+        "Gift registry and wedding lists",
+        "B2B wholesale portals"
+      ]
+    },
+    "services": [
+      {
+        "title": "Visual Product Showcase",
+        "description": "High-quality product galleries with zoom, 360\u00b0 rotation, and lifestyle imagery to help customers make confident decisions.",
+        "icon": "camera"
+      },
+      {
+        "title": "Recipe Integration Platform",
+        "description": "Connect products with recipes, cooking tutorials, and culinary content to inspire and educate customers.",
+        "icon": "book"
+      },
+      {
+        "title": "Product Finder & Guides",
+        "description": "Interactive tools to help customers find the right cookware, knives, or appliances based on their needs.",
+        "icon": "search"
+      },
+      {
+        "title": "Bundle Builder",
+        "description": "Let customers create custom kitchen sets with intelligent product bundling and discounts.",
+        "icon": "package"
+      },
+      {
+        "title": "Gift Registry System",
+        "description": "Wedding registry and gift list features perfect for kitchenware purchases.",
+        "icon": "gift"
+      },
+      {
+        "title": "B2B Wholesale Portal",
+        "description": "Separate portal for restaurant supply and bulk buyers with custom pricing and ordering.",
+        "icon": "building"
+      }
+    ],
+    "technologies": [
+      "Shopify Plus",
+      "WooCommerce",
+      "Magento",
+      "React",
+      "Vue.js",
+      "Node.js",
+      "Algolia Search",
+      "Stripe",
+      "PayPal",
+      "Klaviyo",
+      "Google Analytics",
+      "AWS"
+    ],
+    "benefits": [
+      "Reduce product returns with detailed information",
+      "Increase average order value through bundling",
+      "Build brand loyalty with content marketing",
+      "Streamline B2B and B2C operations",
+      "Improve SEO with recipe content",
+      "Enhance gift-giving experiences",
+      "Simplify product comparison",
+      "Enable omnichannel retail"
+    ],
+    "process": [
+      {
+        "step": "1",
+        "title": "Product Catalog Analysis",
+        "description": "Review your product range, categories, and understand your target customers' shopping behavior."
+      },
+      {
+        "step": "2",
+        "title": "Content Strategy",
+        "description": "Plan product photography, recipe content, care guides, and educational resources."
+      },
+      {
+        "step": "3",
+        "title": "Platform Development",
+        "description": "Build your ecommerce store with specialized features for kitchenware retail."
+      },
+      {
+        "step": "4",
+        "title": "Content Migration",
+        "description": "Import products, optimize descriptions, and set up categorization and filters."
+      },
+      {
+        "step": "5",
+        "title": "Launch & Marketing",
+        "description": "Go live with integrated marketing tools and ongoing optimization."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Premium Cookware Brand",
+        "metric": "180% online revenue growth",
+        "description": "Launched D2C store with recipe integration and product guides"
+      },
+      {
+        "title": "Kitchen Appliance Retailer",
+        "metric": "40% cart value increase",
+        "description": "Implemented smart bundling and product recommendations"
+      },
+      {
+        "title": "Specialty Knife Manufacturer",
+        "metric": "65% reduction in support queries",
+        "description": "Added comprehensive product care and selection guides"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Premium Cookware Stores",
+        "description": "Luxury kitchenware with rich product storytelling",
+        "features": [
+          "Heritage stories",
+          "Craftsmanship videos",
+          "Chef endorsements",
+          "Care instructions"
+        ]
+      },
+      {
+        "title": "Kitchen Appliance Retail",
+        "description": "Small and large appliance ecommerce",
+        "features": [
+          "Product comparisons",
+          "Warranty management",
+          "Installation guides",
+          "Video demos"
+        ]
+      },
+      {
+        "title": "Multi-Brand Marketplace",
+        "description": "Curated kitchenware marketplace",
+        "features": [
+          "Brand pages",
+          "Vendor management",
+          "Quality control",
+          "Editorial content"
+        ]
+      },
+      {
+        "title": "Restaurant Supply B2B",
+        "description": "Commercial kitchenware wholesale",
+        "features": [
+          "Bulk pricing",
+          "Quote requests",
+          "Account management",
+          "Purchase orders"
+        ]
+      }
+    ],
+    "security": {
+      "title": "Secure Retail Operations",
+      "features": [
+        "PCI-compliant payment processing",
+        "Customer account protection",
+        "Secure gift registry privacy",
+        "B2B pricing confidentiality",
+        "Fraud prevention systems",
+        "Data backup and recovery"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How do you handle complex product variations like size and color?",
+        "answer": "Our platforms support unlimited product variations with dynamic pricing, inventory tracking per variant, and smart filtering to help customers find exactly what they need."
+      },
+      {
+        "question": "Can you integrate recipe content with product pages?",
+        "answer": "Yes! We create seamless connections between recipes and products, letting customers shop ingredients or tools directly from recipe pages, increasing engagement and sales."
+      },
+      {
+        "question": "Do you support wedding registries and gift lists?",
+        "answer": "Absolutely. We build comprehensive gift registry systems with privacy controls, item tracking, and easy sharing options perfect for wedding and housewarming gifts."
+      },
+      {
+        "question": "How do you handle both B2C and B2B customers?",
+        "answer": "We create separate experiences within one platform - public-facing retail store for consumers and a secure wholesale portal for business buyers with custom pricing and ordering."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Cook Up Online Success?",
+      "description": "Let's build an ecommerce store that showcases your kitchenware beautifully.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "View Demo"
+    }
   },
   "healthcare-education/healthcare": {
     "slug": "healthcare-education/healthcare",
     "title": "Healthcare Solutions",
+    "name": "Healthcare",
     "description": "Build secure, scalable healthcare platforms for clinics, hospitals, and telemedicine providers.",
     "hero": {
       "heading": "Transform Healthcare with Technology",
-      "description": "From patient apps to EMR systems, our solutions enhance patient care and data security.",
-      "gradient": "from-red-500 to-pink-600"
+      "description": "From patient apps to EMR systems, our solutions enhance patient care, streamline operations, and ensure data security.",
+      "gradient": "from-red-600 to-pink-600",
+      "stats": [
+        {
+          "value": "300+",
+          "label": "Healthcare Facilities"
+        },
+        {
+          "value": "99.9%",
+          "label": "Data Security Compliance"
+        },
+        {
+          "value": "50%",
+          "label": "Admin Time Reduction"
+        },
+        {
+          "value": "HIPAA",
+          "label": "Certified Solutions"
+        }
+      ]
     },
-    "features": [
-      { "title": "Patient Portals", "description": "Streamline appointments and medical records.", "icon": "heart" },
-      { "title": "Telemedicine Platforms", "description": "Enable virtual consultations and monitoring.", "icon": "cloud" },
-      { "title": "HIPAA Compliance", "description": "Ensure secure handling of sensitive medical data.", "icon": "shield" }
+    "overview": {
+      "title": "Leading Healthcare Technology Partner",
+      "description": "We specialize in developing HIPAA-compliant healthcare solutions that improve patient outcomes and streamline clinical workflows. Our expertise spans telemedicine, patient portals, EMR systems, and healthcare analytics.",
+      "highlights": [
+        "HIPAA-compliant application development",
+        "Telemedicine and virtual care platforms",
+        "Patient portal and engagement solutions",
+        "Electronic Health Records (EHR/EMR) integration",
+        "Healthcare analytics and reporting",
+        "Medical device integration"
+      ]
+    },
+    "services": [
+      {
+        "title": "Telemedicine Platforms",
+        "description": "Enable virtual consultations with secure video conferencing, appointment scheduling, e-prescriptions, and remote patient monitoring.",
+        "icon": "cloud"
+      },
+      {
+        "title": "Patient Portal Development",
+        "description": "Build patient-centric portals for appointment booking, medical records access, test results, billing, and secure messaging with providers.",
+        "icon": "heart"
+      },
+      {
+        "title": "EHR/EMR Integration",
+        "description": "Seamless integration with existing Electronic Health Record systems including Epic, Cerner, Allscripts, and custom EMR solutions.",
+        "icon": "database"
+      },
+      {
+        "title": "Healthcare Mobile Apps",
+        "description": "Native iOS and Android apps for patients and healthcare providers with offline capabilities and real-time notifications.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Medical Imaging Solutions",
+        "description": "DICOM-compliant medical imaging platforms with secure storage, sharing, and advanced visualization capabilities.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Healthcare Analytics",
+        "description": "Data-driven insights for population health management, clinical decision support, and operational efficiency.",
+        "icon": "lightbulb"
+      }
+    ],
+    "technologies": [
+      "HL7 & FHIR",
+      "DICOM",
+      "Epic Integration",
+      "Cerner",
+      "AWS Healthcare",
+      "Azure Health",
+      "Twilio Video",
+      "WebRTC",
+      "React Native",
+      "Node.js",
+      "Python",
+      "TensorFlow"
     ],
     "benefits": [
-      "Enhance patient engagement",
-      "Ensure data privacy and compliance",
-      "Integrate with EHR systems",
-      "Improve healthcare outcomes"
-    ]
+      "Enhance patient engagement and satisfaction",
+      "Ensure data privacy and HIPAA compliance",
+      "Integrate seamlessly with existing EHR systems",
+      "Improve healthcare outcomes through better care coordination",
+      "Reduce administrative burden on staff",
+      "Enable remote patient monitoring and care",
+      "Improve clinical decision-making with real-time data",
+      "Reduce hospital readmissions",
+      "Streamline billing and claims processing"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Healthcare Assessment",
+        "description": "Understand your clinical workflows, compliance requirements, and integration needs with existing healthcare systems."
+      },
+      {
+        "step": "02",
+        "title": "Compliance Planning",
+        "description": "Design HIPAA-compliant architecture with security controls, audit logging, and data protection measures."
+      },
+      {
+        "step": "03",
+        "title": "Development & Integration",
+        "description": "Build your healthcare solution with EHR integration, HL7/FHIR standards, and rigorous testing."
+      },
+      {
+        "step": "04",
+        "title": "Security Validation",
+        "description": "Comprehensive security testing, penetration testing, and HIPAA compliance verification."
+      },
+      {
+        "step": "05",
+        "title": "Deployment & Training",
+        "description": "Seamless deployment with staff training, documentation, and ongoing support for healthcare providers."
+      }
+    ],
+    "caseStudies": [
+      {
+        "metric": "85%",
+        "title": "Reduced No-Shows",
+        "description": "Automated appointment reminders and easy rescheduling through patient portal"
+      },
+      {
+        "metric": "60%",
+        "title": "Faster Check-In",
+        "description": "Digital intake forms and pre-visit questionnaires streamline patient registration"
+      },
+      {
+        "metric": "40%",
+        "title": "Lower Costs",
+        "description": "Telemedicine platform reduced emergency room visits and improved care access"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Hospital Management System",
+        "description": "Comprehensive platform for managing hospital operations, patient care, and administrative workflows.",
+        "features": [
+          "Patient admission and discharge",
+          "Bed and ward management",
+          "Operating room scheduling",
+          "Pharmacy and lab integration",
+          "Billing and insurance claims"
+        ]
+      },
+      {
+        "title": "Telemedicine Platform",
+        "description": "Complete virtual care solution connecting patients with healthcare providers remotely.",
+        "features": [
+          "HD video consultations",
+          "E-prescriptions and pharmacy integration",
+          "Remote patient monitoring",
+          "Secure chat and file sharing",
+          "Insurance verification and billing"
+        ]
+      }
+    ],
+    "security": {
+      "title": "HIPAA Compliance & Security",
+      "features": [
+        "End-to-end encryption for all patient data",
+        "Role-based access controls (RBAC)",
+        "Complete audit logging and monitoring",
+        "Business Associate Agreements (BAA)",
+        "Regular security audits and penetration testing",
+        "HIPAA compliance documentation",
+        "Disaster recovery and backup systems",
+        "Secure API authentication"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How do you ensure HIPAA compliance?",
+        "answer": "We follow HIPAA security and privacy rules throughout development, including encryption at rest and in transit, access controls, audit logging, and regular security assessments. We provide Business Associate Agreements and maintain comprehensive compliance documentation."
+      },
+      {
+        "question": "Can you integrate with our existing EHR system?",
+        "answer": "Yes! We have extensive experience integrating with major EHR systems like Epic, Cerner, Allscripts, and others using HL7, FHIR, and proprietary APIs. We ensure seamless data flow while maintaining security and compliance."
+      },
+      {
+        "question": "What telemedicine features do you support?",
+        "answer": "Our telemedicine solutions include HD video consultations, screen sharing, e-prescriptions, appointment scheduling, payment processing, insurance verification, medical records access, and integration with diagnostic devices for remote monitoring."
+      },
+      {
+        "question": "How long does healthcare software development take?",
+        "answer": "Timeline varies based on complexity. A basic patient portal takes 3-4 months, while comprehensive telemedicine platforms or hospital management systems typically require 6-12 months including compliance validation and testing."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform Healthcare Delivery?",
+      "description": "Let's build secure, compliant healthcare technology that improves patient outcomes.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "Schedule Consultation"
+    }
+  },
+  "finance-security/finance": {
+    "slug": "finance-security/finance",
+    "title": "Financial Technology Solutions",
+    "name": "Finance",
+    "description": "Build secure, compliant fintech applications for banking, payments, and financial services.",
+    "hero": {
+      "heading": "Innovate Financial Services with Technology",
+      "description": "Create secure, scalable fintech solutions that transform banking, payments, wealth management, and financial operations.",
+      "gradient": "from-emerald-700 to-teal-600",
+      "stats": [
+        {
+          "value": "$5B+",
+          "label": "Transactions Processed"
+        },
+        {
+          "value": "100%",
+          "label": "Regulatory Compliance"
+        },
+        {
+          "value": "10M+",
+          "label": "Users Protected"
+        },
+        {
+          "value": "99.99%",
+          "label": "System Uptime"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Leading Fintech Development Partner",
+      "description": "We develop secure, compliant financial technology solutions that meet stringent regulatory requirements while delivering exceptional user experiences. Our expertise spans digital banking, payment processing, wealth management, and financial analytics.",
+      "highlights": [
+        "PCI-DSS compliant payment solutions",
+        "Digital banking and mobile banking apps",
+        "Payment gateway and wallet development",
+        "Trading and investment platforms",
+        "Financial analytics and reporting",
+        "Regulatory compliance automation"
+      ]
+    },
+    "services": [
+      {
+        "title": "Digital Banking Platforms",
+        "description": "Build modern banking experiences with account management, transfers, bill payments, and real-time notifications.",
+        "icon": "database"
+      },
+      {
+        "title": "Payment Processing Solutions",
+        "description": "Secure payment gateways with multi-currency support, fraud detection, and PCI-DSS compliance.",
+        "icon": "lock"
+      },
+      {
+        "title": "Trading & Investment Platforms",
+        "description": "Real-time trading platforms with market data, portfolio management, and advanced analytics.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Lending & Credit Management",
+        "description": "Automated loan origination, credit scoring, underwriting, and loan servicing systems.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Wealth Management Apps",
+        "description": "Portfolio tracking, robo-advisory, retirement planning, and financial goal management.",
+        "icon": "monitor"
+      },
+      {
+        "title": "RegTech Solutions",
+        "description": "Compliance automation, KYC/AML verification, transaction monitoring, and regulatory reporting.",
+        "icon": "shield"
+      }
+    ],
+    "technologies": [
+      "Plaid API",
+      "Stripe",
+      "Blockchain",
+      "AWS FinTech",
+      "Azure Finance",
+      "Kafka",
+      "PostgreSQL",
+      "Redis",
+      "React Native",
+      "Node.js",
+      "Python",
+      "Go"
+    ],
+    "benefits": [
+      "Reduce operational costs through automation",
+      "Ensure PCI-DSS and regulatory compliance",
+      "Improve transaction processing speed",
+      "Enhance security and fraud prevention",
+      "Scale seamlessly with growing transaction volumes",
+      "Provide superior customer experiences",
+      "Enable real-time financial insights",
+      "Accelerate time-to-market for new products"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Compliance & Requirements",
+        "description": "Understand your financial services model, regulatory requirements, and security standards including PCI-DSS and KYC/AML."
+      },
+      {
+        "step": "02",
+        "title": "Secure Architecture Design",
+        "description": "Design robust financial architecture with multi-layer security, encryption, and fraud prevention mechanisms."
+      },
+      {
+        "step": "03",
+        "title": "Development & Integration",
+        "description": "Build your fintech platform with banking APIs, payment gateways, and core financial system integrations."
+      },
+      {
+        "step": "04",
+        "title": "Security Testing & Audit",
+        "description": "Comprehensive security testing, penetration testing, and compliance validation before deployment."
+      },
+      {
+        "step": "05",
+        "title": "Deployment & Monitoring",
+        "description": "Launch with 24/7 monitoring, fraud detection, and continuous security updates to protect financial data."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Digital Banking Platform",
+        "metric": "500K+ active users",
+        "description": "Launched neo-bank with instant account opening and real-time payments"
+      },
+      {
+        "title": "Payment Gateway Solution",
+        "metric": "$2B+ processed annually",
+        "description": "Built scalable payment platform handling millions of transactions"
+      },
+      {
+        "title": "Investment Trading App",
+        "metric": "50% user engagement increase",
+        "description": "Mobile trading platform with real-time market data and analytics"
+      }
+    ],
+    "security": {
+      "title": "Financial-Grade Security",
+      "features": [
+        "PCI-DSS Level 1 compliance",
+        "Bank-level encryption (AES-256)",
+        "Multi-factor authentication (MFA)",
+        "Real-time fraud detection and prevention",
+        "KYC/AML automated verification",
+        "SOC 2 Type II certification",
+        "Secure API authentication",
+        "Transaction monitoring and alerts"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How do you ensure PCI-DSS compliance?",
+        "answer": "We follow PCI-DSS standards throughout development including encrypted data transmission, secure storage, regular security testing, and maintaining comprehensive compliance documentation. We provide Level 1 PCI-DSS compliant infrastructure."
+      },
+      {
+        "question": "Can you integrate with existing banking systems?",
+        "answer": "Yes! We have extensive experience integrating with core banking systems, payment processors like Stripe and PayPal, and banking APIs including Plaid, Yodlee, and direct bank integrations."
+      },
+      {
+        "question": "What fraud prevention measures do you implement?",
+        "answer": "Our solutions include real-time transaction monitoring, machine learning-based fraud detection, behavioral analytics, device fingerprinting, and multi-factor authentication to prevent fraudulent activities."
+      },
+      {
+        "question": "How long does fintech development take?",
+        "answer": "Timeline varies by complexity. A mobile banking app takes 4-6 months, while comprehensive payment platforms or trading systems typically require 6-12 months including security testing and compliance validation."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Build Your Fintech Solution?",
+      "description": "Let's create secure, compliant financial technology that transforms your business.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "Schedule Consultation"
+    }
+  },
+  "finance-security/insurance": {
+    "slug": "finance-security/insurance",
+    "title": "Insurance Technology Solutions",
+    "name": "Insurance",
+    "description": "Modernize insurance operations with digital platforms for policy management, claims processing, and customer engagement.",
+    "hero": {
+      "heading": "Transform Insurance with Digital Solutions",
+      "description": "Build modern insurance platforms that streamline underwriting, claims, policy management, and customer engagement.",
+      "gradient": "from-blue-800 to-cyan-700",
+      "stats": [
+        {
+          "value": "250K+",
+          "label": "Policies Managed"
+        },
+        {
+          "value": "70%",
+          "label": "Faster Claims Processing"
+        },
+        {
+          "value": "95%",
+          "label": "Customer Satisfaction"
+        },
+        {
+          "value": "40%",
+          "label": "Cost Reduction"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Insurance Technology Expertise",
+      "description": "We develop comprehensive insurance technology solutions that automate processes, improve customer experiences, and drive operational efficiency. From policy management to claims processing, our solutions cover the entire insurance lifecycle.",
+      "highlights": [
+        "Policy administration systems",
+        "Claims management automation",
+        "Insurance mobile applications",
+        "Agent and broker portals",
+        "Underwriting automation",
+        "Customer self-service platforms"
+      ]
+    },
+    "services": [
+      {
+        "title": "Policy Management Systems",
+        "description": "Complete policy lifecycle management from quotes to renewals with automated workflows and document generation.",
+        "icon": "database"
+      },
+      {
+        "title": "Claims Processing Automation",
+        "description": "Streamlined claims filing, adjudication, and settlement with AI-powered fraud detection.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Insurance Mobile Apps",
+        "description": "Mobile-first experiences for policy holders with instant quotes, claims filing, and document uploads.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Agent Portal Development",
+        "description": "Comprehensive portals for agents and brokers with commission tracking, lead management, and reporting.",
+        "icon": "users"
+      },
+      {
+        "title": "Underwriting Automation",
+        "description": "AI-powered risk assessment, automated underwriting rules, and integration with third-party data sources.",
+        "icon": "shield"
+      },
+      {
+        "title": "Customer Portal",
+        "description": "Self-service portals for policy management, premium payments, claims tracking, and document access.",
+        "icon": "monitor"
+      }
+    ],
+    "technologies": [
+      "Guidewire",
+      "Duck Creek",
+      "ISO Standards",
+      "OCR & AI",
+      "AWS Insurance",
+      "Azure",
+      "React",
+      "Node.js",
+      "Python",
+      "TensorFlow"
+    ],
+    "benefits": [
+      "Reduce claims processing time by 60%",
+      "Automate underwriting and policy issuance",
+      "Improve customer satisfaction scores",
+      "Reduce operational costs significantly",
+      "Enable digital-first customer experiences",
+      "Enhance fraud detection capabilities",
+      "Streamline agent and broker operations",
+      "Ensure regulatory compliance"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Insurance Process Analysis",
+        "description": "Evaluate your insurance workflows, policy types, claims processes, and regulatory compliance requirements."
+      },
+      {
+        "step": "02",
+        "title": "System Design",
+        "description": "Design comprehensive insurance platform architecture with policy management, claims, and customer portal components."
+      },
+      {
+        "step": "03",
+        "title": "Platform Development",
+        "description": "Build insurance system with automated underwriting, policy administration, and claims processing capabilities."
+      },
+      {
+        "step": "04",
+        "title": "Integration & Testing",
+        "description": "Integrate with third-party data sources, payment systems, and conduct thorough testing of all workflows."
+      },
+      {
+        "step": "05",
+        "title": "Deployment & Training",
+        "description": "Launch platform with comprehensive training for agents, adjusters, and ongoing support for operations."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Auto Insurance Platform",
+        "metric": "70% faster policy issuance",
+        "description": "Automated underwriting system processing thousands of quotes daily"
+      },
+      {
+        "title": "Health Insurance Portal",
+        "metric": "90% claims submitted digitally",
+        "description": "Self-service platform reducing phone support by 65%"
+      },
+      {
+        "title": "Commercial Insurance System",
+        "metric": "$50M+ policies managed",
+        "description": "Enterprise platform handling complex commercial insurance products"
+      }
+    ],
+    "security": {
+      "title": "Insurance Data Protection",
+      "features": [
+        "HIPAA compliance for health insurance",
+        "SOC 2 Type II certification",
+        "Encrypted customer data storage",
+        "Secure document management",
+        "Role-based access controls",
+        "Fraud detection algorithms",
+        "Audit logging and compliance reporting",
+        "PCI-DSS for payment processing"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can you integrate with existing insurance systems?",
+        "answer": "Yes! We have experience integrating with major insurance platforms like Guidewire, Duck Creek, and legacy systems. We can also build API connections to third-party data providers for underwriting and claims."
+      },
+      {
+        "question": "How do you automate underwriting processes?",
+        "answer": "Our AI-powered underwriting uses rules engines, machine learning models, and integration with external data sources (credit, driving records, property data) to automate risk assessment and policy pricing."
+      },
+      {
+        "question": "What types of insurance can your platform support?",
+        "answer": "Our flexible platform supports all major insurance types including auto, home, health, life, commercial property, liability, and specialty insurance products with configurable workflows."
+      },
+      {
+        "question": "How long does insurance software implementation take?",
+        "answer": "Implementation timelines vary: basic policy management takes 3-4 months, while comprehensive insurance platforms with claims and agent portals typically require 6-9 months including testing and training."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Modernize Your Insurance Operations?",
+      "description": "Let's build digital insurance solutions that improve efficiency and customer satisfaction.",
+      "primaryButton": "Get Started",
+      "secondaryButton": "Schedule Demo"
+    }
   },
   "finance-security/cybersecurity": {
     "slug": "finance-security/cybersecurity",
     "title": "Cybersecurity Services",
+    "name": "Cybersecurity",
     "description": "Protect your business with comprehensive cybersecurity and data protection solutions.",
     "hero": {
       "heading": "Secure Your Digital Infrastructure",
-      "description": "We offer enterprise-grade protection from cyber threats, breaches, and data loss.",
-      "gradient": "from-blue-700 to-cyan-600"
+      "description": "Enterprise-grade cybersecurity solutions that protect against threats, breaches, and data loss while ensuring compliance.",
+      "gradient": "from-red-700 to-orange-600",
+      "stats": [
+        {
+          "value": "1B+",
+          "label": "Threats Blocked Daily"
+        },
+        {
+          "value": "24/7",
+          "label": "Security Monitoring"
+        },
+        {
+          "value": "99.9%",
+          "label": "Attack Prevention"
+        },
+        {
+          "value": "<5min",
+          "label": "Incident Response"
+        }
+      ]
     },
-    "features": [
-      { "title": "Threat Detection", "description": "Monitor and identify suspicious activity in real-time.", "icon": "shield" },
-      { "title": "Data Encryption", "description": "Protect sensitive data across all platforms.", "icon": "lock" },
-      { "title": "Incident Response", "description": "Rapid mitigation and recovery from security breaches.", "icon": "server" }
+    "overview": {
+      "title": "Comprehensive Cybersecurity Solutions",
+      "description": "We provide end-to-end cybersecurity services that protect your digital assets, secure your infrastructure, and ensure compliance with industry standards. Our solutions combine advanced technology with expert security practices.",
+      "highlights": [
+        "Security assessment and auditing",
+        "Penetration testing and vulnerability scanning",
+        "Security operations center (SOC) setup",
+        "Incident response and forensics",
+        "Compliance and risk management",
+        "Security awareness training"
+      ]
+    },
+    "services": [
+      {
+        "title": "Threat Detection & Response",
+        "description": "24/7 monitoring with AI-powered threat detection, real-time alerts, and automated incident response.",
+        "icon": "shield"
+      },
+      {
+        "title": "Penetration Testing",
+        "description": "Comprehensive security testing including network, application, cloud, and social engineering assessments.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Security Architecture",
+        "description": "Design and implement secure architecture with zero-trust principles, micro-segmentation, and defense in depth.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Data Encryption & Protection",
+        "description": "End-to-end encryption, data loss prevention (DLP), and secure key management solutions.",
+        "icon": "lock"
+      },
+      {
+        "title": "Compliance Management",
+        "description": "Ensure compliance with ISO 27001, SOC 2, GDPR, HIPAA, and other regulatory frameworks.",
+        "icon": "database"
+      },
+      {
+        "title": "Security Training",
+        "description": "Employee security awareness training, phishing simulations, and security best practices workshops.",
+        "icon": "users"
+      }
+    ],
+    "technologies": [
+      "SIEM Tools",
+      "Splunk",
+      "CrowdStrike",
+      "Palo Alto",
+      "AWS Security",
+      "Azure Security",
+      "Kubernetes Security",
+      "HashiCorp Vault",
+      "OWASP",
+      "Nessus",
+      "Metasploit",
+      "Wireshark"
     ],
     "benefits": [
-      "24/7 monitoring and response",
-      "Compliance with ISO & GDPR standards",
+      "24/7 security monitoring and response",
+      "Compliance with ISO, GDPR, and industry standards",
+      "Reduce security incidents by 80%",
+      "Protect customer trust and brand reputation",
+      "Prevent data breaches and ransomware",
       "Secure cloud infrastructure",
-      "Protect customer trust and reputation"
-    ]
+      "Meet audit and compliance requirements",
+      "Reduce cyber insurance premiums"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Security Assessment",
+        "description": "Comprehensive evaluation of your current security posture, vulnerabilities, and compliance gaps."
+      },
+      {
+        "step": "02",
+        "title": "Strategy Development",
+        "description": "Create tailored security roadmap with prioritized recommendations and compliance requirements."
+      },
+      {
+        "step": "03",
+        "title": "Implementation",
+        "description": "Deploy security controls, monitoring systems, encryption, and access management solutions."
+      },
+      {
+        "step": "04",
+        "title": "Testing & Validation",
+        "description": "Penetration testing, vulnerability scanning, and security validation to ensure effectiveness."
+      },
+      {
+        "step": "05",
+        "title": "Continuous Monitoring",
+        "description": "24/7 security operations with threat detection, incident response, and regular security updates."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Enterprise SOC Implementation",
+        "metric": "90% threat detection improvement",
+        "description": "Built 24/7 security operations center with AI-powered threat intelligence"
+      },
+      {
+        "title": "Financial Services Security",
+        "metric": "Zero breaches in 3 years",
+        "description": "Comprehensive security framework for banking platform handling sensitive data"
+      },
+      {
+        "title": "Cloud Security Transformation",
+        "metric": "ISO 27001 certification achieved",
+        "description": "Secured multi-cloud infrastructure and obtained compliance certifications"
+      }
+    ],
+    "security": {
+      "title": "Comprehensive Security Framework",
+      "features": [
+        "Zero-trust security architecture",
+        "Multi-layered defense in depth",
+        "24/7 threat monitoring and response",
+        "Advanced encryption standards",
+        "Identity and access management",
+        "Security information and event management (SIEM)",
+        "Incident response and forensics",
+        "Compliance automation and reporting"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What security frameworks do you follow?",
+        "answer": "We implement industry-standard frameworks including NIST Cybersecurity Framework, ISO 27001, SOC 2, CIS Controls, and OWASP guidelines, customized to your specific industry requirements."
+      },
+      {
+        "question": "How quickly can you respond to security incidents?",
+        "answer": "Our 24/7 SOC provides immediate threat detection and response within minutes. We have documented incident response procedures and dedicated security teams ready to handle any security event."
+      },
+      {
+        "question": "Do you provide security training for employees?",
+        "answer": "Yes! We offer comprehensive security awareness training including phishing simulations, security best practices workshops, and role-specific training to build a security-conscious culture."
+      },
+      {
+        "question": "How do you help with compliance requirements?",
+        "answer": "We provide end-to-end compliance support including gap assessments, control implementation, documentation, audit preparation, and ongoing compliance monitoring for GDPR, HIPAA, PCI-DSS, SOC 2, and other standards."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Strengthen Your Security Posture?",
+      "description": "Let's build a comprehensive cybersecurity strategy that protects your business.",
+      "primaryButton": "Get Security Assessment",
+      "secondaryButton": "Contact Security Team"
+    }
+  },
+  "education/education": {
+    "slug": "education/education",
+    "title": "Education Technology Solutions",
+    "name": "Education",
+    "description": "Transform education with innovative learning platforms, student management systems, and digital classrooms.",
+    "hero": {
+      "heading": "Empower Learning with Technology",
+      "description": "Build engaging educational platforms that enhance learning experiences, streamline administration, and connect students with knowledge.",
+      "gradient": "from-blue-700 to-sky-600",
+      "stats": [
+        {
+          "value": "500K+",
+          "label": "Students Reached"
+        },
+        {
+          "value": "1,000+",
+          "label": "Educational Institutions"
+        },
+        {
+          "value": "85%",
+          "label": "Learning Improvement"
+        },
+        {
+          "value": "24/7",
+          "label": "Learning Access"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Education Technology Expertise",
+      "description": "We develop comprehensive EdTech solutions that transform traditional education into interactive, accessible, and effective learning experiences. From K-12 to higher education and corporate training, our platforms engage learners and simplify administration.",
+      "highlights": [
+        "Learning Management Systems (LMS)",
+        "Virtual classroom and video conferencing",
+        "Student information systems",
+        "Assessment and examination platforms",
+        "Mobile learning applications",
+        "Parent and teacher portals"
+      ]
+    },
+    "services": [
+      {
+        "title": "Learning Management Systems",
+        "description": "Comprehensive LMS platforms with course management, content delivery, assessments, and progress tracking.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Virtual Classrooms",
+        "description": "Interactive online classrooms with live video, screen sharing, whiteboards, breakout rooms, and recording.",
+        "icon": "cloud"
+      },
+      {
+        "title": "Student Information Systems",
+        "description": "Complete student lifecycle management including enrollment, attendance, grades, and academic records.",
+        "icon": "database"
+      },
+      {
+        "title": "Assessment Platforms",
+        "description": "Online testing and examination systems with auto-grading, proctoring, and detailed analytics.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Mobile Learning Apps",
+        "description": "Native iOS and Android apps for on-the-go learning with offline content and push notifications.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Parent-Teacher Portals",
+        "description": "Communication platforms connecting parents, teachers, and students with messaging and progress updates.",
+        "icon": "users"
+      }
+    ],
+    "technologies": [
+      "Moodle",
+      "Canvas LMS",
+      "Zoom SDK",
+      "WebRTC",
+      "Xapi (Tin Can)",
+      "SCORM",
+      "AWS Educate",
+      "React",
+      "React Native",
+      "Node.js",
+      "Python",
+      "MongoDB"
+    ],
+    "benefits": [
+      "Increase student engagement and outcomes",
+      "Enable remote and hybrid learning",
+      "Automate administrative tasks",
+      "Provide personalized learning paths",
+      "Improve parent-teacher communication",
+      "Track student progress in real-time",
+      "Reduce operational costs",
+      "Scale to support growing enrollment"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Educational Needs Analysis",
+        "description": "Understand your institution's teaching methods, student demographics, curriculum, and technology requirements."
+      },
+      {
+        "step": "02",
+        "title": "Platform Design",
+        "description": "Design intuitive learning experiences for students, teachers, and administrators with accessibility in mind."
+      },
+      {
+        "step": "03",
+        "title": "Development & Integration",
+        "description": "Build LMS platform with course management, content delivery, assessments, and student information systems."
+      },
+      {
+        "step": "04",
+        "title": "Content Migration & Testing",
+        "description": "Migrate existing courses and content, conduct user testing with teachers and students."
+      },
+      {
+        "step": "05",
+        "title": "Launch & Training",
+        "description": "Deploy platform with comprehensive training for educators and ongoing technical support."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "University Learning Platform",
+        "metric": "50K+ students enrolled",
+        "description": "Comprehensive LMS supporting hybrid learning across 200+ courses"
+      },
+      {
+        "title": "K-12 School District",
+        "metric": "95% parent engagement",
+        "description": "Unified platform connecting 30 schools with real-time grade updates"
+      },
+      {
+        "title": "Corporate Training System",
+        "metric": "80% completion rate",
+        "description": "Enterprise learning platform with certification and compliance tracking"
+      }
+    ],
+    "security": {
+      "title": "Student Data Protection",
+      "features": [
+        "FERPA and COPPA compliance",
+        "Student data privacy protection",
+        "Secure access controls for minors",
+        "Encrypted communications",
+        "Role-based permissions",
+        "Safe browsing and content filtering",
+        "Audit logs for data access",
+        "Secure assessment and exam proctoring"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can your platform support both K-12 and higher education?",
+        "answer": "Yes! Our flexible platform can be customized for K-12, higher education, and corporate training with age-appropriate features, curriculum management, and compliance requirements specific to each level."
+      },
+      {
+        "question": "How do you ensure student data privacy?",
+        "answer": "We follow FERPA, COPPA, and GDPR compliance standards with encrypted data storage, secure access controls, parental consent management, and strict privacy policies to protect student information."
+      },
+      {
+        "question": "Can you integrate with existing student information systems?",
+        "answer": "Absolutely. We integrate with major SIS platforms like PowerSchool, Infinite Campus, Blackbaud, and can build custom integrations with your existing systems for seamless data flow."
+      },
+      {
+        "question": "What features support remote and hybrid learning?",
+        "answer": "Our platform includes live video classrooms, recorded lectures, interactive whiteboards, breakout rooms, assignment submission, real-time collaboration, and offline content access for flexible learning."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform Education?",
+      "description": "Let's build engaging learning platforms that empower students and educators.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "Schedule Demo"
+    }
+  },
+  "lifestyle/pet-care": {
+    "slug": "lifestyle/pet-care",
+    "title": "Pet Care Technology Solutions",
+    "name": "Pet Care",
+    "description": "Build innovative pet care platforms for veterinary services, pet stores, grooming, and pet parent communities.",
+    "hero": {
+      "heading": "Modernize Pet Care with Digital Solutions",
+      "description": "Create comprehensive pet care platforms that connect pet parents with veterinarians, groomers, trainers, and pet services.",
+      "gradient": "from-amber-600 to-orange-500",
+      "stats": [
+        {
+          "value": "100K+",
+          "label": "Pets Cared For"
+        },
+        {
+          "value": "2,500+",
+          "label": "Vet Clinics Connected"
+        },
+        {
+          "value": "95%",
+          "label": "Owner Satisfaction"
+        },
+        {
+          "value": "30min",
+          "label": "Avg. Booking Time"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Pet Care Technology Partner",
+      "description": "We develop technology solutions for the growing pet care industry, helping veterinary clinics, pet stores, grooming services, and pet care providers deliver exceptional experiences to pet parents while streamlining their operations.",
+      "highlights": [
+        "Veterinary practice management",
+        "Pet health and wellness tracking",
+        "Grooming and boarding booking systems",
+        "Pet adoption platforms",
+        "E-commerce for pet supplies",
+        "Telemedicine for pets"
+      ]
+    },
+    "services": [
+      {
+        "title": "Veterinary Management Software",
+        "description": "Complete practice management with appointments, medical records, prescriptions, billing, and inventory.",
+        "icon": "heart"
+      },
+      {
+        "title": "Pet Health Tracking Apps",
+        "description": "Mobile apps for pet parents to track vaccinations, medications, vet visits, and health metrics.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Booking & Scheduling",
+        "description": "Online booking systems for grooming, boarding, training, and veterinary appointments.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Pet Adoption Platforms",
+        "description": "Connect shelters, rescues, and adopters with searchable databases and application management.",
+        "icon": "users"
+      },
+      {
+        "title": "Pet Supply E-commerce",
+        "description": "Online stores for pet food, toys, and accessories with subscription and delivery options.",
+        "icon": "shoppingcart"
+      },
+      {
+        "title": "Telemedicine for Pets",
+        "description": "Virtual consultations between pet parents and veterinarians with video calls and chat.",
+        "icon": "cloud"
+      }
+    ],
+    "technologies": [
+      "React Native",
+      "Node.js",
+      "MongoDB",
+      "Stripe",
+      "Twilio",
+      "AWS",
+      "Firebase",
+      "WebRTC",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "benefits": [
+      "Improve pet parent engagement",
+      "Streamline veterinary operations",
+      "Enable telemedicine consultations",
+      "Increase booking and appointment rates",
+      "Automate reminders and notifications",
+      "Build loyal customer communities",
+      "Grow revenue through subscriptions",
+      "Provide 24/7 access to pet care resources"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Pet Care Discovery",
+        "description": "Understand your pet care services, target audience, workflow requirements, and business goals."
+      },
+      {
+        "step": "02",
+        "title": "User Experience Design",
+        "description": "Create intuitive interfaces for pet parents, veterinarians, groomers, and service providers."
+      },
+      {
+        "step": "03",
+        "title": "Platform Development",
+        "description": "Build comprehensive pet care platform with booking, health tracking, and communication features."
+      },
+      {
+        "step": "04",
+        "title": "Integration & Testing",
+        "description": "Integrate with payment systems, veterinary software, and conduct thorough user testing."
+      },
+      {
+        "step": "05",
+        "title": "Launch & Support",
+        "description": "Deploy platform with marketing support and ongoing maintenance for pet care businesses."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Veterinary Clinic Chain",
+        "metric": "300% online bookings increase",
+        "description": "Multi-location booking system with automated reminders reducing no-shows"
+      },
+      {
+        "title": "Pet Grooming Marketplace",
+        "metric": "10K+ active pet parents",
+        "description": "Platform connecting groomers with customers across 50+ cities"
+      },
+      {
+        "title": "Pet Health Tracking App",
+        "metric": "4.8/5 user rating",
+        "description": "Mobile app helping pet parents manage vaccinations and vet visits"
+      }
+    ],
+    "security": {
+      "title": "Pet Data Protection",
+      "features": [
+        "Secure pet health records storage",
+        "HIPAA-compliant veterinary data handling",
+        "PCI-DSS payment processing",
+        "Encrypted medical records transmission",
+        "User privacy and consent management",
+        "Secure telemedicine video calls",
+        "Data backup and disaster recovery",
+        "Role-based access for veterinary staff"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can pet parents access their pet's medical records?",
+        "answer": "Yes! Our platforms provide secure pet parent portals where they can view vaccination records, test results, prescriptions, and visit history anytime from their mobile device or computer."
+      },
+      {
+        "question": "How does telemedicine for pets work?",
+        "answer": "Our telemedicine features enable video consultations between pet parents and veterinarians for non-emergency concerns, follow-up visits, and general pet health questions, with integrated e-prescription capabilities."
+      },
+      {
+        "question": "Can you integrate with existing veterinary software?",
+        "answer": "Absolutely. We integrate with popular veterinary management systems like ezyVet, Cornerstone, IDEXX, and AVImark to ensure seamless data flow and avoid duplicate data entry."
+      },
+      {
+        "question": "Do you support subscription-based services?",
+        "answer": "Yes! We build subscription management features for recurring services like pet food delivery, wellness plans, pet insurance, and membership programs with automated billing and renewal management."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Modernize Pet Care Services?",
+      "description": "Let's build technology that helps pets live healthier, happier lives.",
+      "primaryButton": "Get Started",
+      "secondaryButton": "View Solutions"
+    }
+  },
+  "real-estate/real-estate": {
+    "slug": "real-estate/real-estate",
+    "title": "Real Estate Technology Solutions",
+    "name": "Real Estate",
+    "description": "Transform real estate with property management platforms, listing portals, and virtual tour solutions.",
+    "hero": {
+      "heading": "Digitize Real Estate Operations",
+      "description": "Build modern real estate platforms that connect buyers, sellers, agents, and property managers with powerful digital tools.",
+      "gradient": "from-slate-700 to-gray-600",
+      "stats": [
+        {
+          "value": "50K+",
+          "label": "Properties Listed"
+        },
+        {
+          "value": "1M+",
+          "label": "Monthly Visitors"
+        },
+        {
+          "value": "40%",
+          "label": "Faster Sales Cycle"
+        },
+        {
+          "value": "98%",
+          "label": "User Engagement"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Real Estate Technology Expertise",
+      "description": "We develop comprehensive real estate technology solutions that streamline property management, enhance listing visibility, facilitate transactions, and improve communication between all stakeholders in the real estate ecosystem.",
+      "highlights": [
+        "Property management platforms",
+        "Real estate listing portals",
+        "Virtual tours and 3D visualization",
+        "Agent and broker CRM systems",
+        "Tenant and lease management",
+        "Real estate investment platforms"
+      ]
+    },
+    "services": [
+      {
+        "title": "Property Management Systems",
+        "description": "Complete property management with tenant screening, lease management, rent collection, and maintenance tracking.",
+        "icon": "database"
+      },
+      {
+        "title": "Real Estate Listing Portals",
+        "description": "Advanced search and filtering, map integration, saved searches, and property alerts for buyers and renters.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Virtual Tours & 3D Visualization",
+        "description": "Immersive 360\u00b0 virtual tours, 3D floor plans, and augmented reality property viewing.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Agent CRM & Lead Management",
+        "description": "Customer relationship management for real estate agents with lead tracking and automated follow-ups.",
+        "icon": "users"
+      },
+      {
+        "title": "Tenant Portal",
+        "description": "Self-service portals for tenants to pay rent, submit maintenance requests, and access documents.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Investment Analysis Tools",
+        "description": "Real estate investment platforms with property analysis, ROI calculators, and portfolio management.",
+        "icon": "lock"
+      }
+    ],
+    "technologies": [
+      "Mapbox",
+      "Google Maps API",
+      "Matterport",
+      "Zillow API",
+      "MLS Integration",
+      "Stripe",
+      "AWS",
+      "React",
+      "React Native",
+      "Node.js",
+      "PostgreSQL"
+    ],
+    "benefits": [
+      "Increase property visibility and leads",
+      "Streamline tenant management",
+      "Automate rent collection and accounting",
+      "Enable virtual property viewings",
+      "Improve agent productivity",
+      "Reduce vacancy rates",
+      "Enhance property marketing",
+      "Simplify transaction management"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Real Estate Analysis",
+        "description": "Understand your property portfolio, target markets, business model, and user requirements."
+      },
+      {
+        "step": "02",
+        "title": "Platform Architecture",
+        "description": "Design comprehensive real estate system with listings, search, property management, and CRM features."
+      },
+      {
+        "step": "03",
+        "title": "Development & Integration",
+        "description": "Build platform with MLS integration, mapping, virtual tours, and payment processing."
+      },
+      {
+        "step": "04",
+        "title": "Content & Testing",
+        "description": "Import property listings, configure search filters, and conduct user acceptance testing."
+      },
+      {
+        "step": "05",
+        "title": "Launch & Growth",
+        "description": "Deploy platform with marketing tools and ongoing optimization based on user behavior."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Property Management Company",
+        "metric": "1,000+ properties managed",
+        "description": "Unified platform handling tenant screening, leases, and maintenance"
+      },
+      {
+        "title": "Real Estate Brokerage",
+        "metric": "45% lead conversion increase",
+        "description": "Agent CRM and listing portal with virtual tours driving sales"
+      },
+      {
+        "title": "Rental Marketplace",
+        "metric": "100K+ monthly visitors",
+        "description": "Multi-city rental platform with advanced search and instant booking"
+      }
+    ],
+    "security": {
+      "title": "Real Estate Data Security",
+      "features": [
+        "Secure document storage and sharing",
+        "Encrypted financial transactions",
+        "Identity verification for tenants",
+        "PCI-DSS compliant payment processing",
+        "Role-based access controls",
+        "E-signature and contract management",
+        "Data privacy compliance",
+        "Secure background check integration"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can you integrate with MLS systems?",
+        "answer": "Yes! We integrate with major MLS (Multiple Listing Service) systems to automatically sync property listings, updates, and status changes, ensuring your platform always has current information."
+      },
+      {
+        "question": "How do virtual tours work on your platform?",
+        "answer": "We support 360\u00b0 virtual tours, 3D walkthroughs using Matterport, video tours, and interactive floor plans that allow potential buyers or renters to explore properties remotely."
+      },
+      {
+        "question": "Can tenants pay rent through the platform?",
+        "answer": "Absolutely. Our tenant portals include automated rent collection with ACH transfers, credit card payments, payment scheduling, late fee calculation, and digital receipts."
+      },
+      {
+        "question": "Do you support commercial real estate?",
+        "answer": "Yes! Our platform supports residential, commercial, industrial, and mixed-use properties with customizable features for each property type including lease management and tenant improvements."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform Your Real Estate Business?",
+      "description": "Let's build a powerful platform that connects properties with the right people.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "Schedule Demo"
+    }
   },
   "infrastructure/logistics": {
     "slug": "infrastructure/logistics",
     "title": "Logistics & Supply Chain",
+    "name": "Logistics",
     "description": "Digitize logistics and streamline supply chains with data-driven technology.",
     "hero": {
       "heading": "Optimize Logistics Operations",
-      "description": "We build intelligent logistics software that improves delivery efficiency and visibility.",
-      "gradient": "from-orange-500 to-yellow-600"
+      "description": "Build intelligent logistics software that improves delivery efficiency, reduces costs, and provides real-time visibility across your supply chain.",
+      "gradient": "from-orange-600 to-yellow-500",
+      "stats": [
+        {
+          "value": "5M+",
+          "label": "Shipments Tracked"
+        },
+        {
+          "value": "99.5%",
+          "label": "On-Time Delivery"
+        },
+        {
+          "value": "35%",
+          "label": "Cost Savings"
+        },
+        {
+          "value": "24/7",
+          "label": "Real-Time Tracking"
+        }
+      ]
     },
-    "features": [
-      { "title": "Fleet Tracking", "description": "Monitor and manage fleets in real-time.", "icon": "truck" },
-      { "title": "Route Optimization", "description": "Save fuel and time with AI-based routing.", "icon": "lightbulb" },
-      { "title": "Inventory Control", "description": "Track goods across warehouses and locations.", "icon": "database" }
+    "overview": {
+      "title": "Logistics Technology Solutions",
+      "description": "We develop comprehensive logistics and supply chain management solutions that optimize operations, reduce costs, and improve delivery performance. From fleet management to warehouse automation, our solutions cover the entire logistics ecosystem.",
+      "highlights": [
+        "Transportation management systems (TMS)",
+        "Warehouse management systems (WMS)",
+        "Fleet tracking and management",
+        "Route optimization and planning",
+        "Last-mile delivery solutions",
+        "Supply chain visibility platforms"
+      ]
+    },
+    "services": [
+      {
+        "title": "Fleet Management Systems",
+        "description": "Real-time GPS tracking, vehicle diagnostics, driver behavior monitoring, and fuel management.",
+        "icon": "truck"
+      },
+      {
+        "title": "Route Optimization",
+        "description": "AI-powered route planning that reduces fuel costs, delivery times, and carbon emissions.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Warehouse Management",
+        "description": "Inventory control, pick-pack-ship automation, barcode scanning, and warehouse layout optimization.",
+        "icon": "database"
+      },
+      {
+        "title": "Last-Mile Delivery",
+        "description": "Customer-facing delivery tracking, proof of delivery, real-time ETAs, and delivery notifications.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Supply Chain Visibility",
+        "description": "End-to-end tracking of goods across suppliers, warehouses, carriers, and customers.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Freight Management",
+        "description": "Load planning, carrier selection, freight auditing, and freight payment automation.",
+        "icon": "lock"
+      }
+    ],
+    "technologies": [
+      "IoT Sensors",
+      "GPS Tracking",
+      "RFID",
+      "Barcode Systems",
+      "AWS IoT",
+      "Azure IoT",
+      "Kafka",
+      "Redis",
+      "PostgreSQL",
+      "React",
+      "Node.js",
+      "Python"
     ],
     "benefits": [
       "Cut operational costs by 25%",
-      "Improve delivery times",
-      "Real-time analytics dashboard",
-      "Integrated IoT device tracking"
-    ]
+      "Improve on-time delivery rates",
+      "Reduce fuel consumption and emissions",
+      "Increase warehouse efficiency",
+      "Real-time visibility across operations",
+      "Automate manual processes",
+      "Optimize inventory levels",
+      "Enhance customer satisfaction"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Logistics Assessment",
+        "description": "Analyze your supply chain operations, transportation networks, warehouse processes, and pain points."
+      },
+      {
+        "step": "02",
+        "title": "Solution Architecture",
+        "description": "Design integrated logistics system with fleet management, route optimization, and warehouse automation."
+      },
+      {
+        "step": "03",
+        "title": "System Development",
+        "description": "Build comprehensive platform with IoT integration, real-time tracking, and analytics dashboards."
+      },
+      {
+        "step": "04",
+        "title": "Integration & Deployment",
+        "description": "Connect with existing ERP, WMS, and carrier systems, deploy hardware sensors and tracking devices."
+      },
+      {
+        "step": "05",
+        "title": "Optimization & Support",
+        "description": "Continuous monitoring, AI-powered optimization, and ongoing support for logistics operations."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "National Logistics Provider",
+        "metric": "35% cost reduction",
+        "description": "Route optimization and fleet management system across 200+ vehicles"
+      },
+      {
+        "title": "E-commerce Fulfillment",
+        "metric": "99.5% on-time delivery",
+        "description": "Warehouse management and last-mile delivery platform handling 50K+ daily orders"
+      },
+      {
+        "title": "Cold Chain Logistics",
+        "metric": "Zero temperature breaches",
+        "description": "IoT-enabled temperature monitoring for pharmaceutical supply chain"
+      }
+    ],
+    "security": {
+      "title": "Supply Chain Security",
+      "features": [
+        "End-to-end shipment tracking",
+        "Secure data transmission from IoT devices",
+        "Access controls for multi-tenant systems",
+        "Encrypted customer and shipment data",
+        "Audit trails for compliance",
+        "Blockchain for supply chain transparency",
+        "Disaster recovery and backup systems",
+        "Fraud prevention and cargo security"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does route optimization reduce costs?",
+        "answer": "Our AI-powered route optimization considers traffic, weather, delivery windows, vehicle capacity, and driver schedules to plan the most efficient routes, reducing fuel costs by 20-30% and increasing daily delivery capacity."
+      },
+      {
+        "question": "Can you integrate with existing TMS or WMS systems?",
+        "answer": "Yes! We integrate with major transportation management systems (TMS), warehouse management systems (WMS), and ERP platforms like SAP, Oracle, and Manhattan Associates to ensure seamless data flow."
+      },
+      {
+        "question": "What IoT sensors do you support?",
+        "answer": "We support GPS trackers, temperature sensors, humidity monitors, shock detectors, RFID tags, and barcode scanners with real-time data transmission to our cloud platform for visibility and alerts."
+      },
+      {
+        "question": "How do you handle last-mile delivery challenges?",
+        "answer": "Our last-mile solutions include driver mobile apps, customer delivery notifications, proof of delivery capture, real-time ETA updates, and dynamic route adjustments to optimize final-leg delivery efficiency."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Optimize Your Logistics Operations?",
+      "description": "Let's build intelligent supply chain solutions that drive efficiency and growth.",
+      "primaryButton": "Get Started",
+      "secondaryButton": "Request Demo"
+    }
+  },
+  "travel-hospitality/travel": {
+    "slug": "travel-hospitality/travel",
+    "title": "Travel & Hospitality Solutions",
+    "name": "Travel & Hospitality",
+    "description": "Transform travel and hospitality with booking platforms, guest management systems, and personalized experiences.",
+    "hero": {
+      "heading": "Elevate Travel & Hospitality Experiences",
+      "description": "Build innovative travel platforms that streamline bookings, enhance guest experiences, and drive operational efficiency.",
+      "gradient": "from-sky-600 to-blue-500",
+      "stats": [
+        {
+          "value": "10M+",
+          "label": "Bookings Processed"
+        },
+        {
+          "value": "50K+",
+          "label": "Properties Listed"
+        },
+        {
+          "value": "45%",
+          "label": "Revenue Increase"
+        },
+        {
+          "value": "4.8/5",
+          "label": "Guest Rating"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Travel Technology Expertise",
+      "description": "We develop comprehensive travel and hospitality technology solutions that help hotels, resorts, travel agencies, tour operators, and hospitality businesses deliver exceptional guest experiences while optimizing operations and revenue.",
+      "highlights": [
+        "Hotel booking and reservation systems",
+        "Property management systems (PMS)",
+        "Travel agency and tour operator platforms",
+        "Guest experience and loyalty programs",
+        "Restaurant and catering management",
+        "Revenue management and analytics"
+      ]
+    },
+    "services": [
+      {
+        "title": "Hotel Booking Systems",
+        "description": "Online booking engines with real-time availability, dynamic pricing, and seamless payment integration.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Property Management Systems",
+        "description": "Complete PMS with reservations, front desk operations, housekeeping, and guest services management.",
+        "icon": "database"
+      },
+      {
+        "title": "Travel Planning Platforms",
+        "description": "Trip planning and itinerary management with flight, hotel, and activity bookings in one platform.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Guest Experience Apps",
+        "description": "Mobile apps for contactless check-in, room service, concierge, and personalized recommendations.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Restaurant Management",
+        "description": "Table reservations, menu management, POS integration, and kitchen display systems.",
+        "icon": "users"
+      },
+      {
+        "title": "Loyalty & Rewards Programs",
+        "description": "Customer loyalty programs with points, rewards, tier management, and personalized offers.",
+        "icon": "heart"
+      }
+    ],
+    "technologies": [
+      "Amadeus API",
+      "Sabre GDS",
+      "Booking.com API",
+      "Stripe",
+      "AWS Travel",
+      "React Native",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "Elasticsearch"
+    ],
+    "benefits": [
+      "Increase direct bookings and reduce OTA commissions",
+      "Improve guest satisfaction scores",
+      "Optimize revenue with dynamic pricing",
+      "Streamline hotel operations",
+      "Enable contactless guest experiences",
+      "Build guest loyalty and repeat business",
+      "Provide personalized recommendations",
+      "Reduce no-shows and cancellations"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Hospitality Discovery",
+        "description": "Understand your property type, guest demographics, booking channels, and operational workflows."
+      },
+      {
+        "step": "02",
+        "title": "Experience Design",
+        "description": "Design guest-centric interfaces for booking, check-in, in-stay services, and post-stay engagement."
+      },
+      {
+        "step": "03",
+        "title": "Platform Development",
+        "description": "Build comprehensive system with booking engine, PMS integration, and guest experience features."
+      },
+      {
+        "step": "04",
+        "title": "Integration & Testing",
+        "description": "Connect with channel managers, payment systems, and third-party services, conduct thorough testing."
+      },
+      {
+        "step": "05",
+        "title": "Launch & Optimization",
+        "description": "Deploy platform with staff training and continuous optimization based on guest feedback and analytics."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Boutique Hotel Chain",
+        "metric": "55% direct booking increase",
+        "description": "Custom booking engine reducing OTA dependency and improving margins"
+      },
+      {
+        "title": "Resort Management System",
+        "metric": "4.9/5 guest satisfaction",
+        "description": "Integrated PMS and mobile app for seamless guest experiences"
+      },
+      {
+        "title": "Travel Agency Platform",
+        "metric": "100K+ trips booked",
+        "description": "Multi-service booking platform with flights, hotels, and activities"
+      }
+    ],
+    "security": {
+      "title": "Guest Data & Payment Security",
+      "features": [
+        "PCI-DSS compliant payment processing",
+        "Secure guest data storage and privacy",
+        "GDPR and data protection compliance",
+        "Encrypted credit card information",
+        "Fraud detection and prevention",
+        "Secure booking and reservation systems",
+        "Identity verification for guests",
+        "Contactless payment and check-in security"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can you integrate with existing hotel PMS systems?",
+        "answer": "Yes! We integrate with major property management systems including Opera, Cloudbeds, RMS, and Mews, as well as channel managers to synchronize bookings across all platforms."
+      },
+      {
+        "question": "How does dynamic pricing work?",
+        "answer": "Our revenue management system uses AI to analyze demand, competitor pricing, events, seasonality, and booking patterns to automatically adjust room rates for maximum revenue optimization."
+      },
+      {
+        "question": "What contactless features do you support?",
+        "answer": "We provide mobile check-in/check-out, digital room keys, QR code menus, contactless payments, in-room service requests via app, and virtual concierge services for safe, convenient stays."
+      },
+      {
+        "question": "Can guests manage bookings through mobile apps?",
+        "answer": "Absolutely. Our mobile apps allow guests to search availability, book rooms, modify reservations, check in/out, request services, access loyalty rewards, and receive personalized recommendations."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Enhance Your Guest Experience?",
+      "description": "Let's build hospitality technology that delights guests and drives revenue.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "See Demo"
+    }
+  },
+  "agriculture/agritech": {
+    "slug": "agriculture/agritech",
+    "title": "Agricultural Technology Solutions",
+    "name": "Agritech",
+    "description": "Modernize agriculture with smart farming platforms, crop management systems, and supply chain solutions.",
+    "hero": {
+      "heading": "Transform Agriculture with Technology",
+      "description": "Build innovative agritech solutions that increase yields, reduce costs, and promote sustainable farming practices.",
+      "gradient": "from-green-700 to-lime-600",
+      "stats": [
+        {
+          "value": "100K+",
+          "label": "Farmers Connected"
+        },
+        {
+          "value": "45%",
+          "label": "Yield Increase"
+        },
+        {
+          "value": "30%",
+          "label": "Cost Reduction"
+        },
+        {
+          "value": "2M+",
+          "label": "Acres Managed"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Agritech Innovation Partner",
+      "description": "We develop technology solutions for modern agriculture, helping farmers, agribusinesses, and agricultural cooperatives leverage IoT, AI, and data analytics to optimize crop production, manage resources efficiently, and improve supply chain operations.",
+      "highlights": [
+        "Precision farming and crop monitoring",
+        "Farm management software",
+        "Agricultural marketplace platforms",
+        "Livestock management systems",
+        "Supply chain and traceability",
+        "Weather and soil analytics"
+      ]
+    },
+    "services": [
+      {
+        "title": "Farm Management Systems",
+        "description": "Complete farm operations management with crop planning, field mapping, inventory, and financial tracking.",
+        "icon": "database"
+      },
+      {
+        "title": "Precision Agriculture",
+        "description": "IoT sensors for soil monitoring, irrigation automation, crop health tracking, and yield prediction.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Agricultural Marketplaces",
+        "description": "B2B and B2C platforms connecting farmers with buyers, suppliers, and distributors.",
+        "icon": "users"
+      },
+      {
+        "title": "Livestock Management",
+        "description": "Track animal health, feeding schedules, breeding records, and veterinary care.",
+        "icon": "heart"
+      },
+      {
+        "title": "Supply Chain Traceability",
+        "description": "Track produce from farm to table with blockchain-based traceability and quality assurance.",
+        "icon": "lock"
+      },
+      {
+        "title": "Weather & Analytics",
+        "description": "Weather forecasting, soil analysis, pest prediction, and AI-powered farming recommendations.",
+        "icon": "cloud"
+      }
+    ],
+    "technologies": [
+      "IoT Sensors",
+      "Blockchain",
+      "Satellite Imagery",
+      "AI & ML",
+      "AWS IoT",
+      "TensorFlow",
+      "React Native",
+      "Node.js",
+      "Python",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "benefits": [
+      "Increase crop yields by 30%",
+      "Reduce water and fertilizer usage",
+      "Lower operational costs",
+      "Enable data-driven farming decisions",
+      "Improve supply chain transparency",
+      "Optimize resource allocation",
+      "Predict and prevent crop diseases",
+      "Connect farmers directly with markets"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Agricultural Assessment",
+        "description": "Understand farming operations, crop types, equipment, challenges, and technology adoption level."
+      },
+      {
+        "step": "02",
+        "title": "Solution Design",
+        "description": "Design agritech platform with IoT integration, data analytics, and farmer-friendly interfaces."
+      },
+      {
+        "step": "03",
+        "title": "Platform Development",
+        "description": "Build comprehensive system with crop monitoring, resource management, and marketplace features."
+      },
+      {
+        "step": "04",
+        "title": "Deployment & Integration",
+        "description": "Install IoT sensors, integrate with farm equipment, conduct field testing with farmers."
+      },
+      {
+        "step": "05",
+        "title": "Training & Support",
+        "description": "Provide farmer training, ongoing monitoring, and continuous optimization based on agricultural data."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Smart Irrigation System",
+        "metric": "40% water savings",
+        "description": "IoT-based precision irrigation across 5,000 acres reducing water waste"
+      },
+      {
+        "title": "Agricultural Marketplace",
+        "metric": "20K+ farmers connected",
+        "description": "B2B platform linking farmers with distributors and retailers"
+      },
+      {
+        "title": "Crop Disease Detection",
+        "metric": "85% early detection rate",
+        "description": "AI-powered mobile app identifying plant diseases from photos"
+      }
+    ],
+    "security": {
+      "title": "Agricultural Data Security",
+      "features": [
+        "Secure farm data storage",
+        "Blockchain for supply chain traceability",
+        "IoT device encryption",
+        "Farmer data privacy protection",
+        "Secure marketplace transactions",
+        "Weather and soil data integrity",
+        "Access controls for farm management",
+        "Compliance with agricultural regulations"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does precision agriculture improve yields?",
+        "answer": "Our precision agriculture solutions use IoT sensors, satellite imagery, and AI to monitor soil conditions, weather, crop health, and optimize irrigation, fertilization, and pest control, leading to 20-30% yield improvements."
+      },
+      {
+        "question": "Can small-scale farmers use your platform?",
+        "answer": "Yes! We design solutions for farms of all sizes with scalable pricing. Small farmers can start with basic crop tracking and gradually adopt advanced features like IoT sensors and AI recommendations."
+      },
+      {
+        "question": "How does blockchain help with supply chain traceability?",
+        "answer": "Blockchain creates an immutable record of produce journey from farm to consumer, tracking quality certifications, handling, and storage conditions, ensuring food safety and enabling premium pricing for quality produce."
+      },
+      {
+        "question": "What equipment integrations do you support?",
+        "answer": "We integrate with major agricultural equipment brands including John Deere, Case IH, and New Holland for automated data collection, as well as weather stations, soil sensors, and drones."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Modernize Your Agricultural Operations?",
+      "description": "Let's build smart farming solutions that increase yields and sustainability.",
+      "primaryButton": "Get Started",
+      "secondaryButton": "Learn More"
+    }
   },
   "media-entertainment/sports-events": {
     "slug": "media-entertainment/sports-events",
     "title": "Sports & Events Solutions",
+    "name": "Sports & Events",
     "description": "Deliver engaging fan experiences and event management tools for the modern era.",
     "hero": {
       "heading": "Empowering Sports and Events Digitally",
-      "description": "From ticketing platforms to fan engagement apps — we bring innovation to sports and entertainment.",
-      "gradient": "from-indigo-600 to-blue-700"
+      "description": "Create innovative platforms for ticketing, fan engagement, event management, and sports analytics.",
+      "gradient": "from-rose-700 to-pink-600",
+      "stats": [
+        {
+          "value": "5M+",
+          "label": "Tickets Sold"
+        },
+        {
+          "value": "500+",
+          "label": "Events Managed"
+        },
+        {
+          "value": "90%",
+          "label": "Fan Engagement"
+        },
+        {
+          "value": "24/7",
+          "label": "Live Support"
+        }
+      ]
     },
-    "features": [
-      { "title": "Ticketing Platforms", "description": "Seamless ticket booking and payment systems.", "icon": "trophy" },
-      { "title": "Fan Engagement", "description": "Interactive features to boost audience loyalty.", "icon": "users" },
-      { "title": "Analytics & Insights", "description": "Data-driven decisions for teams and organizers.", "icon": "lightbulb" }
+    "overview": {
+      "title": "Sports & Events Technology",
+      "description": "We develop comprehensive sports and events technology solutions that enhance fan experiences, streamline event operations, and provide data-driven insights for teams, venues, and organizers.",
+      "highlights": [
+        "Ticketing and event management",
+        "Fan engagement and mobile apps",
+        "Sports analytics and performance tracking",
+        "Venue and stadium management",
+        "Live streaming and broadcasting",
+        "Merchandise and concession systems"
+      ]
+    },
+    "services": [
+      {
+        "title": "Ticketing Platforms",
+        "description": "Seamless ticket booking with seat selection, dynamic pricing, season passes, and digital wallet integration.",
+        "icon": "trophy"
+      },
+      {
+        "title": "Fan Engagement Apps",
+        "description": "Mobile apps with live scores, player stats, social features, polls, and exclusive content.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Event Management",
+        "description": "Complete event planning with vendor management, scheduling, staff coordination, and real-time dashboards.",
+        "icon": "monitor"
+      },
+      {
+        "title": "Sports Analytics",
+        "description": "Performance tracking, player statistics, game analysis, and predictive analytics for teams.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Venue Management",
+        "description": "Stadium operations including access control, crowd management, concessions, and parking.",
+        "icon": "database"
+      },
+      {
+        "title": "Live Streaming",
+        "description": "Multi-platform live streaming with real-time stats overlay, multiple camera angles, and replay features.",
+        "icon": "cloud"
+      }
+    ],
+    "technologies": [
+      "Ticketmaster API",
+      "AWS Media",
+      "Wowza Streaming",
+      "React Native",
+      "Node.js",
+      "Redis",
+      "Kafka",
+      "PostgreSQL",
+      "TensorFlow",
+      "Computer Vision"
     ],
     "benefits": [
-      "Boost audience engagement",
-      "Custom branding and monetization options",
-      "Cloud-based scalability",
-      "Enhanced security for transactions"
-    ]
+      "Boost audience engagement and loyalty",
+      "Increase ticket and merchandise sales",
+      "Streamline event operations",
+      "Provide data-driven insights",
+      "Enable seamless fan experiences",
+      "Monetize digital content",
+      "Reduce operational costs",
+      "Enhance venue safety and security"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Event & Audience Analysis",
+        "description": "Understand your events, venues, fan demographics, ticketing needs, and engagement goals."
+      },
+      {
+        "step": "02",
+        "title": "Experience Design",
+        "description": "Design engaging fan experiences from ticket purchase to post-event engagement."
+      },
+      {
+        "step": "03",
+        "title": "Platform Development",
+        "description": "Build comprehensive system with ticketing, fan engagement, analytics, and venue management."
+      },
+      {
+        "step": "04",
+        "title": "Integration & Testing",
+        "description": "Integrate with payment systems, access control, and test with live events."
+      },
+      {
+        "step": "05",
+        "title": "Launch & Optimization",
+        "description": "Deploy platform with staff training and continuous improvement based on fan feedback."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Professional Sports Team",
+        "metric": "250% fan app adoption",
+        "description": "Mobile app with live stats, AR experiences, and loyalty rewards"
+      },
+      {
+        "title": "Music Festival Platform",
+        "metric": "100K+ tickets sold",
+        "description": "Multi-day festival ticketing with cashless payments and artist schedules"
+      },
+      {
+        "title": "Stadium Management System",
+        "metric": "60% faster entry",
+        "description": "Digital ticketing and access control system for 50,000-seat venue"
+      }
+    ],
+    "security": {
+      "title": "Event & Fan Data Security",
+      "features": [
+        "Secure ticket issuance and validation",
+        "Fraud prevention and counterfeit detection",
+        "PCI-DSS compliant payment processing",
+        "Fan data privacy protection",
+        "Access control and crowd management",
+        "Secure live streaming and DRM",
+        "Encrypted personal information",
+        "Venue safety and emergency systems"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How do you prevent ticket fraud and scalping?",
+        "answer": "Our platform uses blockchain-based digital tickets, QR codes, dynamic ticket IDs, and identity verification to prevent counterfeiting. We also implement transfer restrictions and price caps to combat scalping."
+      },
+      {
+        "question": "Can fans access content during and after events?",
+        "answer": "Yes! Our fan engagement apps provide live stats, replays, highlights, behind-the-scenes content, and post-event recordings. Fans can also interact through polls, social features, and exclusive content."
+      },
+      {
+        "question": "How does dynamic pricing work for tickets?",
+        "answer": "Our AI-powered dynamic pricing adjusts ticket prices based on demand, time until event, seat location, weather, team performance, and competitor events to maximize revenue while maintaining fair pricing."
+      },
+      {
+        "question": "What analytics do you provide for event organizers?",
+        "answer": "We track attendance patterns, merchandise sales, concession revenue, fan engagement metrics, seat utilization, demographic data, and provide predictive analytics for future event planning and revenue optimization."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Elevate Your Event Experience?",
+      "description": "Let's build innovative solutions that engage fans and streamline operations.",
+      "primaryButton": "Get Started",
+      "secondaryButton": "Schedule Demo"
+    }
+  },
+  "media-entertainment/media-broadcasting": {
+    "slug": "media-entertainment/media-broadcasting",
+    "title": "Media & Broadcasting Solutions",
+    "name": "Media & Broadcasting",
+    "description": "Transform media and broadcasting with streaming platforms, content management, and digital distribution solutions.",
+    "hero": {
+      "heading": "Revolutionize Media & Broadcasting",
+      "description": "Build cutting-edge platforms for content creation, distribution, and monetization that engage audiences across all channels.",
+      "gradient": "from-violet-700 to-purple-600",
+      "stats": [
+        {
+          "value": "100M+",
+          "label": "Content Views"
+        },
+        {
+          "value": "99.9%",
+          "label": "Stream Uptime"
+        },
+        {
+          "value": "50+",
+          "label": "Media Partners"
+        },
+        {
+          "value": "<2s",
+          "label": "Stream Latency"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Media Technology Expertise",
+      "description": "We develop comprehensive media and broadcasting solutions that enable content creators, broadcasters, and media companies to deliver engaging experiences across all platforms. From live streaming to VOD platforms, our solutions cover the entire media ecosystem.",
+      "highlights": [
+        "OTT and streaming platform development",
+        "Content management systems (CMS)",
+        "Live broadcasting solutions",
+        "Video-on-demand (VOD) platforms",
+        "Multi-platform content distribution",
+        "Monetization and subscription systems"
+      ]
+    },
+    "services": [
+      {
+        "title": "OTT Streaming Platforms",
+        "description": "Build custom Netflix-style platforms with adaptive streaming, multi-device support, and personalized recommendations.",
+        "icon": "film"
+      },
+      {
+        "title": "Live Broadcasting",
+        "description": "Real-time streaming solutions with low latency, multi-bitrate support, and interactive features.",
+        "icon": "camera"
+      },
+      {
+        "title": "Content Management",
+        "description": "Comprehensive CMS for organizing, tagging, and managing large media libraries with metadata and search.",
+        "icon": "database"
+      },
+      {
+        "title": "Video Analytics",
+        "description": "Track viewer engagement, watch time, drop-off rates, and audience demographics for content optimization.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Monetization Solutions",
+        "description": "Multiple revenue streams including subscriptions, pay-per-view, advertising, and hybrid models.",
+        "icon": "dollarsign"
+      },
+      {
+        "title": "Multi-Platform Distribution",
+        "description": "Deliver content seamlessly across web, mobile, smart TVs, gaming consoles, and streaming devices.",
+        "icon": "cloud"
+      }
+    ],
+    "technologies": [
+      "AWS MediaLive",
+      "Azure Media Services",
+      "Wowza Streaming",
+      "FFmpeg",
+      "HLS/DASH",
+      "React/React Native",
+      "Node.js",
+      "MongoDB",
+      "Redis",
+      "CDN Networks",
+      "DRM Solutions"
+    ],
+    "benefits": [
+      "Reach global audiences instantly",
+      "Reduce broadcasting infrastructure costs",
+      "Enable multiple monetization strategies",
+      "Provide personalized viewing experiences",
+      "Scale to millions of concurrent viewers",
+      "Track detailed audience analytics",
+      "Support all devices and platforms",
+      "Ensure content security with DRM"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Content Strategy",
+        "description": "Define your content delivery model, target platforms, monetization strategy, and technical requirements."
+      },
+      {
+        "step": "02",
+        "title": "Platform Architecture",
+        "description": "Design scalable architecture with encoding pipelines, CDN integration, and multi-platform delivery."
+      },
+      {
+        "step": "03",
+        "title": "Development & Integration",
+        "description": "Build custom streaming platform with CMS, player integration, and third-party service connections."
+      },
+      {
+        "step": "04",
+        "title": "Testing & Optimization",
+        "description": "Comprehensive testing across devices, network conditions, and load scenarios for optimal performance."
+      },
+      {
+        "step": "05",
+        "title": "Launch & Scale",
+        "description": "Deploy platform with monitoring, analytics, and ongoing optimization based on viewer behavior."
+      }
+    ],
+    "caseStudies": [
+      {
+        "title": "Sports Broadcasting Platform",
+        "metric": "5M+ Viewers",
+        "description": "Live streaming platform handling millions of concurrent viewers with 99.9% uptime during major events."
+      },
+      {
+        "title": "Educational VOD Platform",
+        "metric": "80% Engagement",
+        "description": "Video learning platform with 80% course completion rate through personalized recommendations."
+      },
+      {
+        "title": "News Broadcasting Network",
+        "metric": "24/7 Streaming",
+        "description": "Continuous live news streaming across 15 countries with multi-language support and localization."
+      }
+    ],
+    "security": {
+      "title": "Content Protection & Security",
+      "features": [
+        "DRM (Widevine, FairPlay, PlayReady)",
+        "Token-based authentication",
+        "Geo-blocking and content restrictions",
+        "Watermarking and forensic tracking",
+        "Encrypted content delivery",
+        "Access control and user permissions",
+        "DMCA compliance tools",
+        "Secure payment processing"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What streaming protocols do you support?",
+        "answer": "We support all major protocols including HLS, DASH, RTMP, WebRTC for live streaming, and adaptive bitrate streaming for optimal quality across all network conditions."
+      },
+      {
+        "question": "Can you integrate with existing content libraries?",
+        "answer": "Yes, we can migrate and integrate your existing content libraries, metadata, and user data from legacy systems to your new platform."
+      },
+      {
+        "question": "How do you handle content delivery at scale?",
+        "answer": "We use global CDN networks, edge caching, and optimized encoding to deliver content efficiently to millions of viewers worldwide."
+      },
+      {
+        "question": "What monetization options are available?",
+        "answer": "We support SVOD (subscriptions), TVOD (pay-per-view), AVOD (advertising), and hybrid models with flexible pricing tiers."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform Your Media Platform?",
+      "description": "Let's build a cutting-edge streaming solution that engages your audience and grows your business.",
+      "primaryButton": "Start Your Project",
+      "secondaryButton": "Schedule Demo"
+    }
   }
 }

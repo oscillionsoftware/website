@@ -82,13 +82,6 @@ const TestimonialPage = () => {
     setCurrentIndex((prev) => (prev - 1 + filteredTestimonials.length) % filteredTestimonials.length);
   };
 
-  const stats = [
-    { icon: Users, value: '1,400+', label: 'Happy Clients' },
-    { icon: Star, value: '4.9/5', label: 'Average Rating' },
-    { icon: Award, value: '150+', label: 'Reviews' },
-    { icon: TrendingUp, value: '99%', label: 'Satisfaction Rate' }
-  ];
-
   const currentTestimonial = filteredTestimonials[currentIndex];
 
   return (
@@ -107,22 +100,6 @@ const TestimonialPage = () => {
               real businesses who trusted us with their technology needs.
             </p>
           </div>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl shadow-xl p-6 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp text-center"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <stat.icon className="w-10 h-10 mx-auto mb-3 text-black" />
-              <div className="text-3xl font-bold text-black mb-1">{stat.value}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
-            </div>
-          ))}
         </div>
       </div>
 

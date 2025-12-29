@@ -28,7 +28,6 @@ const footerData: FooterSection[] = [
   links: [
     { label: 'Email Us', href: 'mailto:info@oscillion.com' },
     { label: 'Contact Form', href: '/contact' },
-    { label: 'Office Locations', href: '/company/locations' },
     { label: 'Request a Quote', href: '/request-quote' },
   ],
 },
