@@ -4,13 +4,6 @@ import { Target, Eye, Users, Award, Globe, TrendingUp, Shield, Zap, Clock, Check
 const AboutPage = () => {
   const [activeTab, setActiveTab] = useState('mission');
 
-  const stats = [
-    { icon: Users, value: '750+', label: 'Team Members', color: 'from-black to-gray-700' },
-    { icon: Globe, value: '30+', label: 'Countries Served', color: 'from-gray-800 to-black' },
-    { icon: Award, value: '15+', label: 'Years Experience', color: 'from-black to-gray-600' },
-    { icon: TrendingUp, value: '4200+', label: 'Projects Delivered', color: 'from-gray-700 to-black' },
-  ];
-
   const values = [
     {
       icon: Shield,
@@ -77,24 +70,6 @@ const AboutPage = () => {
               with innovative technology solutions since 2010.
             </p>
           </div>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl shadow-xl p-6 transform hover:-translate-y-2 transition-all duration-300 animate-fadeInUp"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className={`w-12 h-12 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center mb-4`}>
-                <stat.icon className="w-6 h-6 text-white" />
-              </div>
-              <div className="text-3xl font-bold text-black mb-1">{stat.value}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
-            </div>
-          ))}
         </div>
       </div>
 
