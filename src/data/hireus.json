@@ -2,106 +2,259 @@
   "frontend/react-developers": {
     "slug": "frontend/react-developers",
     "title": "Hire React Developers",
+    "name": "React Developers",
     "description": "Build scalable and modern frontends with our expert React developers.",
+    "longDesc": "Transform your web applications with our elite React developers. Our team specializes in building high-performance, scalable, and maintainable React applications using the latest tools and best practices. From complex enterprise solutions to modern SPAs, we deliver excellence.",
     "hero": {
       "heading": "Hire Expert React Developers",
       "description": "Empower your web applications with interactive and high-performance React interfaces.",
       "gradient": "from-blue-600 to-indigo-700"
     },
+    "icon": "code",
     "features": [
-      { "title": "Modern UI Development", "description": "Create stunning interfaces using React and Tailwind CSS.", "icon": "laptop" },
-      { "title": "Component-Based Architecture", "description": "Reusable and scalable components for faster development.", "icon": "code" },
-      { "title": "Performance Optimization", "description": "Ensure smooth performance and fast load times.", "icon": "lightbulb" }
+      "Modern React 18+ Development",
+      "Component-Based Architecture",
+      "Redux/Context State Management",
+      "React Hooks & Custom Hooks",
+      "Server-Side Rendering (Next.js)",
+      "Performance Optimization",
+      "TypeScript Integration",
+      "Responsive UI Development"
     ],
     "benefits": [
       "Save up to 40% on development costs",
       "Dedicated developers for your project",
       "Agile development process",
-      "Cross-browser compatibility"
+      "Cross-browser compatibility",
+      "Scalable and maintainable code",
+      "Fast time-to-market"
+    ],
+    "technologies": ["React", "Next.js", "Redux", "TypeScript", "Tailwind CSS", "React Query", "Jest", "React Testing Library"],
+    "pricing": {
+      "model": "Dedicated Team",
+      "starting": "₹80,000",
+      "duration": "Monthly"
+    },
+    "expertise": [
+      "5+ years average experience",
+      "100+ React projects delivered",
+      "Expert in modern React patterns",
+      "Full-stack capabilities"
     ]
   },
   "frontend/vuejs-developers": {
     "slug": "frontend/vuejs-developers",
     "title": "Hire Vue.js Developers",
+    "name": "Vue.js Developers",
     "description": "Leverage the power of Vue.js for fast and maintainable front-end applications.",
+    "longDesc": "Build stunning, reactive web applications with our experienced Vue.js developers. We specialize in Vue 3, Composition API, and the entire Vue ecosystem to create lightweight, performant, and user-friendly applications that scale with your business needs.",
     "hero": {
       "heading": "Hire Skilled Vue.js Developers",
       "description": "Build interactive, lightweight, and reactive UIs with Vue.js experts.",
       "gradient": "from-green-500 to-emerald-600"
     },
+    "icon": "code",
     "features": [
-      { "title": "Reactive Components", "description": "Build dynamic and data-driven frontends with Vue.", "icon": "code" },
-      { "title": "Lightweight Framework", "description": "Fast load times and high performance for all devices.", "icon": "laptop" },
-      { "title": "Integration Ready", "description": "Easily integrate Vue with existing systems or APIs.", "icon": "plug" }
+      "Vue 3 & Composition API",
+      "Vuex/Pinia State Management",
+      "Component Design Patterns",
+      "Vue Router Implementation",
+      "Nuxt.js for SSR/SSG",
+      "Progressive Web Apps (PWA)",
+      "API Integration",
+      "Unit & E2E Testing"
     ],
     "benefits": [
       "Dedicated Vue.js engineers",
       "Fast project turnaround",
       "Flexible hiring models",
-      "Ongoing maintenance support"
+      "Ongoing maintenance support",
+      "Clean and maintainable code",
+      "Cost-effective solutions"
+    ],
+    "technologies": ["Vue 3", "Nuxt.js", "Pinia", "Vuex", "TypeScript", "Vite", "Vitest", "Cypress"],
+    "pricing": {
+      "model": "Dedicated Team",
+      "starting": "₹75,000",
+      "duration": "Monthly"
+    },
+    "expertise": [
+      "Vue.js certified developers",
+      "80+ Vue projects completed",
+      "Migration specialists",
+      "Full ecosystem knowledge"
+    ]
+  },
+  "frontend/angular-developers": {
+    "slug": "frontend/angular-developers",
+    "title": "Hire Angular Developers",
+    "name": "Angular Developers",
+    "description": "Build robust enterprise applications with our certified Angular developers.",
+    "longDesc": "Leverage the power of Angular with our expert development team. We build enterprise-grade applications using Angular's comprehensive framework, delivering scalable, testable, and maintainable solutions that meet the highest standards of quality and performance.",
+    "hero": {
+      "heading": "Hire Certified Angular Developers",
+      "description": "Create powerful enterprise applications with Angular experts who deliver excellence.",
+      "gradient": "from-red-600 to-pink-700"
+    },
+    "icon": "code",
+    "features": [
+      "Angular 15+ Development",
+      "TypeScript Best Practices",
+      "RxJS & Reactive Programming",
+      "Angular Material UI",
+      "Dependency Injection",
+      "Angular Universal (SSR)",
+      "NgRx State Management",
+      "Comprehensive Testing"
+    ],
+    "benefits": [
+      "Enterprise-grade solutions",
+      "Highly skilled Angular experts",
+      "Code quality assurance",
+      "Scalable architecture",
+      "Long-term maintenance",
+      "Best practices implementation"
+    ],
+    "technologies": ["Angular", "TypeScript", "RxJS", "NgRx", "Angular Material", "Jasmine", "Karma", "Protractor"],
+    "pricing": {
+      "model": "Dedicated Team",
+      "starting": "₹85,000",
+      "duration": "Monthly"
+    },
+    "expertise": [
+      "Angular certified professionals",
+      "6+ years average experience",
+      "90+ enterprise projects",
+      "Migration & upgrade specialists"
     ]
   },
   "backend/nodejs-developers": {
     "slug": "backend/nodejs-developers",
     "title": "Hire Node.js Developers",
+    "name": "Node.js Developers",
     "description": "Develop high-performance backend systems with expert Node.js developers.",
+    "longDesc": "Build scalable, high-performance backend systems with our Node.js experts. We specialize in creating RESTful APIs, microservices, real-time applications, and serverless solutions using Node.js and its rich ecosystem of frameworks and tools.",
     "hero": {
       "heading": "Hire Top Node.js Developers",
       "description": "Build scalable APIs and microservices with Node.js experts.",
       "gradient": "from-yellow-500 to-orange-600"
     },
+    "icon": "server",
     "features": [
-      { "title": "Scalable Architecture", "description": "Microservices and event-driven systems built with Node.", "icon": "server" },
-      { "title": "Secure APIs", "description": "Robust authentication and security mechanisms.", "icon": "lock" },
-      { "title": "Real-Time Apps", "description": "Build chat, streaming, and live data apps efficiently.", "icon": "cloud" }
+      "RESTful API Development",
+      "GraphQL Implementation",
+      "Microservices Architecture",
+      "Real-Time Applications",
+      "Database Integration",
+      "Authentication & Security",
+      "Serverless Functions",
+      "Performance Optimization"
     ],
     "benefits": [
       "High-performance Node apps",
       "Rapid MVP development",
       "24/7 technical support",
-      "Flexible engagement models"
+      "Flexible engagement models",
+      "Scalable solutions",
+      "Cost-effective development"
+    ],
+    "technologies": ["Node.js", "Express", "NestJS", "MongoDB", "PostgreSQL", "Redis", "GraphQL", "Socket.io"],
+    "pricing": {
+      "model": "Dedicated Team",
+      "starting": "₹80,000",
+      "duration": "Monthly"
+    },
+    "expertise": [
+      "5+ years Node.js experience",
+      "120+ backend projects",
+      "Cloud deployment experts",
+      "Security specialists"
     ]
   },
   "mobile/react-native-developers": {
     "slug": "mobile/react-native-developers",
     "title": "Hire React Native Developers",
+    "name": "React Native Developers",
     "description": "Create cross-platform mobile apps with a single React Native codebase.",
+    "longDesc": "Build beautiful, performant mobile applications for iOS and Android with our React Native experts. We deliver native-quality mobile experiences using a single codebase, reducing development time and costs while maintaining high performance and user satisfaction.",
     "hero": {
       "heading": "Hire Expert React Native Developers",
       "description": "Deliver seamless iOS and Android apps faster with React Native.",
       "gradient": "from-purple-600 to-indigo-700"
     },
+    "icon": "smartphone",
     "features": [
-      { "title": "Cross-Platform Apps", "description": "Build iOS & Android apps from one codebase.", "icon": "laptop" },
-      { "title": "Native Performance", "description": "Deliver native-like speed and user experience.", "icon": "shield" },
-      { "title": "Rapid Development", "description": "Save time and resources with faster delivery.", "icon": "lightbulb" }
+      "Cross-Platform Development",
+      "Native Module Integration",
+      "Redux State Management",
+      "Push Notifications",
+      "Offline Functionality",
+      "Third-Party API Integration",
+      "App Store Deployment",
+      "Performance Optimization"
     ],
     "benefits": [
       "Reduced development cost",
       "Reusable code components",
       "Faster time-to-market",
-      "Skilled React Native experts"
+      "Skilled React Native experts",
+      "Native-like performance",
+      "Single codebase maintenance"
+    ],
+    "technologies": ["React Native", "Expo", "Redux", "TypeScript", "Firebase", "REST APIs", "Native Modules", "AsyncStorage"],
+    "pricing": {
+      "model": "Dedicated Team",
+      "starting": "₹90,000",
+      "duration": "Monthly"
+    },
+    "expertise": [
+      "4+ years mobile development",
+      "70+ apps published",
+      "Both iOS & Android experts",
+      "UI/UX specialists"
     ]
   },
   "specialized/devops-engineers": {
     "slug": "specialized/devops-engineers",
     "title": "Hire DevOps Engineers",
+    "name": "DevOps Engineers",
     "description": "Streamline your deployment pipelines with skilled DevOps professionals.",
+    "longDesc": "Transform your software delivery with our certified DevOps engineers. We implement robust CI/CD pipelines, infrastructure automation, and cloud solutions that improve deployment frequency, reduce failure rates, and accelerate time to market.",
     "hero": {
       "heading": "Hire Certified DevOps Engineers",
       "description": "Automate your infrastructure and optimize delivery pipelines.",
       "gradient": "from-cyan-600 to-blue-700"
     },
+    "icon": "cloud",
     "features": [
-      { "title": "Continuous Integration & Deployment", "description": "Set up CI/CD pipelines for faster releases.", "icon": "server" },
-      { "title": "Cloud Infrastructure", "description": "Manage AWS, Azure, or GCP seamlessly.", "icon": "cloud" },
-      { "title": "Security & Monitoring", "description": "Implement secure and stable DevOps environments.", "icon": "file-lock" }
+      "CI/CD Pipeline Setup",
+      "Infrastructure as Code",
+      "Container Orchestration",
+      "Cloud Migration",
+      "Monitoring & Logging",
+      "Security Implementation",
+      "Automated Testing",
+      "Performance Tuning"
     ],
     "benefits": [
       "Automated deployment process",
       "Reduced downtime",
       "Improved scalability",
-      "Enhanced team collaboration"
+      "Enhanced team collaboration",
+      "Cost optimization",
+      "Faster release cycles"
+    ],
+    "technologies": ["AWS", "Docker", "Kubernetes", "Jenkins", "Terraform", "Ansible", "GitLab CI", "Prometheus"],
+    "pricing": {
+      "model": "Dedicated Team",
+      "starting": "₹95,000",
+      "duration": "Monthly"
+    },
+    "expertise": [
+      "AWS/Azure certified",
+      "6+ years DevOps experience",
+      "100+ infrastructure projects",
+      "Security & compliance experts"
     ]
   }
 }
